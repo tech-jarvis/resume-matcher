@@ -5,6 +5,7 @@ import styles from "./ResourceMatcher.module.css";
 import { loadResumes, saveResumes } from "@/lib/resumeStorage";
 import MatchResultsTable from "./MatchResultsTable";
 import ResumesManager from "./ResumesManager";
+import ResumeConverter from "./ResumeConverter";
 
 export default function ResourceMatcher() {
   const [tab, setTab] = useState("match");
@@ -68,6 +69,13 @@ export default function ResourceMatcher() {
             onClick={() => setTab("resumes")}
           >
             Resume database
+          </button>
+          <button
+            type="button"
+            className={`${styles.navItem} ${tab === "convert" ? styles.navActive : ""}`}
+            onClick={() => setTab("convert")}
+          >
+            Resume converter
           </button>
         </nav>
         <div className={styles.sideStats}>
@@ -147,7 +155,7 @@ export default function ResourceMatcher() {
               />
             )}
           </>
-        ) : (
+        ) : tab === "resumes" ? (
           <>
             <div className={styles.topbar}>
               <h1 className={styles.pageTitle}>Resume database</h1>
@@ -157,6 +165,17 @@ export default function ResourceMatcher() {
               </p>
             </div>
             <ResumesManager resumes={resumes} onChange={handleResumesChange} />
+          </>
+        ) : (
+          <>
+            <div className={styles.topbar}>
+              <h1 className={styles.pageTitle}>Resume converter</h1>
+              <p className={styles.pageDesc}>
+                Upload any PDF, Word, or text resume — get a standardized Devsinc profile Word document
+                (.docx) plus structured data you can add to the matcher database.
+              </p>
+            </div>
+            <ResumeConverter resumes={resumes} onAddToDatabase={handleResumesChange} />
           </>
         )}
       </main>

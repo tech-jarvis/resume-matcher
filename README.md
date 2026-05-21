@@ -32,6 +32,15 @@ vercel
 # Settings → Environment Variables → ANTHROPIC_API_KEY
 ```
 
+## Resume converter
+
+Use the **Resume converter** tab to:
+
+- Upload **PDF**, **DOCX**, **DOC**, or **TXT** resumes (up to 10 MB)
+- AI extracts and maps content to Devsinc’s standardized profile format
+- Download a branded **Word document** (`.docx`) with profile table, summary, stacks, domains, and highlights
+- Optionally **Add to database** for matching
+
 ## Resume database
 
 Use the **Resume database** tab in the app to:
