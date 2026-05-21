@@ -32,9 +32,20 @@ vercel
 # Settings → Environment Variables → ANTHROPIC_API_KEY
 ```
 
-## Adding / updating engineers
+## Resume database
 
-Edit `lib/resources.js` — each entry has:
+Use the **Resume database** tab in the app to:
+
+- View and edit all engineer profiles in a spreadsheet-style table
+- Upload `.json`, `.csv`, or text resumes (AI extracts fields from pasted/uploaded text)
+- Export your roster as JSON
+- Changes persist in your browser (`localStorage`) and are used for matching
+
+To reset to the built-in roster, click **Reset defaults**.
+
+## Adding / updating engineers (source file)
+
+The default roster lives in `lib/resources.js` — each entry has:
 
 ```js
 {

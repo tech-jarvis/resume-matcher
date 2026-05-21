@@ -47,11 +47,13 @@ Rules:
 
 export async function POST(request) {
   try {
-    const { jd } = await request.json();
+    const { jd, resources } = await request.json();
 
     if (!jd || typeof jd !== "string" || jd.trim().length < 10) {
       return Response.json({ error: "Please provide a valid job description." }, { status: 400 });
     }
+
+    const pool = Array.isArray(resources) && resources.length > 0 ? resources : RESOURCES;
 
     const message = await client.messages.create({
       model: "claude-sonnet-4-20250514",
@@ -60,7 +62,7 @@ export async function POST(request) {
       messages: [
         {
           role: "user",
-          content: `Here are all Devsinc resources:\n${JSON.stringify(RESOURCES)}\n\nJob Description / Requirement:\n${jd.trim()}\n\nFind the best matches.`,
+          content: `Here are all Devsinc resources:\n${JSON.stringify(pool)}\n\nJob Description / Requirement:\n${jd.trim()}\n\nFind the best matches.`,
         },
       ],
     });
