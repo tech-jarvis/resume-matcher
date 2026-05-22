@@ -1,6 +1,8 @@
+import fs from "fs/promises";
 import {
+  DEVSINC_RESUME_TEMPLATE_DOCX_PATH,
   DEVSINC_RESUME_TEMPLATE_FILENAME,
-  readDevsincResumeTemplate,
+  DEVSINC_RESUME_TEMPLATE_PATH,
 } from "@/lib/devsincTemplate";
 import { requireAuth } from "@/lib/supabase/requireAuth";
 
@@ -11,10 +13,17 @@ export async function GET() {
   if (authError) return Response.json({ error: authError }, { status: 401 });
 
   try {
-    const buffer = await readDevsincResumeTemplate();
+    let buffer;
+    let contentType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+    try {
+      buffer = await fs.readFile(DEVSINC_RESUME_TEMPLATE_DOCX_PATH);
+    } catch {
+      buffer = await fs.readFile(DEVSINC_RESUME_TEMPLATE_PATH);
+      contentType = "application/pdf";
+    }
     return new Response(buffer, {
       headers: {
-        "Content-Type": "application/pdf",
+        "Content-Type": contentType,
         "Content-Disposition": `attachment; filename="${DEVSINC_RESUME_TEMPLATE_FILENAME}"`,
         "Cache-Control": "private, max-age=3600",
       },

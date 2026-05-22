@@ -82,7 +82,7 @@ export default function ResumeConverter({ resumes, onAddToDatabase }) {
     <div className={styles.wrap}>
       <p className={styles.templateBar}>
         <a href="/api/templates/devsinc-resume" className={styles.templateLink} download>
-          Download official Devsinc resume template (PDF)
+          Download official Devsinc resume template (.docx / .pdf)
         </a>
       </p>
       <div

@@ -38,23 +38,27 @@ vercel
 # Settings → Environment Variables → ANTHROPIC_API_KEY
 ```
 
-## Resume converter
+## Resume converter / updater (official template)
 
-Use the **Resume converter** tab to:
+Both tabs output the **same two-column Devsinc Word layout** via `lib/devsincResumeDocx/build.js`:
 
-- Upload **PDF**, **DOCX**, **DOC**, or **TXT** resumes (up to 10 MB)
-- AI extracts and maps content to Devsinc’s standardized profile format
-- Download a branded **Word document** (`.docx`) with profile table, summary, stacks, domains, and highlights
-- Optionally **Add to database** for matching
+- US Letter (12240×15840 DXA), 0.5″ margins, table **6240 + 3120** DXA
+- Left: name, title, summary, work experience, projects (hyperlinks)
+- Right: photo placeholder, contact, skills, achievements, certificates, education
+- Sidebar `#D5E8F0`, teal section rules `#16BBBA`, Word `LevelFormat.BULLET` bullets
 
-## Resume updater
+Export the Google Doc to `files/storage/Devsinc_-_Resume_Template_.docx`, then:
 
-Use the **Resume updater** tab to tailor a resume to a specific job description:
+```bash
+npm run resume:extract-template
+npm run resume:generate
+npm run resume:validate
+```
 
-- Paste the **job description** and upload a resume (PDF/DOCX/DOC/TXT) or paste resume text
-- AI maps content to the **official Devsinc resume template** (summary, work experience, skills, achievements, projects, certificates, education)
-- Content is **rewritten for JD fit** (keywords, bullet emphasis, skill ordering) without inventing employers or credentials
-- Download the tailored **Word document** (`.docx`)
+**Converter:** upload PDF/DOCX/DOC/TXT → `.docx` (+ optional add to matcher DB)  
+**Updater:** paste JD + resume → JD-tailored `.docx`
+
+Validation uses Node (`scripts/office/validate.mjs`) — works on Vercel; Python wrappers call the same script locally.
 
 ## Resume database
 

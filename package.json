@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "resume:extract-template": "node scripts/extract-template-structure.mjs",
+    "resume:generate": "node scripts/generate-resume.mjs",
+    "resume:validate": "node scripts/office/validate.mjs files/storage/sample-output.docx"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
@@ -21,5 +24,9 @@
     "react-dom": "^19.0.0",
     "unpdf": "^1.6.2",
     "word-extractor": "^1.0.4"
+  },
+  "devDependencies": {
+    "fast-xml-parser": "^5.8.0",
+    "jszip": "^3.10.1"
   }
 }
