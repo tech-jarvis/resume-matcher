@@ -40,7 +40,15 @@ export default function ResumeConverter({ onSaved }) {
         method: "POST",
         body: formData,
       });
-      const data = await res.json();
+      const text = await res.text();
+      let data = {};
+      if (text) {
+        try {
+          data = JSON.parse(text);
+        } catch {
+          throw new Error("Unexpected server response. Try again.");
+        }
+      }
       if (!res.ok) throw new Error(data.error || "Conversion failed");
       setResult(data);
       if (data.savedToDatabase && onSaved) await onSaved(data.resource);

@@ -4,6 +4,7 @@ import { parseDevsincResumeWithClaude } from "@/lib/parseDevsincResumeWithClaude
 import { tailorResumeForJD } from "@/lib/tailorResumeForJD";
 import { buildDevsincResumeDocx } from "@/lib/buildDevsincResumeDocx";
 import { saveResourceFromResume } from "@/lib/saveResourceFromResume";
+import { apiErrorResponse } from "@/lib/apiErrors";
 import { requireAuth } from "@/lib/supabase/requireAuth";
 
 export const runtime = "nodejs";
@@ -93,10 +94,6 @@ export async function POST(request) {
       extractedChars: rawText.length,
     });
   } catch (err) {
-    console.error("Update resume error:", err);
-    return Response.json(
-      { error: err.message ?? "Failed to update resume for job description." },
-      { status: 500 }
-    );
+    return apiErrorResponse(err, "Update resume error");
   }
 }

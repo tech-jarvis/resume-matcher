@@ -3,6 +3,7 @@ import { isSupportedFilename } from "@/lib/supportedFormats";
 import { parseDevsincResumeWithClaude } from "@/lib/parseDevsincResumeWithClaude";
 import { buildDevsincResumeDocx } from "@/lib/buildDevsincResumeDocx";
 import { saveResourceFromResume } from "@/lib/saveResourceFromResume";
+import { apiErrorResponse } from "@/lib/apiErrors";
 import { requireAuth } from "@/lib/supabase/requireAuth";
 
 export const runtime = "nodejs";
@@ -55,10 +56,6 @@ export async function POST(request) {
       extractedChars: rawText.length,
     });
   } catch (err) {
-    console.error("Convert resume error:", err);
-    return Response.json(
-      { error: err.message ?? "Failed to convert resume." },
-      { status: 500 }
-    );
+    return apiErrorResponse(err, "Convert resume error");
   }
 }

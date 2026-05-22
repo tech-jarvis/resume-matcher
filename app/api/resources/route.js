@@ -1,3 +1,4 @@
+import { apiErrorResponse, mapError } from "@/lib/apiErrors";
 import { requireAuth } from "@/lib/supabase/requireAuth";
 import { rowToResource, resourceToRow } from "@/lib/supabaseResources";
 
@@ -10,7 +11,10 @@ export async function GET() {
     .select("*")
     .order("name");
 
-  if (dbErr) return Response.json({ error: dbErr.message }, { status: 500 });
+  if (dbErr) {
+    const mapped = mapError(dbErr);
+    return Response.json({ error: mapped.message, code: mapped.code }, { status: mapped.status });
+  }
   return Response.json({ resources: (data ?? []).map(rowToResource) });
 }
 
@@ -29,9 +33,12 @@ export async function POST(request) {
       .select()
       .single();
 
-    if (dbErr) return Response.json({ error: dbErr.message }, { status: 500 });
+    if (dbErr) {
+      const mapped = mapError(dbErr);
+      return Response.json({ error: mapped.message, code: mapped.code }, { status: mapped.status });
+    }
     return Response.json({ resource: rowToResource(data) });
   } catch (err) {
-    return Response.json({ error: err.message }, { status: 500 });
+    return apiErrorResponse(err, "POST resource error");
   }
 }

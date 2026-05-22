@@ -19,17 +19,22 @@ export default function ResourceMatcher() {
 
   const loadResumesFromCloud = useCallback(async () => {
     setResumesLoading(true);
+    setError(null);
     try {
       const res = await fetch("/api/resources");
       const data = await res.json();
-      if (res.ok && data.resources?.length > 0) {
+      if (!res.ok) {
+        throw new Error(data.error || "Failed to load resume database.");
+      }
+      if (data.resources?.length > 0) {
         setResumes(data.resources);
         saveResumes(data.resources);
       } else {
         setResumes(loadResumes());
       }
-    } catch {
+    } catch (e) {
       setResumes(loadResumes());
+      setError(e.message);
     } finally {
       setResumesLoading(false);
     }
@@ -132,6 +137,11 @@ export default function ResourceMatcher() {
       </aside>
 
       <main className={styles.main}>
+        {error && tab !== "match" && (
+          <div className={styles.errorBox}>
+            <strong>Error:</strong> {error}
+          </div>
+        )}
         {tab === "match" ? (
           <>
             <div className={styles.topbar}>

@@ -1,8 +1,8 @@
-import Anthropic from "@anthropic-ai/sdk";
 import RESOURCES from "@/lib/resources";
+import { createAnthropicClient, ANTHROPIC_MODEL } from "@/lib/anthropicClient";
+import { parseAiJson } from "@/lib/parseAiJson";
+import { apiErrorResponse } from "@/lib/apiErrors";
 import { requireAuth } from "@/lib/supabase/requireAuth";
-
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 const SYSTEM_PROMPT = `You are an expert technical recruiter at Devsinc, a software outsourcing company.
 Your job is to match job descriptions or client requirements to the best available engineers from our talent pool.
@@ -58,9 +58,10 @@ export async function POST(request) {
     }
 
     const pool = Array.isArray(resources) && resources.length > 0 ? resources : RESOURCES;
+    const client = createAnthropicClient();
 
     const message = await client.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: ANTHROPIC_MODEL,
       max_tokens: 4096,
       system: SYSTEM_PROMPT,
       messages: [
@@ -72,21 +73,8 @@ export async function POST(request) {
     });
 
     const raw = message.content?.[0]?.text ?? "";
-    const cleaned = raw.replace(/```json\s*/g, "").replace(/```\s*/g, "").trim();
-
-    let parsed;
-    try {
-      parsed = JSON.parse(cleaned);
-    } catch {
-      return Response.json({ error: "Failed to parse AI response. Please try again." }, { status: 500 });
-    }
-
-    return Response.json(parsed);
+    return Response.json(parseAiJson(raw));
   } catch (err) {
-    console.error("Match API error:", err);
-    return Response.json(
-      { error: err.message ?? "An unexpected error occurred." },
-      { status: 500 }
-    );
+    return apiErrorResponse(err, "Match API error");
   }
 }

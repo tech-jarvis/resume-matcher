@@ -1,5 +1,6 @@
 import { parseDevsincResumeWithClaude } from "@/lib/parseDevsincResumeWithClaude";
 import { devsincResumeToResource } from "@/lib/resourceToDevsincResume";
+import { apiErrorResponse } from "@/lib/apiErrors";
 import { requireAuth } from "@/lib/supabase/requireAuth";
 
 export const runtime = "nodejs";
@@ -19,10 +20,6 @@ export async function POST(request) {
 
     return Response.json({ resume, resource });
   } catch (err) {
-    console.error("Parse resume error:", err);
-    return Response.json(
-      { error: err.message ?? "Failed to parse resume." },
-      { status: 500 }
-    );
+    return apiErrorResponse(err, "Parse resume error");
   }
 }
