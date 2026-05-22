@@ -1,37 +1,42 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
-import { authErrorMessage, isDevsincEmail } from "@/lib/auth";
+import { authErrorMessage, isDevsincEmail, mapSupabaseAuthError } from "@/lib/auth";
+import { authCallbackUrl } from "@/lib/siteUrl";
 import styles from "./login.module.css";
 
 export default function LoginPage() {
   const supabase = createClient();
-  const params = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
-  const errorCode = params?.get("error");
+  const searchParams = useSearchParams();
   const [mode, setMode] = useState("signin");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fullName, setFullName] = useState("");
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState(authErrorMessage(errorCode));
+  const [message, setMessage] = useState(null);
   const [success, setSuccess] = useState(null);
 
-  async function signInWithGoogle() {
-    setLoading(true);
-    setMessage(null);
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
-        queryParams: { hd: "devsinc.com" },
-      },
-    });
-    if (error) {
-      setMessage(error.message);
-      setLoading(false);
+  useEffect(() => {
+    const fromQuery = mapSupabaseAuthError(searchParams);
+    if (fromQuery) {
+      setMessage(authErrorMessage(fromQuery));
+      if (fromQuery === "otp_expired") setMode("reset");
+      return;
     }
-  }
+
+    // Hash fragment errors: #error_code=otp_expired (not sent to server)
+    if (typeof window !== "undefined" && window.location.hash) {
+      const hashParams = new URLSearchParams(window.location.hash.slice(1));
+      const fromHash = mapSupabaseAuthError(hashParams);
+      if (fromHash) {
+        setMessage(authErrorMessage(fromHash));
+        if (fromHash === "otp_expired") setMode("reset");
+        window.history.replaceState(null, "", "/login");
+      }
+    }
+  }, [searchParams]);
 
   async function handleEmailAuth(e) {
     e.preventDefault();
@@ -51,7 +56,7 @@ export default function LoginPage() {
         password,
         options: {
           data: { full_name: fullName },
-          emailRedirectTo: `${window.location.origin}/auth/callback`,
+          emailRedirectTo: authCallbackUrl(),
         },
       });
       setLoading(false);
@@ -62,7 +67,7 @@ export default function LoginPage() {
 
     if (mode === "reset") {
       const { error } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: `${window.location.origin}/auth/update-password`,
+        redirectTo: authCallbackUrl("/auth/update-password"),
       });
       setLoading(false);
       if (error) setMessage(error.message);
@@ -86,23 +91,6 @@ export default function LoginPage() {
             <p className={styles.subtitle}>Sign in with your @devsinc.com account</p>
           </div>
         </div>
-
-        <button
-          type="button"
-          className={styles.googleBtn}
-          onClick={signInWithGoogle}
-          disabled={loading}
-        >
-          <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden>
-            <path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303C33.654 32.657 29.073 36 24 36c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C33.64 6.053 28.991 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/>
-            <path fill="#FF3D00" d="m6.306 14.691 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C33.64 6.053 28.991 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/>
-            <path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-6.627 0-12-5.373-12-12 0-1.202.178-2.36.511-3.471l-7.26-5.64C6.053 16.36 4 19.991 4 24c0 11.045 8.955 20 20 20z"/>
-            <path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l6.19 5.238C42.022 35.026 44 30.038 44 24c0-1.341-.138-2.65-.389-3.917z"/>
-          </svg>
-          Continue with Google
-        </button>
-
-        <div className={styles.divider}><span>or use email</span></div>
 
         <div className={styles.tabs}>
           {["signin", "signup", "reset"].map((m) => (

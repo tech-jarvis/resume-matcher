@@ -1,9 +1,14 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
-import { isDevsincEmail } from "@/lib/auth";
+import { isDevsincEmail, mapSupabaseAuthError } from "@/lib/auth";
 
 export async function GET(request) {
   const { searchParams, origin } = new URL(request.url);
+  const authError = mapSupabaseAuthError(searchParams);
+  if (authError) {
+    return NextResponse.redirect(`${origin}/login?error=${authError}`);
+  }
+
   const code = searchParams.get("code");
   const next = searchParams.get("next") ?? "/";
 
@@ -21,8 +26,11 @@ export async function GET(request) {
         return NextResponse.redirect(`${origin}/login?error=domain`);
       }
 
-      return NextResponse.redirect(`${origin}${next}`);
+      const dest = new URL(next, origin);
+      return NextResponse.redirect(dest.toString());
     }
+
+    return NextResponse.redirect(`${origin}/login?error=oauth`);
   }
 
   return NextResponse.redirect(`${origin}/login?error=oauth`);

@@ -40,37 +40,6 @@
 .title { font-size: 1.25rem; font-weight: 700; color: var(--brand-dark); }
 .subtitle { font-size: 0.8125rem; color: var(--text-2); margin-top: 2px; }
 
-.googleBtn {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface);
-  font-weight: 600;
-  font-size: 0.9375rem;
-}
-.googleBtn:hover:not(:disabled) { background: var(--bg); border-color: var(--brand); }
-
-.divider {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 1.25rem 0;
-  color: var(--text-3);
-  font-size: 0.75rem;
-}
-.divider::before,
-.divider::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--border);
-}
-
 .tabs {
   display: flex;
   gap: 4px;

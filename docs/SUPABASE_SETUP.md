@@ -6,59 +6,60 @@ In [Supabase Dashboard](https://supabase.com/dashboard) → **SQL Editor**, past
 
 `supabase/migrations/001_profiles_auth.sql`
 
-This creates `profiles`, `engineer_resources`, RLS policies, storage bucket `resumes`, and auto-profile on signup.
+## 2. URL configuration (required)
 
-## 2. Enable Google OAuth
+**Authentication** → **URL Configuration**
 
-1. **Authentication** → **Providers** → **Google** → Enable
-2. Add Google Cloud OAuth client ID/secret ([Google Cloud Console](https://console.cloud.google.com/apis/credentials))
-3. Authorized redirect URI: `https://<project-ref>.supabase.co/auth/v1/callback`
-
-## 3. Email auth & redirects
-
-**Authentication** → **URL Configuration**:
+### Production ([resume-matcher-red-alpha.vercel.app](https://resume-matcher-red-alpha.vercel.app))
 
 | Setting | Value |
 |---------|--------|
-| Site URL | `http://localhost:3000` (dev) or your production URL |
-| Redirect URLs | `http://localhost:3000/auth/callback`, `http://localhost:3000/auth/update-password`, `http://localhost:3000/auth/confirm` |
+| **Site URL** | `https://resume-matcher-red-alpha.vercel.app` |
+| **Redirect URLs** | Add each line below |
 
-## 4. Domain restriction (@devsinc.com)
+```
+https://resume-matcher-red-alpha.vercel.app/auth/callback
+https://resume-matcher-red-alpha.vercel.app/auth/callback?next=/auth/update-password
+https://resume-matcher-red-alpha.vercel.app/auth/confirm
+https://resume-matcher-red-alpha.vercel.app/login
+https://resume-matcher-red-alpha.vercel.app/auth/update-password
+```
 
-Enforced in app middleware and OAuth callback:
+### Local development (optional)
 
-- Only `*@devsinc.com` emails can stay signed in
-- Google OAuth uses `hd=devsinc.com` hint (not sufficient alone — app validates email)
+```
+http://localhost:3000/auth/callback
+http://localhost:3000/auth/callback?next=/auth/update-password
+http://localhost:3000/auth/confirm
+http://localhost:3000/login
+```
 
-Optional extra lock in Supabase Dashboard → **Authentication** → **Hooks** (advanced).
+**Important:** Email links expire in ~1 hour. If you see `otp_expired`, use **Reset password** on `/login` to get a new link.
 
-## 5. Environment variables
+## 3. Vercel environment variables
 
-Copy `.env.local.example` → `.env.local` and fill:
+In [Vercel Project Settings → Environment Variables](https://vercel.com), set for **Production**:
 
-- `NEXT_PUBLIC_SUPABASE_URL`
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-- `SUPABASE_SERVICE_ROLE_KEY` (server only — for seeding default roster)
-- `ANTHROPIC_API_KEY`
+| Variable | Value |
+|----------|--------|
+| `NEXT_PUBLIC_SITE_URL` | `https://resume-matcher-red-alpha.vercel.app` |
+| `NEXT_PUBLIC_SUPABASE_URL` | Your Supabase project URL |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anon key |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service role (server only) |
+| `ANTHROPIC_API_KEY` | Anthropic API key |
+
+Redeploy after adding variables.
+
+## 4. Enable Google OAuth
+
+1. **Authentication** → **Providers** → **Google** → Enable
+2. Google Cloud OAuth credentials → Authorized redirect URI:  
+   `https://<your-project-ref>.supabase.co/auth/v1/callback`
+
+## 5. Domain restriction (@devsinc.com)
+
+Only `*@devsinc.com` accounts can use the app (enforced in middleware + OAuth callback).
 
 ## 6. Seed engineer roster
 
-1. Sign in with a @devsinc.com account
-2. Open **Resume database** → **Seed cloud database** (once, when empty)
-
-## Security summary
-
-| Layer | Protection |
-|-------|------------|
-| Middleware | Session refresh; redirect unauthenticated users |
-| Domain check | Non-@devsinc.com users signed out immediately |
-| API routes | `requireAuth()` on all AI/match/convert endpoints |
-| RLS | Users read all resources; write/update/delete own rows only |
-| Storage | Resume files scoped to `resumes/{user_id}/` |
-| Secrets | Service role key server-only; never in client bundle |
-
-## Password reset
-
-1. Login → **Reset password** tab
-2. Enter @devsinc.com email
-3. Click link in email → set new password on `/auth/update-password`
+Sign in → **Resume database** → **Seed cloud database** (once, when empty).
