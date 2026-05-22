@@ -43,7 +43,7 @@ export default function ResumeConverter({ onSaved }) {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Conversion failed");
       setResult(data);
-      if (data.savedToDatabase && onSaved) await onSaved();
+      if (data.savedToDatabase && onSaved) await onSaved(data.resource);
     } catch (e) {
       setError(e.message);
     } finally {
@@ -173,8 +173,8 @@ export default function ResumeConverter({ onSaved }) {
           </div>
 
           <p className={styles.docNote}>
-            Profile is saved automatically to the resume database for JD matching. Download uses
-            the official Devsinc two-column template.
+            Profile is saved to Supabase and appears in the <strong>Resume database</strong> tab
+            (sidebar count updates). Download uses the official Devsinc two-column template.
           </p>
         </div>
       )}

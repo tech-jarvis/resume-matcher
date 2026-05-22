@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import styles from "./ResourceMatcher.module.css";
-import { loadResumes, saveResumes } from "@/lib/resumeStorage";
+import { loadResumes, saveResumes, mergeResumes } from "@/lib/resumeStorage";
 import MatchResultsTable from "./MatchResultsTable";
 import ResumesManager from "./ResumesManager";
 import ResumeConverter from "./ResumeConverter";
@@ -44,6 +44,21 @@ export default function ResourceMatcher() {
     saveResumes(next);
   }
 
+  /** After convert/updater saves to Supabase — refresh list + sidebar count immediately */
+  const handleResourceSaved = useCallback(
+    async (resource) => {
+      if (resource?.name) {
+        setResumes((prev) => {
+          const next = mergeResumes(prev, [resource]);
+          saveResumes(next);
+          return next;
+        });
+      }
+      await loadResumesFromCloud();
+    },
+    [loadResumesFromCloud]
+  );
+
   async function handleMatch() {
     if (!jd.trim() || loading) return;
     setLoading(true);
@@ -84,7 +99,7 @@ export default function ResourceMatcher() {
             className={`${styles.navItem} ${tab === "resumes" ? styles.navActive : ""}`}
             onClick={() => setTab("resumes")}
           >
-            Resume database
+            Resume database ({resumes.length})
           </button>
           <button
             type="button"
@@ -187,15 +202,15 @@ export default function ResourceMatcher() {
                 and auto-save the profile to the resume database for matching.
               </p>
             </div>
-            <ResumeUpdater onSaved={loadResumesFromCloud} />
+            <ResumeUpdater onSaved={handleResourceSaved} />
           </>
         ) : tab === "resumes" ? (
           <>
             <div className={styles.topbar}>
               <h1 className={styles.pageTitle}>Resume database</h1>
               <p className={styles.pageDesc}>
-                Upload JSON/CSV/text resumes, edit fields inline, or paste resume text for AI extraction.
-                Synced to Supabase — used for matching across your team.
+                <strong>{resumes.length}</strong> engineer profiles in Supabase — including any saved from
+                Converter or Updater. Upload JSON/CSV/text, edit inline, or paste resume text for extraction.
               </p>
             </div>
             <ResumesManager
@@ -214,7 +229,7 @@ export default function ResourceMatcher() {
                 auto-save to the resume database for matching.
               </p>
             </div>
-            <ResumeConverter onSaved={loadResumesFromCloud} />
+            <ResumeConverter onSaved={handleResourceSaved} />
           </>
         ) : null}
       </main>

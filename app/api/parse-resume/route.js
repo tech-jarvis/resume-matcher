@@ -1,4 +1,5 @@
-import { parseResumeWithClaude } from "@/lib/parseResumeWithClaude";
+import { parseDevsincResumeWithClaude } from "@/lib/parseDevsincResumeWithClaude";
+import { devsincResumeToResource } from "@/lib/resourceToDevsincResume";
 import { requireAuth } from "@/lib/supabase/requireAuth";
 
 export const runtime = "nodejs";
@@ -13,9 +14,10 @@ export async function POST(request) {
       return Response.json({ error: "Please provide resume text (at least 20 characters)." }, { status: 400 });
     }
 
-    const parsed = await parseResumeWithClaude(text);
+    const resume = await parseDevsincResumeWithClaude(text);
+    const resource = devsincResumeToResource(resume);
 
-    return Response.json({ resource: parsed });
+    return Response.json({ resume, resource });
   } catch (err) {
     console.error("Parse resume error:", err);
     return Response.json(

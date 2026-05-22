@@ -52,8 +52,8 @@ Run `npm run resume:extract-template` after placing a valid `.docx` export to re
 
 | Use | Hex |
 |-----|-----|
-| Section titles / rules | `#4468B1` |
-| Name | `#0D1F1F` |
+| All headings (sections, name, roles, projects, etc.) | `#4468B1` only |
+| Body text | `#000000` |
 | Sidebar background | `#F6F7F9` |
 | Hyperlinks | `#0563C1` |
 | Muted text | `#404040` |

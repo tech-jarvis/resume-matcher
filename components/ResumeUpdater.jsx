@@ -72,7 +72,7 @@ export default function ResumeUpdater({ onSaved }) {
       }
       if (!res.ok) throw new Error(data.error || "Update failed");
       setResult(data);
-      if (data.savedToDatabase && onSaved) await onSaved();
+      if (data.savedToDatabase && onSaved) await onSaved(data.resource);
     } catch (e) {
       setError(e.message);
     } finally {
@@ -266,7 +266,8 @@ export default function ResumeUpdater({ onSaved }) {
           </div>
 
           <p className={styles.docNote}>
-            Tailored profile is saved automatically to the resume database for future JD matching.
+            Tailored profile is saved to Supabase and appears in the <strong>Resume database</strong> tab
+            (sidebar count updates).
           </p>
         </div>
       )}
