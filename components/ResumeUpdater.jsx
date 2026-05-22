@@ -19,7 +19,7 @@ function downloadBase64Docx(base64, filename) {
   URL.revokeObjectURL(url);
 }
 
-export default function ResumeUpdater() {
+export default function ResumeUpdater({ onSaved }) {
   const fileRef = useRef(null);
   const [jd, setJd] = useState("");
   const [resumeText, setResumeText] = useState("");
@@ -72,6 +72,7 @@ export default function ResumeUpdater() {
       }
       if (!res.ok) throw new Error(data.error || "Update failed");
       setResult(data);
+      if (data.savedToDatabase && onSaved) await onSaved();
     } catch (e) {
       setError(e.message);
     } finally {
@@ -210,8 +211,10 @@ export default function ResumeUpdater() {
             <div>
               <h2 className={styles.resultTitle}>{r.name}</h2>
               <p className={styles.resultSub}>
-                {r.designation} · tailored to JD · {result.extractedChars?.toLocaleString()} chars
-                from source
+                {r.designation} · tailored to JD
+                {result.savedToDatabase
+                  ? ` · Saved to resume database (${result.databaseAction})`
+                  : ""}
               </p>
             </div>
             <div className={styles.resultActions}>
@@ -263,9 +266,7 @@ export default function ResumeUpdater() {
           </div>
 
           <p className={styles.docNote}>
-            Output follows the official Devsinc resume template: name, summary, work experience,
-            contact, skills, achievements, projects, certificates, and education — aligned to your
-            job description.
+            Tailored profile is saved automatically to the resume database for future JD matching.
           </p>
         </div>
       )}

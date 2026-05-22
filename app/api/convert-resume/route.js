@@ -2,13 +2,14 @@ import { extractTextFromBuffer } from "@/lib/extractDocumentText";
 import { isSupportedFilename } from "@/lib/supportedFormats";
 import { parseDevsincResumeWithClaude } from "@/lib/parseDevsincResumeWithClaude";
 import { buildDevsincResumeDocx } from "@/lib/buildDevsincResumeDocx";
+import { saveResourceFromResume } from "@/lib/saveResourceFromResume";
 import { requireAuth } from "@/lib/supabase/requireAuth";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
 
 export async function POST(request) {
-  const { error: authError } = await requireAuth();
+  const { user, supabase, error: authError } = await requireAuth();
   if (authError) return Response.json({ error: authError }, { status: 401 });
 
   try {
@@ -38,9 +39,17 @@ export async function POST(request) {
     const { buffer: docxBuffer, filename: docxFilename } =
       await buildDevsincResumeDocx(resume);
 
+    const { resource, created } = await saveResourceFromResume(
+      supabase,
+      user.id,
+      resume
+    );
+
     return Response.json({
       resume,
-      resource: resume,
+      resource,
+      savedToDatabase: true,
+      databaseAction: created ? "created" : "updated",
       filename: docxFilename,
       docxBase64: docxBuffer.toString("base64"),
       extractedChars: rawText.length,

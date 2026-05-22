@@ -3,13 +3,14 @@ import { isSupportedFilename } from "@/lib/supportedFormats";
 import { parseDevsincResumeWithClaude } from "@/lib/parseDevsincResumeWithClaude";
 import { tailorResumeForJD } from "@/lib/tailorResumeForJD";
 import { buildDevsincResumeDocx } from "@/lib/buildDevsincResumeDocx";
+import { saveResourceFromResume } from "@/lib/saveResourceFromResume";
 import { requireAuth } from "@/lib/supabase/requireAuth";
 
 export const runtime = "nodejs";
 export const maxDuration = 120;
 
 export async function POST(request) {
-  const { error: authError } = await requireAuth();
+  const { user, supabase, error: authError } = await requireAuth();
   if (authError) return Response.json({ error: authError }, { status: 401 });
 
   try {
@@ -75,9 +76,18 @@ export async function POST(request) {
     const { buffer: docxBuffer, filename: docxFilename } =
       await buildDevsincResumeDocx(tailored);
 
+    const { resource, created } = await saveResourceFromResume(
+      supabase,
+      user.id,
+      tailored
+    );
+
     return Response.json({
       resume: tailored,
       original: parsed,
+      resource,
+      savedToDatabase: true,
+      databaseAction: created ? "created" : "updated",
       filename: docxFilename,
       docxBase64: docxBuffer.toString("base64"),
       extractedChars: rawText.length,

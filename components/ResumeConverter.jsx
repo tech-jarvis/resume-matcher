@@ -1,8 +1,6 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { mergeResumes, saveResumes } from "@/lib/resumeStorage";
-import { devsincResumeToResource } from "@/lib/resourceToDevsincResume";
 import { supportedExtensions } from "@/lib/supportedFormats";
 import styles from "./ResumeConverter.module.css";
 
@@ -21,7 +19,7 @@ function downloadBase64Docx(base64, filename) {
   URL.revokeObjectURL(url);
 }
 
-export default function ResumeConverter({ resumes, onAddToDatabase }) {
+export default function ResumeConverter({ onSaved }) {
   const fileRef = useRef(null);
   const [dragging, setDragging] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -45,6 +43,7 @@ export default function ResumeConverter({ resumes, onAddToDatabase }) {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Conversion failed");
       setResult(data);
+      if (data.savedToDatabase && onSaved) await onSaved();
     } catch (e) {
       setError(e.message);
     } finally {
@@ -65,18 +64,8 @@ export default function ResumeConverter({ resumes, onAddToDatabase }) {
     convertFile(file);
   }
 
-  function handleAddToDb() {
-    const resume = result?.resume ?? result?.resource;
-    if (!resume?.name) return;
-    const row = devsincResumeToResource(resume);
-    const next = mergeResumes(resumes, [row]);
-    onAddToDatabase(next);
-    saveResumes(next);
-    setError(null);
-    alert(`Added ${resume.name} to the resume database.`);
-  }
-
   const r = result?.resume ?? result?.resource;
+  const dbResource = result?.resource;
 
   return (
     <div className={styles.wrap}>
@@ -131,7 +120,11 @@ export default function ResumeConverter({ resumes, onAddToDatabase }) {
             <div>
               <h2 className={styles.resultTitle}>{r.name}</h2>
               <p className={styles.resultSub}>
-                {r.designation} · {r.primary} · {result.extractedChars?.toLocaleString()} chars extracted
+                {r.designation}
+                {dbResource?.primary ? ` · ${dbResource.primary}` : ""}
+                {result.savedToDatabase
+                  ? ` · Saved to resume database (${result.databaseAction})`
+                  : ""}
               </p>
             </div>
             <div className={styles.resultActions}>
@@ -141,9 +134,6 @@ export default function ResumeConverter({ resumes, onAddToDatabase }) {
                 onClick={() => downloadBase64Docx(result.docxBase64, result.filename)}
               >
                 Download Word (.docx)
-              </button>
-              <button type="button" className={styles.btnSecondary} onClick={handleAddToDb}>
-                Add to database
               </button>
               <button
                 type="button"
@@ -183,9 +173,8 @@ export default function ResumeConverter({ resumes, onAddToDatabase }) {
           </div>
 
           <p className={styles.docNote}>
-            Download uses the official Devsinc resume layout: two columns (experience & projects
-            left; contact, skills & achievements right), section headers (#4468b1), and
-            sidebar styling matching the template PDF.
+            Profile is saved automatically to the resume database for JD matching. Download uses
+            the official Devsinc two-column template.
           </p>
         </div>
       )}

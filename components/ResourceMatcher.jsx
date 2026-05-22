@@ -183,12 +183,11 @@ export default function ResourceMatcher() {
             <div className={styles.topbar}>
               <h1 className={styles.pageTitle}>Resume updater</h1>
               <p className={styles.pageDesc}>
-                Paste a job description and upload a resume — get a tailored Devsinc-format Word
-                document aligned to the JD (official template: summary, experience, skills,
-                projects, education).
+                Paste a job description and upload a resume — get a tailored Devsinc Word document
+                and auto-save the profile to the resume database for matching.
               </p>
             </div>
-            <ResumeUpdater />
+            <ResumeUpdater onSaved={loadResumesFromCloud} />
           </>
         ) : tab === "resumes" ? (
           <>
@@ -211,11 +210,11 @@ export default function ResourceMatcher() {
             <div className={styles.topbar}>
               <h1 className={styles.pageTitle}>Resume converter</h1>
               <p className={styles.pageDesc}>
-                Upload any PDF, Word, or text resume — get the official Devsinc resume Word document
-                (.docx) in the two-column template format.
+                Upload any PDF, Word, or text resume — get the official Devsinc Word document and
+                auto-save to the resume database for matching.
               </p>
             </div>
-            <ResumeConverter resumes={resumes} onAddToDatabase={handleResumesChange} />
+            <ResumeConverter onSaved={loadResumesFromCloud} />
           </>
         ) : null}
       </main>
