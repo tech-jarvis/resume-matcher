@@ -184,7 +184,7 @@ export default function ResumeConverter({ resumes, onAddToDatabase }) {
 
           <p className={styles.docNote}>
             Download uses the official Devsinc resume layout: two columns (experience & projects
-            left; contact, skills & achievements right), teal section headers (#16BBBA), and
+            left; contact, skills & achievements right), section headers (#4468b1), and
             sidebar styling matching the template PDF.
           </p>
         </div>

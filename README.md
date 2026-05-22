@@ -45,7 +45,7 @@ Both tabs output the **same two-column Devsinc Word layout** via `lib/devsincRes
 - US Letter (12240×15840 DXA), 0.5″ margins, table **6240 + 3120** DXA
 - Left: name, title, summary, work experience, projects (hyperlinks)
 - Right: photo placeholder, contact, skills, achievements, certificates, education
-- Sidebar `#D5E8F0`, teal section rules `#16BBBA`, Word `LevelFormat.BULLET` bullets
+- Sidebar `#F6F7F9`, section headings `#4468B1`, Word `LevelFormat.BULLET` bullets
 
 Export the Google Doc to `files/storage/Devsinc_-_Resume_Template_.docx`, then:
 

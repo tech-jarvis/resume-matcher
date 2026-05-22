@@ -14,14 +14,14 @@ Run `npm run resume:extract-template` after placing a valid `.docx` export to re
 | Left column (main) | **6240** DXA (~4.3 in) |
 | Right column (sidebar) | **3120** DXA (~2.2 in) |
 | Table borders | None |
-| Sidebar shading | **#D5E8F0**, `ShadingType.CLEAR` |
+| Sidebar shading | **#F6F7F9**, `ShadingType.CLEAR` |
 
 ## Left column (main)
 
-1. **Name** — 14pt, bold, dark teal `#0A4F4E`
-2. **Designation / tagline** — 11pt, teal `#16BBBA`
+1. **Name** — 14pt, bold `#0D1F1F`
+2. **Designation / tagline** — 11pt body color
 3. **Summary** — 10pt body
-4. **WORK EXPERIENCE** — section title + teal underline (paragraph border)
+4. **WORK EXPERIENCE** — section title + `#4468B1` underline (paragraph border)
    - Job title (bold) + dates (right-aligned tab)
    - `Company | Location` (italic, muted)
    - Bullets via `LevelFormat.BULLET` numbering (not Unicode ● in text)
@@ -46,15 +46,15 @@ Run `npm run resume:extract-template` after placing a valid `.docx` export to re
 |---------|------|------|
 | Body | Calibri (or Arial) | 10pt (20 half-pt) |
 | Name | Calibri | 14pt (28 half-pt) |
-| Section headers | Calibri | 11pt (22 half-pt), bold, teal |
+| Section headers | Calibri | 11pt (22 half-pt), bold, `#4468B1` |
 
 ## Colors
 
 | Use | Hex |
 |-----|-----|
-| Section titles / rules | `#16BBBA` |
-| Name | `#0A4F4E` |
-| Sidebar background | `#D5E8F0` |
+| Section titles / rules | `#4468B1` |
+| Name | `#0D1F1F` |
+| Sidebar background | `#F6F7F9` |
 | Hyperlinks | `#0563C1` |
 | Muted text | `#404040` |
 

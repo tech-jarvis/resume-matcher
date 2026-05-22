@@ -11,7 +11,7 @@ Google Doc: https://docs.google.com/document/d/16ppUGyxsCRj_KJ7rb0IEhaOVX6ZoSU-W
 
 Generated resumes use `lib/devsincResumeDocx/build.js`:
 - US Letter 12240×15840 DXA, 0.5″ margins
-- Table 6240 + 3120 DXA columns, sidebar `#D5E8F0`
+- Table 6240 + 3120 DXA columns, sidebar `#F6F7F9`, section headings `#4468B1`
 - `LevelFormat.BULLET` numbering, external hyperlinks on projects
 
 ```bash
