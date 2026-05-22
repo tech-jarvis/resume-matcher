@@ -2,11 +2,15 @@ import { extractTextFromBuffer } from "@/lib/extractDocumentText";
 import { isSupportedFilename } from "@/lib/supportedFormats";
 import { parseResumeWithClaude } from "@/lib/parseResumeWithClaude";
 import { buildDevsincDocx } from "@/lib/buildDevsincDocx";
+import { requireAuth } from "@/lib/supabase/requireAuth";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
 
 export async function POST(request) {
+  const { error: authError } = await requireAuth();
+  if (authError) return Response.json({ error: authError }, { status: 401 });
+
   try {
     const formData = await request.formData();
     const file = formData.get("file");

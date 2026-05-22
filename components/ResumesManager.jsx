@@ -9,16 +9,55 @@ import {
   saveResumes,
   resetResumes,
 } from "@/lib/resumeStorage";
+import { createClient } from "@/lib/supabase/client";
+import { resourceToRow, rowToResource } from "@/lib/supabaseResources";
 import styles from "./ResumesManager.module.css";
 
 const EDITABLE = RESOURCE_FIELDS.filter((f) => f !== "id");
+const isLocalId = (id) => typeof id === "number" && id > 1_000_000_000_000;
 
-export default function ResumesManager({ resumes, onChange }) {
+export default function ResumesManager({ resumes, onChange, onReload, loading }) {
   const fileRef = useRef(null);
   const [pasteText, setPasteText] = useState("");
   const [parsing, setParsing] = useState(false);
   const [msg, setMsg] = useState(null);
   const [filter, setFilter] = useState("");
+  const [seeding, setSeeding] = useState(false);
+
+  async function persistResource(resource) {
+    const supabase = createClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    if (!user) return resource.id;
+
+    const row = resourceToRow(resource, user.id);
+    delete row.id;
+
+    if (isLocalId(resource.id)) {
+      const { data, error } = await supabase
+        .from("engineer_resources")
+        .insert(row)
+        .select()
+        .single();
+      if (error) throw error;
+      return data.id;
+    }
+
+    const { error } = await supabase
+      .from("engineer_resources")
+      .update(row)
+      .eq("id", resource.id);
+    if (error) throw error;
+    return resource.id;
+  }
+
+  async function deleteResource(id) {
+    if (isLocalId(id)) return;
+    const supabase = createClient();
+    const { error } = await supabase.from("engineer_resources").delete().eq("id", id);
+    if (error) throw error;
+  }
 
   const filtered = resumes.filter((r) => {
     if (!filter.trim()) return true;
@@ -31,26 +70,60 @@ export default function ResumesManager({ resumes, onChange }) {
     );
   });
 
-  function update(id, field, value) {
-    const next = resumes.map((r) =>
-      r.id === id ? { ...r, [field]: value } : r
-    );
-    onChange(next);
-    saveResumes(next);
+  async function update(id, field, value) {
+    const target = resumes.find((r) => r.id === id);
+    if (!target) return;
+    const updated = { ...target, [field]: value };
+    try {
+      await persistResource(updated);
+      const next = resumes.map((r) => (r.id === id ? updated : r));
+      onChange(next);
+      saveResumes(next);
+    } catch (e) {
+      setMsg(`Save failed: ${e.message}`);
+    }
   }
 
-  function remove(id) {
-    const next = resumes.filter((r) => r.id !== id);
-    onChange(next);
-    saveResumes(next);
-    setMsg("Resume removed.");
+  async function remove(id) {
+    try {
+      await deleteResource(id);
+      const next = resumes.filter((r) => r.id !== id);
+      onChange(next);
+      saveResumes(next);
+      setMsg("Resume removed.");
+    } catch (e) {
+      setMsg(`Delete failed: ${e.message}`);
+    }
   }
 
-  function addBlank() {
-    const next = [...resumes, emptyResource()];
-    onChange(next);
-    saveResumes(next);
-    setMsg("Added blank row — fill in the fields below.");
+  async function addBlank() {
+    const blank = emptyResource();
+    try {
+      const dbId = await persistResource(blank);
+      const row = { ...blank, id: dbId };
+      const next = [...resumes, row];
+      onChange(next);
+      saveResumes(next);
+      setMsg("Added blank row — fill in the fields below.");
+    } catch (e) {
+      setMsg(`Add failed: ${e.message}`);
+    }
+  }
+
+  async function seedCloud() {
+    setSeeding(true);
+    setMsg(null);
+    try {
+      const res = await fetch("/api/seed-resources", { method: "POST" });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+      setMsg(`Seeded ${data.seeded} engineers to Supabase.`);
+      onReload?.();
+    } catch (e) {
+      setMsg(e.message);
+    } finally {
+      setSeeding(false);
+    }
   }
 
   function handleReset() {
@@ -87,10 +160,26 @@ export default function ResumesManager({ resumes, onChange }) {
         setParsing(false);
       }
 
-      const next = mergeResumes(resumes, incoming);
+      const supabase = createClient();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      const inserted = [];
+      for (const item of incoming) {
+        const row = resourceToRow(item, user?.id);
+        delete row.id;
+        const { data, error } = await supabase
+          .from("engineer_resources")
+          .insert(row)
+          .select()
+          .single();
+        if (!error && data) inserted.push(rowToResource(data));
+      }
+      const next = mergeResumes(resumes, inserted.length ? inserted : incoming);
       onChange(next);
       saveResumes(next);
-      setMsg(`Imported ${incoming.length} resume(s) from ${file.name}.`);
+      setMsg(`Imported ${inserted.length || incoming.length} resume(s) from ${file.name}.`);
+      onReload?.();
     } catch (err) {
       setParsing(false);
       setMsg(`Import failed: ${err.message}`);
@@ -109,11 +198,24 @@ export default function ResumesManager({ resumes, onChange }) {
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
-      const next = mergeResumes(resumes, [data.resource]);
+      const supabase = createClient();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      const row = resourceToRow(data.resource, user?.id);
+      delete row.id;
+      const { data: inserted, error: insErr } = await supabase
+        .from("engineer_resources")
+        .insert(row)
+        .select()
+        .single();
+      if (insErr) throw insErr;
+      const next = mergeResumes(resumes, [rowToResource(inserted)]);
       onChange(next);
       saveResumes(next);
       setPasteText("");
       setMsg(`Parsed and added: ${data.resource.name || "New resume"}.`);
+      onReload?.();
     } catch (err) {
       setMsg(`Parse failed: ${err.message}`);
     } finally {
@@ -162,10 +264,20 @@ export default function ResumesManager({ resumes, onChange }) {
             Export JSON
           </button>
           <button type="button" className={styles.btnGhost} onClick={handleReset}>
-            Reset defaults
+            Reset local cache
+          </button>
+          <button
+            type="button"
+            className={styles.btnSecondary}
+            onClick={seedCloud}
+            disabled={seeding}
+          >
+            {seeding ? "Seeding…" : "Seed cloud database"}
           </button>
         </div>
       </div>
+
+      {loading && <p className={styles.msg}>Loading resumes from Supabase…</p>}
 
       <div className={styles.pastePanel}>
         <label className={styles.pasteLabel}>Paste resume text (AI will extract fields)</label>

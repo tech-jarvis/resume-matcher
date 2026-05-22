@@ -1,5 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import RESOURCES from "@/lib/resources";
+import { requireAuth } from "@/lib/supabase/requireAuth";
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
@@ -46,6 +47,9 @@ Rules:
 - Do not invent data not present in the resource profiles`;
 
 export async function POST(request) {
+  const { error: authError } = await requireAuth();
+  if (authError) return Response.json({ error: authError }, { status: 401 });
+
   try {
     const { jd, resources } = await request.json();
 

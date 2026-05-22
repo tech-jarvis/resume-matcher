@@ -8,14 +8,20 @@ Match client JDs and requirements to the best Devsinc engineers — powered by C
 # 1. Install dependencies
 npm install
 
-# 2. Set up your Anthropic API key
+# 2. Configure environment
 cp .env.local.example .env.local
-# Then edit .env.local and paste your key from https://console.anthropic.com/settings/keys
+# Fill in ANTHROPIC_API_KEY and Supabase keys (see docs/SUPABASE_SETUP.md)
 
-# 3. Run locally
+# 3. Run Supabase migration (SQL Editor) — see docs/SUPABASE_SETUP.md
+
+# 4. Enable Google OAuth in Supabase + set redirect URLs
+
+# 5. Run locally
 npm run dev
-# → Open http://localhost:3000
+# → Open http://localhost:3000 (sign in with @devsinc.com)
 ```
+
+**Access:** Only `@devsinc.com` Google or email accounts. See [docs/SUPABASE_SETUP.md](docs/SUPABASE_SETUP.md) for auth configuration.
 
 ## Stack
 

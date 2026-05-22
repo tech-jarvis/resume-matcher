@@ -1,9 +1,13 @@
 import { buildDevsincDocx } from "@/lib/buildDevsincDocx";
+import { requireAuth } from "@/lib/supabase/requireAuth";
 
 export const runtime = "nodejs";
 
 /** Regenerate DOCX from an already-parsed resource object */
 export async function POST(request) {
+  const { error: authError } = await requireAuth();
+  if (authError) return Response.json({ error: authError }, { status: 401 });
+
   try {
     const { resource } = await request.json();
     if (!resource?.name) {

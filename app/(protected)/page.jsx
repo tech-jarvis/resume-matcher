@@ -1,5 +1,5 @@
 import ResourceMatcher from "@/components/ResourceMatcher";
 
-export default function Home() {
+export default function HomePage() {
   return <ResourceMatcher />;
 }

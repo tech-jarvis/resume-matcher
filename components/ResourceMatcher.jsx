@@ -1,8 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import styles from "./ResourceMatcher.module.css";
 import { loadResumes, saveResumes } from "@/lib/resumeStorage";
+import { createClient } from "@/lib/supabase/client";
+import { fetchResources } from "@/lib/supabaseResources";
 import MatchResultsTable from "./MatchResultsTable";
 import ResumesManager from "./ResumesManager";
 import ResumeConverter from "./ResumeConverter";
@@ -10,14 +12,33 @@ import ResumeConverter from "./ResumeConverter";
 export default function ResourceMatcher() {
   const [tab, setTab] = useState("match");
   const [resumes, setResumes] = useState([]);
+  const [resumesLoading, setResumesLoading] = useState(true);
   const [jd, setJd] = useState("");
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState(null);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    setResumes(loadResumes());
+  const loadResumesFromCloud = useCallback(async () => {
+    setResumesLoading(true);
+    try {
+      const supabase = createClient();
+      const data = await fetchResources(supabase);
+      if (data.length > 0) {
+        setResumes(data);
+        saveResumes(data);
+      } else {
+        setResumes(loadResumes());
+      }
+    } catch {
+      setResumes(loadResumes());
+    } finally {
+      setResumesLoading(false);
+    }
   }, []);
+
+  useEffect(() => {
+    loadResumesFromCloud();
+  }, [loadResumesFromCloud]);
 
   function handleResumesChange(next) {
     setResumes(next);
@@ -51,10 +72,6 @@ export default function ResourceMatcher() {
   return (
     <div className={styles.shell}>
       <aside className={styles.sidebar}>
-        <a href="https://www.devsinc.com" target="_blank" rel="noopener noreferrer" className={styles.logo}>
-          <span className={styles.logoIcon}>D</span>
-          <span className={styles.logoText}>Devsinc</span>
-        </a>
         <nav className={styles.nav}>
           <button
             type="button"
@@ -161,10 +178,15 @@ export default function ResourceMatcher() {
               <h1 className={styles.pageTitle}>Resume database</h1>
               <p className={styles.pageDesc}>
                 Upload JSON/CSV/text resumes, edit fields inline, or paste resume text for AI extraction.
-                Changes are saved in your browser and used for matching.
+                Synced to Supabase — used for matching across your team.
               </p>
             </div>
-            <ResumesManager resumes={resumes} onChange={handleResumesChange} />
+            <ResumesManager
+              resumes={resumes}
+              loading={resumesLoading}
+              onChange={handleResumesChange}
+              onReload={loadResumesFromCloud}
+            />
           </>
         ) : (
           <>

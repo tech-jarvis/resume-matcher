@@ -1,8 +1,12 @@
 import { parseResumeWithClaude } from "@/lib/parseResumeWithClaude";
+import { requireAuth } from "@/lib/supabase/requireAuth";
 
 export const runtime = "nodejs";
 
 export async function POST(request) {
+  const { error: authError } = await requireAuth();
+  if (authError) return Response.json({ error: authError }, { status: 401 });
+
   try {
     const { text } = await request.json();
     if (!text || typeof text !== "string" || text.trim().length < 20) {
