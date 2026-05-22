@@ -42,8 +42,16 @@ export default function LoginPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
       });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error);
+      const text = await res.text();
+      let data = {};
+      if (text) {
+        try {
+          data = JSON.parse(text);
+        } catch {
+          throw new Error("Unexpected server response. Try again.");
+        }
+      }
+      if (!res.ok) throw new Error(data.error || "Request failed.");
       window.location.href = "/";
     } catch (err) {
       setMessage(err.message);
