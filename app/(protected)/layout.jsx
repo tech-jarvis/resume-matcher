@@ -1,19 +1,13 @@
 import { redirect } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
+import { getSessionUser, toAuthUser } from "@/lib/session";
 import { isDevsincEmail } from "@/lib/auth";
 import AppShell from "@/components/AppShell";
 
 export default async function ProtectedLayout({ children }) {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const session = await getSessionUser();
 
-  if (!user) redirect("/login");
-  if (!isDevsincEmail(user.email)) {
-    await supabase.auth.signOut();
-    redirect("/login?error=domain");
-  }
+  if (!session) redirect("/login");
+  if (!isDevsincEmail(session.email)) redirect("/login?error=domain");
 
-  return <AppShell user={user}>{children}</AppShell>;
+  return <AppShell user={toAuthUser(session)}>{children}</AppShell>;
 }

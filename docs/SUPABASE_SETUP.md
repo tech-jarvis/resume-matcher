@@ -1,10 +1,13 @@
 # Supabase auth & security setup
 
-## 1. Run database migration
+## 1. Run database migrations
 
-In [Supabase Dashboard](https://supabase.com/dashboard) → **SQL Editor**, paste and run:
+In [Supabase Dashboard](https://supabase.com/dashboard) → **SQL Editor**, run **both** files in order:
 
-`supabase/migrations/001_profiles_auth.sql`
+1. `supabase/migrations/001_profiles_auth.sql`
+2. `supabase/migrations/002_users_table.sql` ← **required** for sign up / sign in
+
+Auth uses the `users` table with **bcrypt-hashed passwords**. Sign up and sign in are instant for `@devsinc.com` emails (no verification email).
 
 ## 2. URL configuration (required)
 
@@ -47,6 +50,7 @@ In [Vercel Project Settings → Environment Variables](https://vercel.com), set 
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anon key |
 | `SUPABASE_SERVICE_ROLE_KEY` | Supabase service role (server only) |
 | `ANTHROPIC_API_KEY` | Anthropic API key |
+| `SESSION_SECRET` | Long random string (or reuse `SUPABASE_JWT_SECRET`) |
 
 Redeploy after adding variables.
 

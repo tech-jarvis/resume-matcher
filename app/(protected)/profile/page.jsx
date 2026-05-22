@@ -1,34 +1,15 @@
 import { redirect } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
+import { getSessionUser } from "@/lib/session";
+import { findUserById, sanitizeUser } from "@/lib/users";
 import ProfileEditor from "@/components/ProfileEditor";
 import styles from "./profile.module.css";
 
 export default async function ProfilePage() {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const session = await getSessionUser();
+  if (!session) redirect("/login");
 
-  if (!user) redirect("/login");
-
-  let { data: profile } = await supabase
-    .from("profiles")
-    .select("*")
-    .eq("id", user.id)
-    .single();
-
-  if (!profile) {
-    const { data: created } = await supabase
-      .from("profiles")
-      .insert({
-        id: user.id,
-        email: user.email,
-        full_name: user.user_metadata?.full_name || user.user_metadata?.name || "",
-      })
-      .select()
-      .single();
-    profile = created;
-  }
+  const profile = sanitizeUser(await findUserById(session.id));
+  if (!profile) redirect("/login");
 
   return (
     <div className={styles.page}>
@@ -38,7 +19,7 @@ export default async function ProfilePage() {
           Manage your Devsinc engineer profile, resume, and professional links.
         </p>
       </div>
-      <ProfileEditor userId={user.id} initialProfile={profile} />
+      <ProfileEditor userId={session.id} initialProfile={profile} />
     </div>
   );
 }

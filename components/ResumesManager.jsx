@@ -9,12 +9,38 @@ import {
   saveResumes,
   resetResumes,
 } from "@/lib/resumeStorage";
-import { createClient } from "@/lib/supabase/client";
-import { resourceToRow, rowToResource } from "@/lib/supabaseResources";
 import styles from "./ResumesManager.module.css";
 
 const EDITABLE = RESOURCE_FIELDS.filter((f) => f !== "id");
 const isLocalId = (id) => typeof id === "number" && id > 1_000_000_000_000;
+
+async function apiPostResource(resource) {
+  const res = await fetch("/api/resources", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(resource),
+  });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error);
+  return data.resource;
+}
+
+async function apiPatchResource(resource) {
+  const res = await fetch(`/api/resources/${resource.id}`, {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(resource),
+  });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error);
+  return data.resource;
+}
+
+async function apiDeleteResource(id) {
+  const res = await fetch(`/api/resources/${id}`, { method: "DELETE" });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error);
+}
 
 export default function ResumesManager({ resumes, onChange, onReload, loading }) {
   const fileRef = useRef(null);
@@ -23,41 +49,6 @@ export default function ResumesManager({ resumes, onChange, onReload, loading })
   const [msg, setMsg] = useState(null);
   const [filter, setFilter] = useState("");
   const [seeding, setSeeding] = useState(false);
-
-  async function persistResource(resource) {
-    const supabase = createClient();
-    const {
-      data: { user },
-    } = await supabase.auth.getUser();
-    if (!user) return resource.id;
-
-    const row = resourceToRow(resource, user.id);
-    delete row.id;
-
-    if (isLocalId(resource.id)) {
-      const { data, error } = await supabase
-        .from("engineer_resources")
-        .insert(row)
-        .select()
-        .single();
-      if (error) throw error;
-      return data.id;
-    }
-
-    const { error } = await supabase
-      .from("engineer_resources")
-      .update(row)
-      .eq("id", resource.id);
-    if (error) throw error;
-    return resource.id;
-  }
-
-  async function deleteResource(id) {
-    if (isLocalId(id)) return;
-    const supabase = createClient();
-    const { error } = await supabase.from("engineer_resources").delete().eq("id", id);
-    if (error) throw error;
-  }
 
   const filtered = resumes.filter((r) => {
     if (!filter.trim()) return true;
@@ -70,13 +61,20 @@ export default function ResumesManager({ resumes, onChange, onReload, loading })
     );
   });
 
+  async function persistResource(resource) {
+    if (isLocalId(resource.id)) {
+      return apiPostResource(resource);
+    }
+    return apiPatchResource(resource);
+  }
+
   async function update(id, field, value) {
     const target = resumes.find((r) => r.id === id);
     if (!target) return;
     const updated = { ...target, [field]: value };
     try {
-      await persistResource(updated);
-      const next = resumes.map((r) => (r.id === id ? updated : r));
+      const saved = await persistResource(updated);
+      const next = resumes.map((r) => (r.id === id ? saved : r));
       onChange(next);
       saveResumes(next);
     } catch (e) {
@@ -86,7 +84,7 @@ export default function ResumesManager({ resumes, onChange, onReload, loading })
 
   async function remove(id) {
     try {
-      await deleteResource(id);
+      if (!isLocalId(id)) await apiDeleteResource(id);
       const next = resumes.filter((r) => r.id !== id);
       onChange(next);
       saveResumes(next);
@@ -97,11 +95,9 @@ export default function ResumesManager({ resumes, onChange, onReload, loading })
   }
 
   async function addBlank() {
-    const blank = emptyResource();
     try {
-      const dbId = await persistResource(blank);
-      const row = { ...blank, id: dbId };
-      const next = [...resumes, row];
+      const saved = await apiPostResource(emptyResource());
+      const next = [...resumes, saved];
       onChange(next);
       saveResumes(next);
       setMsg("Added blank row — fill in the fields below.");
@@ -127,10 +123,10 @@ export default function ResumesManager({ resumes, onChange, onReload, loading })
   }
 
   function handleReset() {
-    if (!confirm("Reset all resumes to the default Devsinc roster? Custom entries will be lost.")) return;
+    if (!confirm("Reset local cache to default roster?")) return;
     const next = resetResumes();
     onChange(next);
-    setMsg("Restored default engineer roster.");
+    setMsg("Restored local cache.");
   }
 
   async function handleFile(e) {
@@ -160,25 +156,14 @@ export default function ResumesManager({ resumes, onChange, onReload, loading })
         setParsing(false);
       }
 
-      const supabase = createClient();
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
       const inserted = [];
       for (const item of incoming) {
-        const row = resourceToRow(item, user?.id);
-        delete row.id;
-        const { data, error } = await supabase
-          .from("engineer_resources")
-          .insert(row)
-          .select()
-          .single();
-        if (!error && data) inserted.push(rowToResource(data));
+        inserted.push(await apiPostResource(item));
       }
-      const next = mergeResumes(resumes, inserted.length ? inserted : incoming);
+      const next = mergeResumes(resumes, inserted);
       onChange(next);
       saveResumes(next);
-      setMsg(`Imported ${inserted.length || incoming.length} resume(s) from ${file.name}.`);
+      setMsg(`Imported ${inserted.length} resume(s) from ${file.name}.`);
       onReload?.();
     } catch (err) {
       setParsing(false);
@@ -198,19 +183,8 @@ export default function ResumesManager({ resumes, onChange, onReload, loading })
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
-      const supabase = createClient();
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
-      const row = resourceToRow(data.resource, user?.id);
-      delete row.id;
-      const { data: inserted, error: insErr } = await supabase
-        .from("engineer_resources")
-        .insert(row)
-        .select()
-        .single();
-      if (insErr) throw insErr;
-      const next = mergeResumes(resumes, [rowToResource(inserted)]);
+      const saved = await apiPostResource(data.resource);
+      const next = mergeResumes(resumes, [saved]);
       onChange(next);
       saveResumes(next);
       setPasteText("");

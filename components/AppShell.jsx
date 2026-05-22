@@ -36,11 +36,16 @@ export default function AppShell({ user, children }) {
         <div className={styles.userBlock}>
           <span className={styles.userEmail}>{displayName}</span>
           <span className={styles.userDomain}>{user?.email}</span>
-          <form action="/auth/signout" method="post">
-            <button type="submit" className={styles.signOut}>
-              Sign out
-            </button>
-          </form>
+          <button
+            type="button"
+            className={styles.signOut}
+            onClick={async () => {
+              await fetch("/api/auth/signout", { method: "POST" });
+              window.location.href = "/login";
+            }}
+          >
+            Sign out
+          </button>
         </div>
       </header>
       <div className={styles.body}>{children}</div>

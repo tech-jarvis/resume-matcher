@@ -3,8 +3,6 @@
 import { useCallback, useEffect, useState } from "react";
 import styles from "./ResourceMatcher.module.css";
 import { loadResumes, saveResumes } from "@/lib/resumeStorage";
-import { createClient } from "@/lib/supabase/client";
-import { fetchResources } from "@/lib/supabaseResources";
 import MatchResultsTable from "./MatchResultsTable";
 import ResumesManager from "./ResumesManager";
 import ResumeConverter from "./ResumeConverter";
@@ -21,11 +19,11 @@ export default function ResourceMatcher() {
   const loadResumesFromCloud = useCallback(async () => {
     setResumesLoading(true);
     try {
-      const supabase = createClient();
-      const data = await fetchResources(supabase);
-      if (data.length > 0) {
-        setResumes(data);
-        saveResumes(data);
+      const res = await fetch("/api/resources");
+      const data = await res.json();
+      if (res.ok && data.resources?.length > 0) {
+        setResumes(data.resources);
+        saveResumes(data.resources);
       } else {
         setResumes(loadResumes());
       }

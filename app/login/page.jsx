@@ -2,13 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import { createClient } from "@/lib/supabase/client";
 import { authErrorMessage, isDevsincEmail, mapSupabaseAuthError } from "@/lib/auth";
-import { authCallbackUrl } from "@/lib/siteUrl";
 import styles from "./login.module.css";
 
 export default function LoginPage() {
-  const supabase = createClient();
   const searchParams = useSearchParams();
   const [mode, setMode] = useState("signin");
   const [email, setEmail] = useState("");
@@ -16,32 +13,15 @@ export default function LoginPage() {
   const [fullName, setFullName] = useState("");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState(null);
-  const [success, setSuccess] = useState(null);
 
   useEffect(() => {
     const fromQuery = mapSupabaseAuthError(searchParams);
-    if (fromQuery) {
-      setMessage(authErrorMessage(fromQuery));
-      if (fromQuery === "otp_expired") setMode("reset");
-      return;
-    }
-
-    // Hash fragment errors: #error_code=otp_expired (not sent to server)
-    if (typeof window !== "undefined" && window.location.hash) {
-      const hashParams = new URLSearchParams(window.location.hash.slice(1));
-      const fromHash = mapSupabaseAuthError(hashParams);
-      if (fromHash) {
-        setMessage(authErrorMessage(fromHash));
-        if (fromHash === "otp_expired") setMode("reset");
-        window.history.replaceState(null, "", "/login");
-      }
-    }
+    if (fromQuery) setMessage(authErrorMessage(fromQuery));
   }, [searchParams]);
 
-  async function handleEmailAuth(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     setMessage(null);
-    setSuccess(null);
 
     if (!isDevsincEmail(email)) {
       setMessage(authErrorMessage("domain"));
@@ -50,35 +30,25 @@ export default function LoginPage() {
 
     setLoading(true);
 
-    if (mode === "signup") {
-      const { error } = await supabase.auth.signUp({
-        email,
-        password,
-        options: {
-          data: { full_name: fullName },
-          emailRedirectTo: authCallbackUrl(),
-        },
-      });
-      setLoading(false);
-      if (error) setMessage(error.message);
-      else setSuccess("Account created. Check your @devsinc.com inbox to confirm, then sign in.");
-      return;
-    }
+    try {
+      const endpoint = mode === "signup" ? "/api/auth/signup" : "/api/auth/signin";
+      const body =
+        mode === "signup"
+          ? { email, password, full_name: fullName }
+          : { email, password };
 
-    if (mode === "reset") {
-      const { error } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: authCallbackUrl("/auth/update-password"),
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
       });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+      window.location.href = "/";
+    } catch (err) {
+      setMessage(err.message);
       setLoading(false);
-      if (error) setMessage(error.message);
-      else setSuccess(authErrorMessage("reset"));
-      return;
     }
-
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-    setLoading(false);
-    if (error) setMessage(error.message);
-    else window.location.href = "/";
   }
 
   return (
@@ -93,19 +63,19 @@ export default function LoginPage() {
         </div>
 
         <div className={styles.tabs}>
-          {["signin", "signup", "reset"].map((m) => (
+          {["signin", "signup"].map((m) => (
             <button
               key={m}
               type="button"
               className={`${styles.tab} ${mode === m ? styles.tabActive : ""}`}
-              onClick={() => { setMode(m); setMessage(null); setSuccess(null); }}
+              onClick={() => { setMode(m); setMessage(null); }}
             >
-              {m === "signin" ? "Sign in" : m === "signup" ? "Sign up" : "Reset password"}
+              {m === "signin" ? "Sign in" : "Sign up"}
             </button>
           ))}
         </div>
 
-        <form onSubmit={handleEmailAuth} className={styles.form}>
+        <form onSubmit={handleSubmit} className={styles.form}>
           {mode === "signup" && (
             <label>
               Full name
@@ -122,34 +92,25 @@ export default function LoginPage() {
               required
             />
           </label>
-          {mode !== "reset" && (
-            <label>
-              Password
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                minLength={8}
-                required
-              />
-            </label>
-          )}
+          <label>
+            Password
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              minLength={8}
+              required
+            />
+          </label>
           <button type="submit" className={styles.submitBtn} disabled={loading}>
-            {loading
-              ? "Please wait…"
-              : mode === "signin"
-                ? "Sign in"
-                : mode === "signup"
-                  ? "Create account"
-                  : "Send reset link"}
+            {loading ? "Please wait…" : mode === "signin" ? "Sign in" : "Create account"}
           </button>
         </form>
 
         {message && <p className={styles.error}>{message}</p>}
-        {success && <p className={styles.success}>{success}</p>}
 
         <p className={styles.foot}>
-          Access restricted to Devsinc employees. Contact IT if you need help.
+          Only @devsinc.com addresses. Change your password anytime under My profile.
         </p>
       </div>
     </div>
