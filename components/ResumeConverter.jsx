@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { mergeResumes, saveResumes } from "@/lib/resumeStorage";
+import { devsincResumeToResource } from "@/lib/resourceToDevsincResume";
 import { supportedExtensions } from "@/lib/supportedFormats";
 import styles from "./ResumeConverter.module.css";
 
@@ -65,15 +66,17 @@ export default function ResumeConverter({ resumes, onAddToDatabase }) {
   }
 
   function handleAddToDb() {
-    if (!result?.resource) return;
-    const next = mergeResumes(resumes, [result.resource]);
+    const resume = result?.resume ?? result?.resource;
+    if (!resume?.name) return;
+    const row = devsincResumeToResource(resume);
+    const next = mergeResumes(resumes, [row]);
     onAddToDatabase(next);
     saveResumes(next);
     setError(null);
-    alert(`Added ${result.resource.name} to the resume database.`);
+    alert(`Added ${resume.name} to the resume database.`);
   }
 
-  const r = result?.resource;
+  const r = result?.resume ?? result?.resource;
 
   return (
     <div className={styles.wrap}>
@@ -154,51 +157,35 @@ export default function ResumeConverter({ resumes, onAddToDatabase }) {
 
           <div className={styles.previewGrid}>
             <div className={styles.previewCard}>
-              <h3>Profile fields</h3>
-              <table className={styles.previewTable}>
-                <tbody>
-                  {[
-                    ["Team", r.team],
-                    ["Designation", r.designation],
-                    ["Primary stack", r.primary],
-                    ["Experience", r.exp],
-                    ["Timezone", r.tz],
-                    ["Industries", r.industries],
-                    ["Dependency", r.dep],
-                  ].map(([k, v]) => (
-                    <tr key={k}>
-                      <th>{k}</th>
-                      <td>{v || "—"}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <h3>Summary</h3>
+              <p>{r.summary || "—"}</p>
+              <h3>Work experience</h3>
+              <ul className={styles.compactList}>
+                {(r.workExperience || []).slice(0, 3).map((job, i) => (
+                  <li key={i}>
+                    <strong>{job.title}</strong> — {job.company}
+                  </li>
+                ))}
+              </ul>
             </div>
             <div className={styles.previewCard}>
-              <h3>Technical stacks</h3>
-              <p>{r.stacks || "—"}</p>
-              {r.summary && (
-                <>
-                  <h3>Summary (in Word doc)</h3>
-                  <p>{r.summary}</p>
-                </>
-              )}
-              {r.highlights?.length > 0 && (
-                <>
-                  <h3>Highlights</h3>
-                  <ul>
-                    {r.highlights.map((h, i) => (
-                      <li key={i}>{h}</li>
-                    ))}
-                  </ul>
-                </>
-              )}
+              <h3>Skills</h3>
+              <p>
+                <strong>Technology:</strong> {r.skills?.technology || "—"}
+              </p>
+              <h3>Projects</h3>
+              <ul className={styles.compactList}>
+                {(r.projects || []).slice(0, 4).map((p, i) => (
+                  <li key={i}>{p.name}</li>
+                ))}
+              </ul>
             </div>
           </div>
 
           <p className={styles.docNote}>
-            The downloaded file is a branded Devsinc Word document (.docx) with standardized sections:
-            profile table, summary, technical competencies, domains, and highlights.
+            Download uses the official Devsinc resume layout: two columns (experience & projects
+            left; contact, skills & achievements right), teal section headers (#16BBBA), and
+            sidebar styling matching the template PDF.
           </p>
         </div>
       )}

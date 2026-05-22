@@ -1,7 +1,7 @@
 import { extractTextFromBuffer } from "@/lib/extractDocumentText";
 import { isSupportedFilename } from "@/lib/supportedFormats";
-import { parseResumeWithClaude } from "@/lib/parseResumeWithClaude";
-import { buildDevsincDocx } from "@/lib/buildDevsincDocx";
+import { parseDevsincResumeWithClaude } from "@/lib/parseDevsincResumeWithClaude";
+import { buildDevsincResumeDocx } from "@/lib/buildDevsincResumeDocx";
 import { requireAuth } from "@/lib/supabase/requireAuth";
 
 export const runtime = "nodejs";
@@ -34,11 +34,13 @@ export async function POST(request) {
 
     const buffer = Buffer.from(await file.arrayBuffer());
     const rawText = await extractTextFromBuffer(buffer, filename);
-    const resource = await parseResumeWithClaude(rawText);
-    const { buffer: docxBuffer, filename: docxFilename } = await buildDevsincDocx(resource);
+    const resume = await parseDevsincResumeWithClaude(rawText);
+    const { buffer: docxBuffer, filename: docxFilename } =
+      await buildDevsincResumeDocx(resume);
 
     return Response.json({
-      resource,
+      resume,
+      resource: resume,
       filename: docxFilename,
       docxBase64: docxBuffer.toString("base64"),
       extractedChars: rawText.length,

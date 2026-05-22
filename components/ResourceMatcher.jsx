@@ -211,8 +211,8 @@ export default function ResourceMatcher() {
             <div className={styles.topbar}>
               <h1 className={styles.pageTitle}>Resume converter</h1>
               <p className={styles.pageDesc}>
-                Upload any PDF, Word, or text resume — get a standardized Devsinc profile Word document
-                (.docx) plus structured data you can add to the matcher database.
+                Upload any PDF, Word, or text resume — get the official Devsinc resume Word document
+                (.docx) in the two-column template format.
               </p>
             </div>
             <ResumeConverter resumes={resumes} onAddToDatabase={handleResumesChange} />

@@ -1,4 +1,5 @@
-import { buildDevsincDocx } from "@/lib/buildDevsincDocx";
+import { buildDevsincResumeDocx } from "@/lib/buildDevsincResumeDocx";
+import { resourceToDevsincResume } from "@/lib/resourceToDevsincResume";
 import { requireAuth } from "@/lib/supabase/requireAuth";
 
 export const runtime = "nodejs";
@@ -14,7 +15,10 @@ export async function POST(request) {
       return Response.json({ error: "Resource data with at least a name is required." }, { status: 400 });
     }
 
-    const { buffer, filename } = await buildDevsincDocx(resource);
+    const resume = resource.workExperience
+      ? resource
+      : resourceToDevsincResume(resource);
+    const { buffer, filename } = await buildDevsincResumeDocx(resume);
 
     return new Response(buffer, {
       headers: {
