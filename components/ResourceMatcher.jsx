@@ -6,6 +6,7 @@ import { loadResumes, saveResumes } from "@/lib/resumeStorage";
 import MatchResultsTable from "./MatchResultsTable";
 import ResumesManager from "./ResumesManager";
 import ResumeConverter from "./ResumeConverter";
+import ResumeUpdater from "./ResumeUpdater";
 
 export default function ResourceMatcher() {
   const [tab, setTab] = useState("match");
@@ -92,6 +93,13 @@ export default function ResourceMatcher() {
           >
             Resume converter
           </button>
+          <button
+            type="button"
+            className={`${styles.navItem} ${tab === "updater" ? styles.navActive : ""}`}
+            onClick={() => setTab("updater")}
+          >
+            Resume updater
+          </button>
         </nav>
         <div className={styles.sideStats}>
           <div className={styles.statItem}>
@@ -170,6 +178,18 @@ export default function ResourceMatcher() {
               />
             )}
           </>
+        ) : tab === "updater" ? (
+          <>
+            <div className={styles.topbar}>
+              <h1 className={styles.pageTitle}>Resume updater</h1>
+              <p className={styles.pageDesc}>
+                Paste a job description and upload a resume — get a tailored Devsinc-format Word
+                document aligned to the JD (official template: summary, experience, skills,
+                projects, education).
+              </p>
+            </div>
+            <ResumeUpdater />
+          </>
         ) : tab === "resumes" ? (
           <>
             <div className={styles.topbar}>
@@ -186,7 +206,7 @@ export default function ResourceMatcher() {
               onReload={loadResumesFromCloud}
             />
           </>
-        ) : (
+        ) : tab === "convert" ? (
           <>
             <div className={styles.topbar}>
               <h1 className={styles.pageTitle}>Resume converter</h1>
@@ -197,7 +217,7 @@ export default function ResourceMatcher() {
             </div>
             <ResumeConverter resumes={resumes} onAddToDatabase={handleResumesChange} />
           </>
-        )}
+        ) : null}
       </main>
     </div>
   );

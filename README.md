@@ -47,6 +47,15 @@ Use the **Resume converter** tab to:
 - Download a branded **Word document** (`.docx`) with profile table, summary, stacks, domains, and highlights
 - Optionally **Add to database** for matching
 
+## Resume updater
+
+Use the **Resume updater** tab to tailor a resume to a specific job description:
+
+- Paste the **job description** and upload a resume (PDF/DOCX/DOC/TXT) or paste resume text
+- AI maps content to the **official Devsinc resume template** (summary, work experience, skills, achievements, projects, certificates, education)
+- Content is **rewritten for JD fit** (keywords, bullet emphasis, skill ordering) without inventing employers or credentials
+- Download the tailored **Word document** (`.docx`)
+
 ## Resume database
 
 Use the **Resume database** tab in the app to:

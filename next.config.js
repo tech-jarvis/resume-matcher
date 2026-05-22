@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  serverExternalPackages: ["pdf-parse", "word-extractor"],
+  serverExternalPackages: ["unpdf", "word-extractor"],
 };
 export default nextConfig;

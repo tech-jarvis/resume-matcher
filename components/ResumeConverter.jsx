@@ -77,6 +77,11 @@ export default function ResumeConverter({ resumes, onAddToDatabase }) {
 
   return (
     <div className={styles.wrap}>
+      <p className={styles.templateBar}>
+        <a href="/api/templates/devsinc-resume" className={styles.templateLink} download>
+          Download official Devsinc resume template (PDF)
+        </a>
+      </p>
       <div
         className={`${styles.dropzone} ${dragging ? styles.dropzoneActive : ""} ${loading ? styles.dropzoneLoading : ""}`}
         onDragOver={(e) => { e.preventDefault(); setDragging(true); }}

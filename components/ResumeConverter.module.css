@@ -1,5 +1,20 @@
 .wrap { display: flex; flex-direction: column; gap: 1.25rem; }
 
+.templateBar {
+  margin: 0;
+  font-size: 0.8125rem;
+}
+
+.templateLink {
+  color: var(--brand);
+  font-weight: 600;
+  text-decoration: none;
+}
+.templateLink:hover {
+  color: var(--brand-dark);
+  text-decoration: underline;
+}
+
 .dropzone {
   border: 2px dashed var(--border-md);
   border-radius: var(--radius-lg);
@@ -143,4 +158,57 @@
   color: var(--text-3);
   margin-top: 1rem;
   line-height: 1.5;
+}
+
+.textArea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  resize: vertical;
+  background: var(--surface);
+}
+.textArea:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 2px var(--brand-bg);
+}
+
+.modeRow {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btnActive {
+  color: var(--brand-dark);
+  font-weight: 600;
+  background: var(--brand-bg);
+  border-radius: var(--radius);
+}
+
+.actionRow {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actionRow .btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 220px;
+  justify-content: center;
+}
+
+.compactList {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.muted {
+  color: var(--text-2);
+  font-weight: 400;
 }
