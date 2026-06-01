@@ -3,6 +3,7 @@ import { createAnthropicClient, ANTHROPIC_MODEL } from "@/lib/anthropicClient";
 import { parseAiJson } from "@/lib/parseAiJson";
 import { apiErrorResponse } from "@/lib/apiErrors";
 import { requireAuth } from "@/lib/supabase/requireAuth";
+import { shortlistResources } from "@/lib/filterResources";
 
 const SYSTEM_PROMPT = `You are an expert technical recruiter at Devsinc, a software outsourcing company.
 Your job is to match job descriptions or client requirements to the best available engineers from our talent pool.
@@ -44,7 +45,8 @@ Rules:
 - Be specific about WHY each person matches — reference their actual tech stack and industries
 - Consider both primary AND secondary tech stacks
 - If the JD needs a team (multiple roles), note that in the summary
-- Do not invent data not present in the resource profiles`;
+- Do not invent data not present in the resource profiles
+- The candidate pool below has ALREADY been narrowed to people relevant to THIS job description. Evaluate each one on its own merits for this specific JD and rank strictly by genuine technical fit — do not default to "well-known" or earlier-listed people. The ordering of the list is not a ranking.`;
 
 export async function POST(request) {
   const { error: authError } = await requireAuth();
@@ -57,7 +59,13 @@ export async function POST(request) {
       return Response.json({ error: "Please provide a valid job description." }, { status: 400 });
     }
 
-    const pool = Array.isArray(resources) && resources.length > 0 ? resources : RESOURCES;
+    const fullPool =
+      Array.isArray(resources) && resources.length > 0 ? resources : RESOURCES;
+
+    // Narrow to the people actually relevant to this JD before sending to the
+    // model. This removes positional anchoring (which made unrelated JDs return
+    // the same people) and produces genuinely JD-specific, best-fit results.
+    const { pool } = shortlistResources(jd, fullPool, 40);
     const client = createAnthropicClient();
 
     const message = await client.messages.create({
@@ -67,7 +75,7 @@ export async function POST(request) {
       messages: [
         {
           role: "user",
-          content: `Here are all Devsinc resources:\n${JSON.stringify(pool)}\n\nJob Description / Requirement:\n${jd.trim()}\n\nFind the best matches.`,
+          content: `Candidate engineers relevant to this requirement (unordered):\n${JSON.stringify(pool)}\n\nJob Description / Requirement:\n${jd.trim()}\n\nRank these candidates by genuine fit for THIS job description and return the best matches.`,
         },
       ],
     });
