@@ -134,21 +134,33 @@ export default function ResumesManager({ resumes, onChange, onReload, loading })
     if (!file) return;
     e.target.value = "";
 
+    const name = file.name.toLowerCase();
+    const isDoc = /\.(pdf|docx|doc|rtf)$/.test(name);
+
     try {
-      const text = await file.text();
       let incoming = [];
 
-      if (file.name.endsWith(".json")) {
-        const data = JSON.parse(text);
+      if (name.endsWith(".json")) {
+        const data = JSON.parse(await file.text());
         incoming = Array.isArray(data) ? data : [data];
-      } else if (file.name.endsWith(".csv")) {
-        incoming = parseCsv(text);
+      } else if (name.endsWith(".csv")) {
+        incoming = parseCsv(await file.text());
+      } else if (isDoc) {
+        // Binary documents are extracted + parsed server-side, then saved to the pool.
+        setParsing(true);
+        const formData = new FormData();
+        formData.append("file", file);
+        const res = await fetch("/api/parse-resume", { method: "POST", body: formData });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error);
+        incoming = [data.resource];
+        setParsing(false);
       } else {
         setParsing(true);
         const res = await fetch("/api/parse-resume", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ text }),
+          body: JSON.stringify({ text: await file.text() }),
         });
         const data = await res.json();
         if (!res.ok) throw new Error(data.error);
@@ -163,7 +175,7 @@ export default function ResumesManager({ resumes, onChange, onReload, loading })
       const next = mergeResumes(resumes, inserted);
       onChange(next);
       saveResumes(next);
-      setMsg(`Imported ${inserted.length} resume(s) from ${file.name}.`);
+      setMsg(`Imported ${inserted.length} resume(s) from ${file.name} — saved to the resource pool.`);
       onReload?.();
     } catch (err) {
       setParsing(false);
@@ -224,12 +236,17 @@ export default function ResumesManager({ resumes, onChange, onReload, loading })
           <input
             ref={fileRef}
             type="file"
-            accept=".json,.csv,.txt,.md"
+            accept=".pdf,.docx,.doc,.rtf,.txt,.md,.json,.csv"
             className={styles.fileInput}
             onChange={handleFile}
           />
-          <button type="button" className={styles.btnSecondary} onClick={() => fileRef.current?.click()}>
-            Upload file
+          <button
+            type="button"
+            className={styles.btnSecondary}
+            onClick={() => fileRef.current?.click()}
+            disabled={parsing}
+          >
+            {parsing ? "Parsing…" : "Upload resume / file"}
           </button>
           <button type="button" className={styles.btnSecondary} onClick={addBlank}>
             + Add row
