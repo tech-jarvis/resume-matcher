@@ -1,4 +1,5 @@
 import RESOURCES from "@/lib/resources";
+import { filterActiveResources } from "@/lib/activeEmployees";
 import { createAnthropicClient, ANTHROPIC_MODEL } from "@/lib/anthropicClient";
 import { parseAiJson } from "@/lib/parseAiJson";
 import { apiErrorResponse } from "@/lib/apiErrors";
@@ -59,8 +60,9 @@ export async function POST(request) {
       return Response.json({ error: "Please provide a valid job description." }, { status: 400 });
     }
 
-    const fullPool =
-      Array.isArray(resources) && resources.length > 0 ? resources : RESOURCES;
+    const fullPool = filterActiveResources(
+      Array.isArray(resources) && resources.length > 0 ? resources : RESOURCES
+    );
 
     // Narrow to the people actually relevant to this JD before sending to the
     // model. This removes positional anchoring (which made unrelated JDs return

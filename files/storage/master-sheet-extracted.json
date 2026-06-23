@@ -11,72 +11,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Aamir Sharif",
-    "team": "Salman Ali",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN, React, Next, Typescript",
-    "exp": "2y",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Abbas Ali",
-    "team": "Ahmed Wasim",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN, SpringBoot",
-    "exp": "1 year",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Abbas Rizvi",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "Android ( Kotlin)",
-    "stacks": "Java, Javascript, Next, Node, Typescript, SQL, React, MERN",
-    "exp": "Less than 1 yr",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Abdul Basit Jalil",
-    "team": "Ahmed Wasim",
-    "designation": "ASE",
-    "primary": "Django",
-    "stacks": "Python, Django",
-    "exp": "Less than 1",
-    "tz": "PKT",
-    "industries": "E-commerce & Retail, Cloud",
-    "dep": "High"
-  },
-  {
-    "name": "Abdul Hannan",
-    "team": "Ali Raza Watoo",
-    "designation": "SSE",
-    "primary": "Next",
-    "stacks": "Next, ROR, Docker , Javascript, Typescript, React, Node",
-    "exp": "2",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Abdul Hannan Mir",
-    "team": "Yasir Barkat",
-    "designation": "AFC",
-    "primary": "Dynamics F&O",
-    "stacks": "Supply Chain, Finance",
-    "exp": "5 Months",
-    "tz": "PKT",
-    "industries": "IT, Food",
-    "dep": "Normal"
-  },
-  {
     "name": "Abdul Hayan",
     "team": "Salman Ali",
     "designation": "SE",
@@ -86,17 +20,6 @@
     "tz": "PKT",
     "industries": "E-commerce & Retail, Healthcare, Architecture and Planning, Logistics and Supply Chain",
     "dep": "High"
-  },
-  {
-    "name": "Abdul Malik",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "AI / ML",
-    "stacks": "AI / ML, Angular, AWS, Java, Javascript, MERN, Nest, Next, React, ROR, Typescript",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
   },
   {
     "name": "Abdul Mateen",
@@ -140,17 +63,6 @@
     "exp": "Less than 1 yr",
     "tz": "PKT",
     "industries": "CRM, FinTech, Automation, Project Managment",
-    "dep": "Normal"
-  },
-  {
-    "name": "Abdul Muiz Khan",
-    "team": "Junaid Rehmat",
-    "designation": "ATL",
-    "primary": "Python",
-    "stacks": "Python, Django, Fast Api, ROR, React, AWS, Docker, Javascript, Vue js",
-    "exp": "5y",
-    "tz": "Anytime",
-    "industries": "Automotive Industry, FinTech, E-commerce & Retail, Real Estate, Healthcare",
     "dep": "Normal"
   },
   {
@@ -198,17 +110,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Abdul Wahab",
-    "team": "Ghulam Murtaza",
-    "designation": "SSQAE",
-    "primary": "QA - Automation",
-    "stacks": "QA - Automation",
-    "exp": "5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Abdul Wahab Ahmed",
     "team": "E-Commerce & Digital Retail",
     "designation": "SE-II",
@@ -218,28 +119,6 @@
     "tz": "PKT",
     "industries": "E-commerce & Retail",
     "dep": "Normal"
-  },
-  {
-    "name": "Abdul Wahab Mirza",
-    "team": "Mahroz",
-    "designation": "ATL",
-    "primary": "QA Automation",
-    "stacks": "QA Automation, QA - Manual, Product Manager, Scrum Master, Businees Analyst",
-    "exp": "6 yrs",
-    "tz": "Anytime",
-    "industries": "HR and management systems, Payroll, E-commerce & Retail, FinTech, Healthcare, Information Technology, HR",
-    "dep": "Normal"
-  },
-  {
-    "name": "Abdul Wasey Sipra",
-    "team": "Saad Team",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "Python, React, Django",
-    "exp": "Less than 1y",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
   },
   {
     "name": "Abdullah Ahmad",
@@ -264,17 +143,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Abdullah Ijaz",
-    "team": "Saad Team",
-    "designation": "ATL",
-    "primary": ".Net",
-    "stacks": ".Net, ASP, C#, React, GraphQL, Javascript, Fast API, Docker , DevOps, PHP",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Abdullah Khan",
     "team": "Mahroz",
     "designation": "Trainee ASE",
@@ -283,17 +151,6 @@
     "exp": "Less than 1y",
     "tz": "Anytime",
     "industries": "Transport, Education, Healthcare, E-commerce & Retail, Entertainment",
-    "dep": "High"
-  },
-  {
-    "name": "Abdullah mahboob",
-    "team": "Salman Ali",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN, React, Next, Typescript, Javascript, Node, AWS",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -317,28 +174,6 @@
     "tz": "Anytime",
     "industries": "",
     "dep": "Normal"
-  },
-  {
-    "name": "Abdullah Saud",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "React Native",
-    "stacks": "React Native, Node.js, React, Typescript, Docker , Javascript, MERN, Node, Next",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Abdullah Sharif",
-    "team": "Junaid Rehmat",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, vue.Js",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
   },
   {
     "name": "Abdullah Tahir",
@@ -385,39 +220,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Abid Ali",
-    "team": "Junaid Ali",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "Python, Django, AI / ML, Flask, Javascript, MERN, Node, React, MongoDB",
-    "exp": "Below 1",
-    "tz": "Anytime",
-    "industries": "E-commerce & Retail, Healthcare",
-    "dep": "Normal"
-  },
-  {
-    "name": "Abraheem Asad Fazli",
-    "team": "Junaid Ali",
-    "designation": "ATL",
-    "primary": "ROR",
-    "stacks": "ROR, React, Node, Angular, Typescript, Javascript, AWS, GCP",
-    "exp": "4y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Abrar Ahmad",
-    "team": "Ahmed Wasim",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN, React Native",
-    "exp": "1 year",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Abu Huraira Zaheer",
     "team": "Junaid Rehmat",
     "designation": "ASE",
@@ -437,17 +239,6 @@
     "exp": "1.5y",
     "tz": "Anytime",
     "industries": "E-commerce & Retail, Healthcare, Software Devolpment",
-    "dep": "High"
-  },
-  {
-    "name": "Abubakar Aziz",
-    "team": "Aqib Maqbool",
-    "designation": "SSQA",
-    "primary": "Javascript",
-    "stacks": "Javascript, Python, Typescript, AI/ML, QA - Automation",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -506,50 +297,6 @@
     "dep": "High"
   },
   {
-    "name": "Adil Mir",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "Java",
-    "stacks": "Java, React, Elixir",
-    "exp": "1y",
-    "tz": "Anytime",
-    "industries": "FinTech, Healthcare",
-    "dep": "Low"
-  },
-  {
-    "name": "Adnan Ahmad Tahir",
-    "team": "Junaid Ali",
-    "designation": "SSE",
-    "primary": "Angular",
-    "stacks": "Angular, AWS, Javascript, MERN, Node, Python, ROR, React, Typescript, Flask",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Adnan Habib Khan",
-    "team": "Junaid Rehmat",
-    "designation": "SE",
-    "primary": "Flutter",
-    "stacks": "Flutter",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Adnan Jamil",
-    "team": "Awais Mushtaq",
-    "designation": "ASE",
-    "primary": "Python, React",
-    "stacks": "Python, MERN, React",
-    "exp": "Less than 1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Adnan Naseer Rana",
     "team": "Aqib Maqbool",
     "designation": "SE",
@@ -561,17 +308,6 @@
     "dep": "High"
   },
   {
-    "name": "Afaq Javed",
-    "team": "Aqib Maqbool",
-    "designation": "ATL",
-    "primary": "AI/ML",
-    "stacks": "AI/ML, Python, React, DevOps, Javascript, Angular, MERN, Typescript, Node, Next, Nest",
-    "exp": "7y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Afaq Khan",
     "team": "Junaid Rehmat",
     "designation": "SE",
@@ -580,17 +316,6 @@
     "exp": "1y",
     "tz": "Anytime",
     "industries": "Software Devolpment, Healthcare, E-commerce & Retail, Real Estate, Education",
-    "dep": "High"
-  },
-  {
-    "name": "Ahmad",
-    "team": "Awais Mushtaq",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python[Django], React, Vue, Dynamics365",
-    "exp": "1",
-    "tz": "Anytime",
-    "industries": "Water Pipe Industry, E-commerce & Retail",
     "dep": "High"
   },
   {
@@ -616,17 +341,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Ahmad Fayyaz",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, Angular, Javascript, django, flask, Java",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "Education, E-commerce & Retail, Healthcare, Entertainment, Sports",
-    "dep": "High"
-  },
-  {
     "name": "Ahmad Hassaan",
     "team": "Mahroz",
     "designation": "ATL",
@@ -638,28 +352,6 @@
     "dep": "None"
   },
   {
-    "name": "Ahmad Saeed Awan",
-    "team": "Junaid Ali",
-    "designation": "ATL",
-    "primary": "Javascript",
-    "stacks": "Javascript, Typescript, React, Angular, PHP, Laravel",
-    "exp": "4y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Ahmad Siddiqui",
-    "team": "Samrah Ishtiaq",
-    "designation": "SE",
-    "primary": "Salesforce",
-    "stacks": "Salesforce, Python, AI/ML, AWS",
-    "exp": "2y",
-    "tz": "UTC",
-    "industries": "Law Firm, Real Estate, E-commerce & Retail",
-    "dep": "Low"
-  },
-  {
     "name": "Ahmad Waleed",
     "team": "TenseiGames",
     "designation": "TL",
@@ -668,17 +360,6 @@
     "exp": "7y",
     "tz": "Anytime",
     "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Ahmad Yousaf",
-    "team": "Talha Mughal",
-    "designation": "ASE",
-    "primary": "ROR",
-    "stacks": "ROR, Python",
-    "exp": "Less than 1y",
-    "tz": "Anytime",
-    "industries": "Travel and Tourism, E-commerce & Retail",
     "dep": "Normal"
   },
   {
@@ -704,17 +385,6 @@
     "dep": "Low"
   },
   {
-    "name": "Ahmed Waheed Butt",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Ahmed Wasim",
     "team": "Ahmed Wasim",
     "designation": "APM",
@@ -724,17 +394,6 @@
     "tz": "EST",
     "industries": "Information Technology, Entertainment, Recruitment, Healthcare, Saas",
     "dep": "Normal"
-  },
-  {
-    "name": "Ahmer Ejaz",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "Javascript",
-    "stacks": "Javascript, Node.js, React, MERN, Typescript, Django, Python, DevOps",
-    "exp": "2.5 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
   },
   {
     "name": "Ahsan Ali",
@@ -759,28 +418,6 @@
     "dep": "High"
   },
   {
-    "name": "Ahsan Farid",
-    "team": "Junaid Rehmat",
-    "designation": "SE",
-    "primary": "Node",
-    "stacks": "Node, MERN",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Ahsan Malik",
-    "team": "Awais Mushtaq",
-    "designation": "ASE",
-    "primary": "Python, Javascript",
-    "stacks": "Javascript, Node, GraphQL, Python, SFCC, jQuery, Django, MERN, React",
-    "exp": "2.5y",
-    "tz": "PKT",
-    "industries": "Information Technology, E-commerce & Retail, Pharmacutical Manufacturing",
-    "dep": "Normal"
-  },
-  {
     "name": "Ahtasham Ali",
     "team": "Usama Imtiaz",
     "designation": "SE",
@@ -790,17 +427,6 @@
     "tz": "Anytime",
     "industries": "Education, E-commerce & Retail, Healthcare, Marketplace",
     "dep": "High"
-  },
-  {
-    "name": "Ahzam Ejaz",
-    "team": "Talha Mughal",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "SQL, MongoDB, Data Analyst, AI/ML, Computer Vision, Deep Learning",
-    "exp": "2y",
-    "tz": "PST",
-    "industries": "FinTech, Education",
-    "dep": "Normal"
   },
   {
     "name": "Aiman Ali",
@@ -836,17 +462,6 @@
     "dep": "High"
   },
   {
-    "name": "Aleem Ahmad Khan",
-    "team": "Talha Mughal",
-    "designation": "SE",
-    "primary": "AI / ML",
-    "stacks": "AI / ML",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
     "name": "Aleem Ahmed Khan",
     "team": "Fahad Hassan",
     "designation": "SSE",
@@ -867,17 +482,6 @@
     "tz": "Anytime",
     "industries": "Healthcare, Hospitality, Real Estate",
     "dep": "High"
-  },
-  {
-    "name": "Ali Amanat Ali",
-    "team": "Ali Raza Watoo",
-    "designation": "ASE",
-    "primary": "React",
-    "stacks": "React, ROR, AWS, GraphQL",
-    "exp": "Below 1",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
   },
   {
     "name": "Ali Hasnain",
@@ -902,28 +506,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Ali Nawaz",
-    "team": "Awais Mushtaq",
-    "designation": "ASE",
-    "primary": "MERN",
-    "stacks": "Nest",
-    "exp": "Less than 1y",
-    "tz": "Anytime",
-    "industries": "Finance",
-    "dep": "Normal"
-  },
-  {
-    "name": "Ali Raza",
-    "team": "E-Commerce & Digital Retail",
-    "designation": "SSE",
-    "primary": "Flutter",
-    "stacks": "Flutter, Shopify",
-    "exp": "4.5y",
-    "tz": "PKT",
-    "industries": "E-commerce & Retail",
-    "dep": "Low"
-  },
-  {
     "name": "Ali Raza Khan",
     "team": "Tensei Games",
     "designation": "ASE",
@@ -933,17 +515,6 @@
     "tz": "PKT | EST",
     "industries": "Gaming and 3D, E-commerce & Retail, Entertainment, Information Technology, Ad Tech",
     "dep": "High"
-  },
-  {
-    "name": "Ali Raza Watoo",
-    "team": "Ali Raza Watoo",
-    "designation": "APM",
-    "primary": "React",
-    "stacks": "React, ROR, AWS, GraphQL, Docker , Javascript, Python, Salesforce",
-    "exp": "7",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
   },
   {
     "name": "Ali Suhaib Shahid",
@@ -979,50 +550,6 @@
     "dep": "Low"
   },
   {
-    "name": "Alishba Saeed",
-    "team": "Mahroz",
-    "designation": "ATL",
-    "primary": "Java",
-    "stacks": "ROR, Java, .Net, DevOps, Shopify, Liquid Js, Python, PHP, Laravel, Typescript, React, Angular",
-    "exp": "4y",
-    "tz": "EST",
-    "industries": "E-commerce & Retail, FinTech, Healthcare, Logistics and Supply Chain, Software Development Services",
-    "dep": "Normal"
-  },
-  {
-    "name": "Allah Wasaya",
-    "team": "Mahroz",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, React, Typescript, Django, AWS",
-    "exp": "4 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Alsa Munir",
-    "team": "Ahmad Wasim",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": ".Net, C#, Javascript, Docker , React, SQL, Python, ETLs, Fast API, Next, AI / ML",
-    "exp": "Less than 1",
-    "tz": "EST",
-    "industries": "Oil and Gas, CRM",
-    "dep": "Normal"
-  },
-  {
-    "name": "Alyan Chatta",
-    "team": "Ahmed Wasim",
-    "designation": "ASE",
-    "primary": "MERN",
-    "stacks": "MERN Javascript Nestjs Litcomponents Azure Remix",
-    "exp": "Less than 1y",
-    "tz": "PKT",
-    "industries": "Normal",
-    "dep": "Normal"
-  },
-  {
     "name": "Ameer Hamza",
     "team": "Awais Mushtaq",
     "designation": "ASE",
@@ -1034,28 +561,6 @@
     "dep": "High"
   },
   {
-    "name": "Amina",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, AI / ML, django, flask, AWS",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Amir Ali",
-    "team": "Muhammad Babar",
-    "designation": "SE",
-    "primary": "Dynamics 365 CE/Power Platform",
-    "stacks": "Dynamics 365 CRM / CE:Sales, Customer ServicePower Platform:Power Apps (Model-driven & Canvas), Power Automate, Power Pages, Power BI, AI BuilderDevelopment & Customization:C#, JavaScript, TypeScript, Java, Python, Plugins, Custom APIs, JSON, HTML/CSS, React (PCF Controls), Web Resources (JS), SSRS Reports (RDL),Web API,Integrations:Salesforce, SharePoint, Business Central (BC), Social Media Integrations via Zapier Tools & Utilities: Visual Studio, VS Code, Postman, PowerShell, XRM Toolbox",
-    "exp": "2.5 year",
-    "tz": "PKT/EST",
-    "industries": "Healthcare, HR Management, Horse Management, and Store Management",
-    "dep": "Normal"
-  },
-  {
     "name": "Ammar Ahmed",
     "team": "Ahmed Wasim",
     "designation": "ASE",
@@ -1065,17 +570,6 @@
     "tz": "Anytime",
     "industries": "Education, Government Internal Software, E-commerce & Retail",
     "dep": "Normal"
-  },
-  {
-    "name": "Ammara Amin",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "AI / ML",
-    "stacks": "AI / ML, AWS, Docker , Python, Flask, GenAI, Deep learning, SQL, Fast API, Django",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
   },
   {
     "name": "Amna Khalid",
@@ -1100,28 +594,6 @@
     "dep": "High"
   },
   {
-    "name": "Amna Mubashar",
-    "team": "Junaid Rehmat",
-    "designation": "SSE",
-    "primary": "iOS",
-    "stacks": "iOS",
-    "exp": "3y",
-    "tz": "CST|PKT",
-    "industries": "Oil and Gas, Software Devolpment, Pets Guardianship, LLMs, Healthcare",
-    "dep": "High"
-  },
-  {
-    "name": "Amnah Siddiqua",
-    "team": "Salman Ali",
-    "designation": "SSE",
-    "primary": "ROR, Vue JS",
-    "stacks": "ROR, React, Vue.js",
-    "exp": "3.5y",
-    "tz": "PKT",
-    "industries": "Education, Healthcare, Hospitality",
-    "dep": "High"
-  },
-  {
     "name": "Anam Umar",
     "team": "Awais Mushtaq",
     "designation": "ASE",
@@ -1131,28 +603,6 @@
     "tz": "PKT",
     "industries": "Low",
     "dep": "Less than 1y"
-  },
-  {
-    "name": "Anas Abdullah",
-    "team": "Ali Raza Watoo",
-    "designation": "SSE",
-    "primary": "AWS",
-    "stacks": "AWS, Java",
-    "exp": "4",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Anas Ahmad",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": ".Net",
-    "stacks": ".Net, Typescript, React, ROR, QA Automation, Next, Javascript",
-    "exp": "3y",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
   },
   {
     "name": "Anas Waleed Tahir",
@@ -1166,17 +616,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Aneeb ur Rehman",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "AI/ML",
-    "stacks": "AI / ML, Python, React Native, GenAI, Django, Deep learning, SQL, Fast API, LLM, PostgreSQL, Playwrite",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "Automotive Industry, Information Technology, Automobile, Media/Advertisement",
-    "dep": "Low"
-  },
-  {
     "name": "Anjum Hussain",
     "team": "Mahroz",
     "designation": "SE",
@@ -1188,17 +627,6 @@
     "dep": "High"
   },
   {
-    "name": "Aqsa Khalid",
-    "team": "Ali Raza Watoo",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, React, Python",
-    "exp": "3",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Areeba Ghafeer",
     "team": "Muhammad Babar",
     "designation": "PFC",
@@ -1208,28 +636,6 @@
     "tz": "PKT/CST/EST/Middle East",
     "industries": "Municipality Retail Hospitality Automotive Groceries Non-profit organization - NA",
     "dep": "Normal"
-  },
-  {
-    "name": "Areej Ashraf",
-    "team": "Junaid Rehmat",
-    "designation": "SE",
-    "primary": "DevOps",
-    "stacks": "DevOps, AWS",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Arham Jahangir",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "AI/ML",
-    "stacks": "AI / ML, Blockchain, Docker, Javascript, Node, React, Python, Flask, GenAI, Deep learning, SQL, Fast API, NLP, LLM, Computer Vision",
-    "exp": "1 yr",
-    "tz": "Anytime",
-    "industries": "Education, Chat Bots, Industrial",
-    "dep": "Low"
   },
   {
     "name": "Arhum Naveed",
@@ -1252,28 +658,6 @@
     "tz": "Anytime",
     "industries": "Chat Bots, Education, Event Managment, Marketplace, Software Development Services",
     "dep": "Low"
-  },
-  {
-    "name": "Arooj Irfan",
-    "team": "Junaid Ali",
-    "designation": "SE",
-    "primary": "Java",
-    "stacks": "Java, MERN, MEAN",
-    "exp": "1.5y",
-    "tz": "EST",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Arooj Naeem",
-    "team": "Junaid Rehmat",
-    "designation": "ASE",
-    "primary": "iOS",
-    "stacks": "iOS",
-    "exp": "Less than 1y",
-    "tz": "PKT | Any",
-    "industries": "Oil and Gas, Software Devolpment, LLMs, Pets Guardianship",
-    "dep": "Normal"
   },
   {
     "name": "Arsalan Khalid",
@@ -1309,17 +693,6 @@
     "dep": "Low"
   },
   {
-    "name": "Arslan Tariq",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, Javascript, React, Django, Fast API, Typescript, ROR, AWS",
-    "exp": "2 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
     "name": "Asad Ali",
     "team": "Fahad Hassan",
     "designation": "Trainee ASE",
@@ -1329,17 +702,6 @@
     "tz": "EST",
     "industries": "",
     "dep": "Low"
-  },
-  {
-    "name": "Asad Rehman",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "React",
-    "stacks": "Javascript, React, Node.js, AWS, Typescript, Docker, MERN, Next",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "E-commerce & Retail, Education, Real Estate, Hospitality",
-    "dep": "Normal"
   },
   {
     "name": "Asad Tariq",
@@ -1373,50 +735,6 @@
     "tz": "EST",
     "industries": "",
     "dep": "Normal"
-  },
-  {
-    "name": "Asadullah Zahid",
-    "team": "Talha Mughal",
-    "designation": "SQA",
-    "primary": "QA Automation, QA - Manual",
-    "stacks": "Java, Azure, QA - Manual , QA Automation, Javascript",
-    "exp": "1",
-    "tz": "Anytime",
-    "industries": "Real Estate, Insurance, FinTech",
-    "dep": "Normal"
-  },
-  {
-    "name": "Awais Ahmad",
-    "team": "Ahmed Wasim",
-    "designation": "SSE",
-    "primary": "MERN",
-    "stacks": "MERN, Next, React Native",
-    "exp": "3",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Awais Aman",
-    "team": "Ali Raza Watoo",
-    "designation": "TL",
-    "primary": "React",
-    "stacks": "React, ROR, AWS, GraphQL, Javascript, React Native, Typescript",
-    "exp": "9",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Awais Amin",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "AI / ML",
-    "stacks": "AI / ML, AWS, Docker, Python, Flask, Django, LLM, NLP, Fast API, SQL, Deep learning",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
   },
   {
     "name": "Awais Mohammad",
@@ -1463,50 +781,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Ayesha Zafar Dar",
-    "team": "Ali Raza Watoo",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "Python, React, Django, Typescript, Javascript",
-    "exp": "Below 1",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Ayila Jawad",
-    "team": "Yasir Barkat",
-    "designation": "FC",
-    "primary": "Dynamics F&O",
-    "stacks": "Microsoft Project Operations: Sales to project initiation cycle, Project Delivery Cycle (WBS), Resource Management Cycle, Project Billing Cycle, Dual-write Integration with D365 F&O. Finance Modules: GL, AP, AR, Budgeting, Subscription Billing, Financial Reporting, ACH payments (NACHA). SCM Modules: PIM, IM, TMS, 3PL Integration (PTL, UPS Worldship), BYOD. Documentation: CR, FDD, FRD, Fit-Gap Analysis, and BRD. Technical: X++. SSRS, Forms, Workflows, Security.",
-    "exp": "2.5 Years",
-    "tz": "PKT",
-    "industries": "Manufacturing, Distribution, and Health Sciences.",
-    "dep": "Normal"
-  },
-  {
-    "name": "Ayiza Asghar",
-    "team": "Ahmed Wasim",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN, Next, React Native",
-    "exp": "1.5",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Azan Arif",
-    "team": "Ghulam Murtaza",
-    "designation": "ATL",
-    "primary": "ROR",
-    "stacks": "ROR, Python, GraphQL, React, React Native, Javascript, AI / ML",
-    "exp": "4y",
-    "tz": "EST",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Azan Rashid",
     "team": "Ahmed Wasim",
     "designation": "SE",
@@ -1518,28 +792,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Aziz ur Rehman Khan",
-    "team": "Aqib Maqbool",
-    "designation": "SE",
-    "primary": "Cloud Engineer",
-    "stacks": "Cloud Engineer, SRE, DevOps",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Azmat Ali",
-    "team": "Ali Raza Watoo",
-    "designation": "ATL",
-    "primary": "React",
-    "stacks": "React, ROR, Nest, Next, Node",
-    "exp": "4",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Bakhtawar Maqsood",
     "team": "Ahmed Wasim",
     "designation": "ATL",
@@ -1548,28 +800,6 @@
     "exp": "4",
     "tz": "Anytime",
     "industries": "Saas, FinTech, Healthcare, Communication platform",
-    "dep": "Normal"
-  },
-  {
-    "name": "Basim Akram",
-    "team": "Fahad Hassan",
-    "designation": "SE-2",
-    "primary": "GenAI, Python, AI/ML",
-    "stacks": "GenAI, Python, AI/ML, AWS, Azure, Cloud Engineer, Docker, MongoDB, SQL, Computer Vision, Data Analyst",
-    "exp": "",
-    "tz": "PKT",
-    "industries": "Information Technology, Healthcare, Telecom, FinTech",
-    "dep": "Normal"
-  },
-  {
-    "name": "Bilal Afzal",
-    "team": "Yasir Barkat",
-    "designation": "SE",
-    "primary": "Dynamics F&O",
-    "stacks": "X++, Integration, C#, Reporting, SQL, Security.",
-    "exp": "2.5 Years",
-    "tz": "PKT/EST",
-    "industries": "Finance, Supply chain, Hr Payroll",
     "dep": "Normal"
   },
   {
@@ -1595,17 +825,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Bilal Hassan",
-    "team": "Aqib Maqbool",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, React, AWS, Docker, DevOps, Python, Javascript, SQL, Zoho",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "E-commerce & Retail, Hospitality, Information Technology, CRM, Healthcare, FinTech",
-    "dep": "High"
-  },
-  {
     "name": "Bilal Jawid",
     "team": "Awais Mushtaq",
     "designation": "ATL",
@@ -1617,50 +836,6 @@
     "dep": "Low"
   },
   {
-    "name": "Bilal Nadeem",
-    "team": "Mahroz",
-    "designation": "SQA",
-    "primary": "QA Automation",
-    "stacks": "QA Automation, QA - Manual",
-    "exp": "2.5 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Bilal Zahid",
-    "team": "Saad Team",
-    "designation": "SSE",
-    "primary": "Python",
-    "stacks": "Python, React, ROR, Javascript, Typescript, Java",
-    "exp": "4y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Burhan Ahmad Khan",
-    "team": "Ghulam Murtaza",
-    "designation": "SSE",
-    "primary": "MERN",
-    "stacks": "Docker, GraphQL, Javascript, MERN, Nest, Next, Node, React Native, React, Typescript, ROR, Python",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "E-commerce & Retail, FinTech, Information Technology",
-    "dep": "High"
-  },
-  {
-    "name": "Burhan Azhar",
-    "team": "Ali Raza Watoo",
-    "designation": "SE",
-    "primary": "QA - Manual",
-    "stacks": "QA - Manual , QA Automation",
-    "exp": "4",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Ch Waleed Ishtiaq",
     "team": "Mahroz",
     "designation": "ASE",
@@ -1669,17 +844,6 @@
     "exp": "Less than 1 yr",
     "tz": "PST",
     "industries": "Chat Bots, Networking and cybersecurity solution",
-    "dep": "Normal"
-  },
-  {
-    "name": "Daib Tariq",
-    "team": "Yasir Barkat",
-    "designation": "AFC",
-    "primary": "Dynamics F&O",
-    "stacks": "Supply Chain",
-    "exp": "3 Months",
-    "tz": "PKT",
-    "industries": "-",
     "dep": "Normal"
   },
   {
@@ -1694,17 +858,6 @@
     "dep": "High"
   },
   {
-    "name": "Daniyal Ahmad Rizwan",
-    "team": "Aqib Maqbool",
-    "designation": "SE",
-    "primary": "",
-    "stacks": "",
-    "exp": "",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Daniyal Aijaz",
     "team": "Fahad Hassan",
     "designation": "Trainee ASE",
@@ -1716,72 +869,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Daniyal Jazeel",
-    "team": "Samrah Ishtiaq",
-    "designation": "SE",
-    "primary": "Salesforce",
-    "stacks": "Salesforce, Javascript, React, Node",
-    "exp": "2.5",
-    "tz": "Anytime",
-    "industries": "NGO, Real Estate, Finance, Consultancy, IT & Infrastructure",
-    "dep": "Normal"
-  },
-  {
-    "name": "Danyal Ahmed",
-    "team": "Saad Team",
-    "designation": "SE",
-    "primary": ".Net",
-    "stacks": ".Net, Angular, React, C#, Javascript, Fast API, Docker",
-    "exp": "1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Duaa Rizwan",
-    "team": "Yasir Barkat",
-    "designation": "FC",
-    "primary": "Dynamics F&O",
-    "stacks": "Finance , Project Management and Accounting, Project Operations, Subscription billing, Expense Management, SCM , Landed cost, vendor collaboration, Inventory management.",
-    "exp": "3 years",
-    "tz": "CST",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Ehsan Ullah",
-    "team": "Saad Team",
-    "designation": "ASE",
-    "primary": ".Net",
-    "stacks": ".Net, C#",
-    "exp": "Less than 1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Ehtisham Hafeez",
-    "team": "Ali Raza Watoo",
-    "designation": "SSE",
-    "primary": "Typescript",
-    "stacks": "Typescript, React, Node, Javascript",
-    "exp": "3",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Ehtisham Mubashar",
-    "team": "Aqib Maqbool",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN, Angular, Typescript, Javascript, Nest, Next, Node, React",
-    "exp": "3y",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Eman Muneeb",
     "team": "Junaid Rehmat",
     "designation": "SE",
@@ -1790,17 +877,6 @@
     "exp": "Less than 1y",
     "tz": "PKT",
     "industries": "Healthcare, Sports",
-    "dep": "Normal"
-  },
-  {
-    "name": "Fahad Akram",
-    "team": "Saad Team",
-    "designation": "SQA",
-    "primary": "QA Automation",
-    "stacks": "QA Automation, QA - Manual , SDET, Selenium, Cypress, playwright, Appium, Java, Javascript, Typescript, SQL",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "Normal"
   },
   {
@@ -1837,17 +913,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Fahad Murtaza",
-    "team": "Awais Mushtaq",
-    "designation": "SSE",
-    "primary": "Django",
-    "stacks": "Javascript, Java, MERN, Next, Node, ROR, React, Salesforce, Typescript",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "E-commerce & Retail, Education, Entertainment",
-    "dep": "High"
-  },
-  {
     "name": "Fahad Zubair",
     "team": "Fahad Hassan",
     "designation": "ASE",
@@ -1870,61 +935,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Faisal Rafiq",
-    "team": "Mahroz",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, Django, React, DevOps, Python, Typescript, Angular, AWS, Docker , GraphQL, Javascript, Next",
-    "exp": "3 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Faisal Shahzad",
-    "team": "Ahmed Wasim",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR",
-    "exp": "2.5",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Faiza Ashfaq",
-    "team": "Talha Mughal",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Faizan Ali",
-    "team": "Ahmed Wasim",
-    "designation": "SSE",
-    "primary": "Python",
-    "stacks": "Python, MERN, ROR, AWS, DevOps, GCP, Flutter, ETLs, Django, Flask, SQL, Fast API, Javascript, Docker, GraphQL, Next, Node, Typescript, GenAI, Rest API, React, React Native",
-    "exp": "3.5",
-    "tz": "Anytime",
-    "industries": "E-commerce & Retail, Cyber Security, Cloud, Real Estate, Entertainment, AI/ ML, Oil and Gas, Travel and Tourism, Saas",
-    "dep": "High"
-  },
-  {
-    "name": "Faizan Aslam",
-    "team": "Fahad Hassan",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "Python, AI / ML, Docker, AWS, Deep Learning",
-    "exp": "Below 1",
-    "tz": "Anytime",
-    "industries": "Gaming and 3D, Travel and Tourism",
-    "dep": "Normal"
-  },
-  {
     "name": "Faizan Ul Haq",
     "team": "Mahroz",
     "designation": "SSE",
@@ -1934,28 +944,6 @@
     "tz": "PST",
     "industries": "Healthcare, FinTech, Information Technology, E-commerce & Retail, Software Development Services, Architecture and Planning",
     "dep": "High"
-  },
-  {
-    "name": "Fakhar Ayub Rana",
-    "team": "Aqib Maqbool",
-    "designation": "SE",
-    "primary": "React",
-    "stacks": "React, React Native, Next, Node, Nest, AWS, Javascript, Typescript, MERN",
-    "exp": "2.5y",
-    "tz": "PST",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Fareeha Nasir Khan",
-    "team": "Ahmed Wasim",
-    "designation": "ASE",
-    "primary": "React",
-    "stacks": "MERN, React, Typescript,",
-    "exp": "Less than 1y",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
   },
   {
     "name": "Farhan Javed",
@@ -1980,28 +968,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Farrukh Ahmed Khan",
-    "team": "Saad Team",
-    "designation": "SE",
-    "primary": ".Net",
-    "stacks": ".Net, ASP, C#",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Faseeh Ullah Jafar",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "Angular",
-    "stacks": "Angular, .Net, React, Typescript, QA Automation, AI / ML, MERN, Python, ROR",
-    "exp": "1y",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Fatima Muneer",
     "team": "Mahroz",
     "designation": "ASE",
@@ -2013,28 +979,6 @@
     "dep": "High"
   },
   {
-    "name": "Fazal Rabbi",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "AI / ML",
-    "stacks": "AI / ML, Docker , Python, Flask, Deep learning, Django, GenAI, SQL",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Fazal Ur Rehman",
-    "team": "Junaid Ali",
-    "designation": "ATL",
-    "primary": "ROR",
-    "stacks": "ROR, React, Javascript, Typescript, Node",
-    "exp": "4y",
-    "tz": "EST",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Fiza Shahzad",
     "team": "Mahroz",
     "designation": "ASE",
@@ -2042,17 +986,6 @@
     "stacks": "AI / ML, Python, GenAI, Deep learning, SQL, NLP, LLM",
     "exp": "1 yr",
     "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Fizza Nasir",
-    "team": "Ahmed Wasim",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN, .Net",
-    "exp": "1 year",
-    "tz": "PKT",
     "industries": "",
     "dep": "Normal"
   },
@@ -2112,39 +1045,6 @@
     "dep": "High"
   },
   {
-    "name": "H Kamran Shahid",
-    "team": "Fahad Hassan",
-    "designation": "SE-2",
-    "primary": "Data Analyst",
-    "stacks": "Python, SQL, AWS, MongoDB, Data Analyst",
-    "exp": "3.5y",
-    "tz": "Anytime",
-    "industries": "Information Technology, Finance, Telecom",
-    "dep": "Normal"
-  },
-  {
-    "name": "Habib Ur Rehman",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "Next",
-    "stacks": "Next, Nest, GraphQL, Typescript, DevOps, RecatNative, React, Node, Python, MERN, Javascript, Django",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Habiba",
-    "team": "Junaid Rehmat",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, Django, Fast Api",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Hadia Chaudhary",
     "team": "Junaid Rehmat",
     "designation": "SSE",
@@ -2153,39 +1053,6 @@
     "exp": "3y",
     "tz": "Anytime",
     "industries": "Software Devolpment, Construction, E-commerce & Retail, Real Estate, Technology service partner",
-    "dep": "Normal"
-  },
-  {
-    "name": "Hadia Shabbir",
-    "team": "Ahmed Wasim",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN, Python, Next, Nest, Angular",
-    "exp": "1 year",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Hafiz Muhammad Aamir",
-    "team": "Saad Team",
-    "designation": "SE",
-    "primary": "Blockchain",
-    "stacks": "Blockchain, Web3, Ethereum, Solidity, Wallets",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Hafiz Muhammad Adnan",
-    "team": "Fahad Hassan",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "Data Analyst, Python, AI/ML",
-    "exp": "Less than 1y",
-    "tz": "Anytime",
-    "industries": "Real Estate",
     "dep": "Normal"
   },
   {
@@ -2198,17 +1065,6 @@
     "tz": "Anytime",
     "industries": "",
     "dep": "Normal"
-  },
-  {
-    "name": "Hafiz Muhammad Rehan",
-    "team": "Junaid Rehmat",
-    "designation": "SE",
-    "primary": "Flutter",
-    "stacks": "Flutter",
-    "exp": "1y",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
   },
   {
     "name": "Hafiz Muhammad Uzair Warsi",
@@ -2233,28 +1089,6 @@
     "dep": "High"
   },
   {
-    "name": "Hafiz Uzair Abbas",
-    "team": "Saad Team",
-    "designation": "SSQA",
-    "primary": "QA Automation",
-    "stacks": "QA Automation, QA - Manual , SDET, Selenium, playwright, Cypress, SQL, Appium, Python, Javascript, Typescript",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Hamdan Aziz",
-    "team": "Ahmed Wasim",
-    "designation": "ASE",
-    "primary": "Python, MERN, Next",
-    "stacks": "MERN,Node,Nextjs,Javascript,Python,SQL,Figma,TYpescript",
-    "exp": "Less than 1y",
-    "tz": "PKT",
-    "industries": "Information Technology",
-    "dep": "Normal"
-  },
-  {
     "name": "Hammad Abdullah",
     "team": "Aqib Maqbool",
     "designation": "SSE",
@@ -2266,17 +1100,6 @@
     "dep": "High"
   },
   {
-    "name": "Hammad Ajmal",
-    "team": "Junaid Rehmat",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, Django, React",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Hammad Rashid",
     "team": "Ghulam Murtaza",
     "designation": "SSE",
@@ -2285,50 +1108,6 @@
     "exp": "2.5y",
     "tz": "Anytime",
     "industries": "E-commerce & Retail",
-    "dep": "High"
-  },
-  {
-    "name": "Hammad Saeed",
-    "team": "Saad Team",
-    "designation": "SSE",
-    "primary": "React",
-    "stacks": "React, ROR, Javascript, Typescript",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Hamza Ahmad Khan",
-    "team": "Saad Team",
-    "designation": "ASE",
-    "primary": ".Net",
-    "stacks": ".Net",
-    "exp": "Less than 1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Hamza Akram",
-    "team": "Aqib Maqbool",
-    "designation": "SSE",
-    "primary": "MERN, ROR",
-    "stacks": "Node.js, React, Nest, Next, Javascript, Typescript",
-    "exp": "Less than 1 yr",
-    "tz": "PKT",
-    "industries": "FinTech, E-commerce & Retail, Education, Healthcare, Information Technology, Sports, Travel and Tourism",
-    "dep": "Normal"
-  },
-  {
-    "name": "Hamza Ali",
-    "team": "Talha Mughal",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, React, Node, Javascript, MERN, Typescript, GraphQL, Next, Nest",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -2343,28 +1122,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Hamza Aqeel",
-    "team": "Junaid Rehmat",
-    "designation": "ASE",
-    "primary": "DevOps",
-    "stacks": "AWS, Docker , DevOps, Terraform, CI/CD",
-    "exp": "Less than 1y",
-    "tz": "PKT",
-    "industries": "Software Devolpment",
-    "dep": "Normal"
-  },
-  {
-    "name": "Hamza Fayyaz",
-    "team": "Ali Raza Watoo",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, React, AWS, Laravel, Vue.js, Django",
-    "exp": "2",
-    "tz": "EST",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Hamza Jamil",
     "team": "Ahmed Wasim",
     "designation": "SE",
@@ -2374,28 +1131,6 @@
     "tz": "Anytime",
     "industries": "",
     "dep": "Low"
-  },
-  {
-    "name": "Hamza Masood",
-    "team": "Ghulam Murtaza",
-    "designation": "SSE",
-    "primary": "MERN",
-    "stacks": "Typescript, React, Next, Node, Nest, MERN, Javascript, Blockchain, ROR",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "FinTech, Gaming and 3D, E-commerce & Retail",
-    "dep": "High"
-  },
-  {
-    "name": "Hamza Mukhtar",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, React, React Native, MERN, GraphQL, AWS, Javascript, Typescript, Node.js",
-    "exp": "3.5 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
   },
   {
     "name": "Hamza Naeem",
@@ -2497,17 +1232,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Haseeb Rehmat Ali",
-    "team": "Talha Mughal",
-    "designation": "SE",
-    "primary": "Javascript",
-    "stacks": "Javascript, MERN, Next, Node, Python, React, Typescript, PHP, GraphQL",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Haseeb Riaz",
     "team": "Tensei Games",
     "designation": "SE",
@@ -2549,17 +1273,6 @@
     "exp": "2y",
     "tz": "EST",
     "industries": "Information Technology, Healthcare, FinTech, Real Estate",
-    "dep": "High"
-  },
-  {
-    "name": "Hassaan Farooq",
-    "team": "Aqib Maqbool",
-    "designation": "SQA",
-    "primary": "QA - Manual",
-    "stacks": "QA - Manual",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -2607,28 +1320,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Hassan Jabbar",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "MERN, Python, GenAI",
-    "stacks": "Angular, .Net, Typescript, Azure, Node, Python, Javascript, MERN, MySQL, Next, Flask, Django, DevOps, React, Docker, Nest, Microservices",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "Healthcare, E-commerce & Retail, Saas, Chat Bots, Software Development Services",
-    "dep": "High"
-  },
-  {
-    "name": "Hassan Murtaza",
-    "team": "Ahmed Wasim",
-    "designation": "ASE",
-    "primary": "MERN",
-    "stacks": "MERN, .Net",
-    "exp": "Less than 1",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Hassan Najam",
     "team": "Ashar Ali",
     "designation": "SE",
@@ -2638,28 +1329,6 @@
     "tz": "Anytime",
     "industries": "Information Technology, Telecom, E-commerce & Retail",
     "dep": "High"
-  },
-  {
-    "name": "Hassan Raza",
-    "team": "Awais Mushtaq",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "AWS, MERN, Next, Node, React, ROR, Typescript, Javascript, Docker",
-    "exp": "4",
-    "tz": "Anytime",
-    "industries": "Architecture and Planning, Real Estate, IT & Infrastructure, Travel and Tourism",
-    "dep": "Normal"
-  },
-  {
-    "name": "Hassan Siddique",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "Open Stack",
-    "stacks": "MERN",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
   },
   {
     "name": "Hassan Sohail Malik",
@@ -2673,28 +1342,6 @@
     "dep": "High"
   },
   {
-    "name": "Hassan Zaheer",
-    "team": "Aqib Maqbool",
-    "designation": "DevOps Engineer",
-    "primary": "Cloud Engineer",
-    "stacks": "Cloud Engineer, SRE, DevOps",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Hassan Zameer",
-    "team": "Ghulam Murtaza",
-    "designation": "SSE",
-    "primary": "GraphQL",
-    "stacks": "GraphQL, Javascript, MERN, Nest, Docker , Node, Python, ROR, React, React Native, Typescript, AWS",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Haziq Ali",
     "team": "Ahmed Wasim",
     "designation": "ASE",
@@ -2704,17 +1351,6 @@
     "tz": "Anytime",
     "industries": "Information Technology",
     "dep": "Normal"
-  },
-  {
-    "name": "Hiba Saqib",
-    "team": "Junaid Ali",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, AWS, Javascript",
-    "exp": "2.5y",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Low"
   },
   {
     "name": "Hibatullah Rana",
@@ -2739,61 +1375,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Hira Shahid",
-    "team": "Talha Mughal",
-    "designation": "SE",
-    "primary": "Javascript",
-    "stacks": "Javascript, MERN, React, Typescript, Nest, Next, Node",
-    "exp": "1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Hira Waheed",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, AWS, Django, Fast API",
-    "exp": "1.5 yrs",
-    "tz": "Anytime",
-    "industries": "E-commerce & Retail, Information Technology, Cybersecurity",
-    "dep": "High"
-  },
-  {
-    "name": "Humaira Zaman",
-    "team": "Talha Mughal",
-    "designation": "SE",
-    "primary": "AI / ML",
-    "stacks": "AI / ML, Javascript, MERN, ROR, Salesforce, Next, Node, React, Typescript, Python, AWS, Docker, Agentic Development, RAG Developemnt",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "Healthcare, FinTech, Farming, Beauty, Real Estate",
-    "dep": "Normal"
-  },
-  {
-    "name": "Hur Abbas",
-    "team": "Ashar Ali",
-    "designation": "TL",
-    "primary": "MERN",
-    "stacks": "MERN, Blockchain, Java, React, React Native, Node, Next, Nest, AWS, Docker , Javascript, Typescript",
-    "exp": "7y",
-    "tz": "Anytime",
-    "industries": "FinTech, Healthcare, Real Estate, Ride hilling, Social Media, E-commerce & Retail",
-    "dep": "Normal"
-  },
-  {
-    "name": "Husnain Asif",
-    "team": "Ghulam Murtaza",
-    "designation": "SSE",
-    "primary": "Python",
-    "stacks": "Python, MERN",
-    "exp": "2.5y",
-    "tz": "EST",
-    "industries": "Sports, E-commerce & Retail, Healthcare",
-    "dep": "High"
-  },
-  {
     "name": "Husnain Siddique",
     "team": "Mahroz",
     "designation": "SSE",
@@ -2814,39 +1395,6 @@
     "tz": "PKT",
     "industries": "HR, HR and management systems, Payroll, Information Technology",
     "dep": "High"
-  },
-  {
-    "name": "Huzeyfa Saqib",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "Open Stack",
-    "stacks": "MERN, Python, Fast API, Next",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Ibrahim Ahmad Khan Sherwani",
-    "team": "Junaid Ali",
-    "designation": "SE",
-    "primary": "Node",
-    "stacks": "Node, Shopify, SAM Architechture, React, Next",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Ibrahim Butt",
-    "team": "Tensei Games",
-    "designation": "SE",
-    "primary": "Game Development",
-    "stacks": "Computer Vision, Azure, Blockchain, Firebase, Unity C#, Networking, Netcode, GraphQL, Unity Multiplayer, Photon Stacks",
-    "exp": "4.5y",
-    "tz": "PKT | EST",
-    "industries": "Gaming and 3D",
-    "dep": "Normal"
   },
   {
     "name": "Ibrahim Tariq",
@@ -2959,17 +1507,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Junaid Ali Tariq",
-    "team": "Aqib Maqbool",
-    "designation": "ATL",
-    "primary": "ROR",
-    "stacks": "ROR, Javascript, AWS, Docker, React, Typescript, GraphQL",
-    "exp": "5.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Junaid Iqbal Shah",
     "team": "Fahad Hassan",
     "designation": "SSE",
@@ -2979,17 +1516,6 @@
     "tz": "Anytime",
     "industries": "Education, Healthcare, E-commerce & Retail, FinTech, Sports, Travel and Tourism, Pets Guardianship",
     "dep": "High"
-  },
-  {
-    "name": "Junaid Islam",
-    "team": "Talha Mughal",
-    "designation": "FEE",
-    "primary": "React",
-    "stacks": "React, Next, Vue, Javascript, Typescript, Node, Angular",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
   },
   {
     "name": "Kaashaan Ali Karim",
@@ -3124,17 +1650,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Laiba Tariq",
-    "team": "Ali Raza Watoo",
-    "designation": "ASE",
-    "primary": "React",
-    "stacks": "React, Next, ROR, AWS, React Native, Javascript, Typescript",
-    "exp": "Below 1",
-    "tz": "PST",
-    "industries": "Real Estate, Social Media",
-    "dep": "High"
-  },
-  {
     "name": "Laila Khan",
     "team": "Mahroz",
     "designation": "SSE",
@@ -3157,105 +1672,6 @@
     "dep": "High"
   },
   {
-    "name": "M Arhum Qayyum Khan",
-    "team": "Ghulam Murtaza",
-    "designation": "ASE",
-    "primary": "Python, django",
-    "stacks": "Python, django",
-    "exp": "Less than 1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "M Hamza Shakeel",
-    "team": "Aqib Maqbool",
-    "designation": "SSE",
-    "primary": "React Native",
-    "stacks": "React Native, MERN, Next, Javascript, Typescript, GraphQL, AWS, Docker",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "M Hassan Muzaffar",
-    "team": "Ahmed Wasim",
-    "designation": "ASE",
-    "primary": "MERN, Javascript",
-    "stacks": "Next, Node, React, Typescript, SQL, NoSQL, AI/ML, FAST API, Python",
-    "exp": "Less than 1y",
-    "tz": "Anytime",
-    "industries": "Information Technology, Education, Healthcare, Warehouse Inventory Management, Architecture and Planning",
-    "dep": "Normal"
-  },
-  {
-    "name": "M. Asad Yasin",
-    "team": "Ghulam Murtaza",
-    "designation": "SSE",
-    "primary": "Python",
-    "stacks": "Python, React, django, flask, LLM, Next, ROR, Javascript, DevOps, Nest",
-    "exp": "3.5y",
-    "tz": "Anytime",
-    "industries": "E-commerce & Retail, Real Estate, Customer Relationship Management (CRM), Healthcare, Education, Architecture and Planning",
-    "dep": "High"
-  },
-  {
-    "name": "M. Hamza Razzaq",
-    "team": "Ghulam Murtaza",
-    "designation": "SSE",
-    "primary": "MERN",
-    "stacks": "Docker, GraphQL, Javascript, Elixir, MERN, Nest, Next, Node, Typescript, React, Python",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "E-commerce & Retail, Education, FinTech, Healthcare, Hospitality, Information Technology, Sports",
-    "dep": "High"
-  },
-  {
-    "name": "M. Ibrahim Raza",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "Fast API, Flask, Javascript, Python, React, Next, Django",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "E-commerce & Retail",
-    "dep": "Normal"
-  },
-  {
-    "name": "Maazin Zaidi",
-    "team": "Awais Mushtaq",
-    "designation": "ASE",
-    "primary": "AI / ML",
-    "stacks": "AI / ML, Python, Deep Learning, Docker, Flask, GCP, Azure",
-    "exp": "Less than 1y",
-    "tz": "EST",
-    "industries": "E-commerce & Retail, Education",
-    "dep": "High"
-  },
-  {
-    "name": "Maham Wajid",
-    "team": "Junaid Rehmat",
-    "designation": "SE",
-    "primary": "Android",
-    "stacks": "Android, Java",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Maheen Butt",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "Javascript",
-    "stacks": "Django, Flask, .Net, Javascript, Python, React, GOLANG",
-    "exp": "2y",
-    "tz": "EST",
-    "industries": "Healthcare, FinTech, Transport",
-    "dep": "High"
-  },
-  {
     "name": "Maheen Zahid",
     "team": "Ghulam Murtaza",
     "designation": "ATL",
@@ -3264,17 +1680,6 @@
     "exp": "5y",
     "tz": "Anytime",
     "industries": "E-commerce & Retail, Education, Travel and Tourism",
-    "dep": "Normal"
-  },
-  {
-    "name": "Maheer Taha",
-    "team": "Ahmed Wasim",
-    "designation": "ASE",
-    "primary": "ROR",
-    "stacks": "ROR, Next",
-    "exp": "Less than 1",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "Normal"
   },
   {
@@ -3297,28 +1702,6 @@
     "exp": "2 years",
     "tz": "PKT",
     "industries": "CRM, Communication platform, E-commerce & Retail, Oil and Gas",
-    "dep": "Normal"
-  },
-  {
-    "name": "Malaika Tariq",
-    "team": "Aqib Maqbool",
-    "designation": "ASE",
-    "primary": "Python, Django, ROR",
-    "stacks": "React, Python, MERN, Java, Javascript, SQL, Fast API, Node.js",
-    "exp": "",
-    "tz": "PKT",
-    "industries": "E-commerce & Retail",
-    "dep": "Normal"
-  },
-  {
-    "name": "Malik Muhammad Faizan",
-    "team": "Ahmed Wasim",
-    "designation": "ASE",
-    "primary": "MERN",
-    "stacks": "MERN, Flutter, Next, Python",
-    "exp": "Less than 1",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "Normal"
   },
   {
@@ -3388,17 +1771,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Mateeh Ullah",
-    "team": "Junaid Rehmat",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, Django, Fast Api",
-    "exp": "1.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Mauarij Hussain Khan",
     "team": "Junaid Rehmat",
     "designation": "ASE",
@@ -3432,17 +1804,6 @@
     "dep": "High"
   },
   {
-    "name": "Mehak Fatima",
-    "team": "Dania Asrar Butt",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, Node, React, Docker",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "Hospitality, Healthcare, E-commerce & Retail",
-    "dep": "Low"
-  },
-  {
     "name": "Mehar Aziz",
     "team": "Ghulam Murtaza",
     "designation": "ASE",
@@ -3465,17 +1826,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Mehmood Hassan Shah",
-    "team": "Ahmed Wasim",
-    "designation": "SE",
-    "primary": "Django",
-    "stacks": "Django, ROR",
-    "exp": "1 year",
-    "tz": "PKT",
-    "industries": "Entertainment, Healthcare",
-    "dep": "High"
-  },
-  {
     "name": "Mehmood Ur Rasheed",
     "team": "E-Commerce & Digital Retail",
     "designation": "SE-I",
@@ -3484,17 +1834,6 @@
     "exp": "2y",
     "tz": "PKT",
     "industries": "E-commerce & Retail",
-    "dep": "High"
-  },
-  {
-    "name": "Mehral Qamar",
-    "team": "Talha Mughal",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN, ROR, React",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -3520,17 +1859,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Mehroz Ali",
-    "team": "Ali Raza Watoo",
-    "designation": "SSE",
-    "primary": "MERN",
-    "stacks": "MERN, Javascript, Nest, Next, Node, AWS, ROR, React, Typescript",
-    "exp": "3",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Mehroz Muzaffar",
     "team": "Aqib Maqbool",
     "designation": "SSE",
@@ -3551,17 +1879,6 @@
     "tz": "PKT",
     "industries": "E-commerce & Retail",
     "dep": "High"
-  },
-  {
-    "name": "Mian Afzaal Zahoor",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "GraphQL",
-    "stacks": "GraphQL, DevOps, Javascript, MERN, Nest, Next, Node, ROR, React, React Native, Node.js, SQL, Flask, Typescript",
-    "exp": "2.5 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
   },
   {
     "name": "Minahil Sadiq",
@@ -3619,39 +1936,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Mishgha Zahid",
-    "team": "Ali Raza Watoo",
-    "designation": "SE",
-    "primary": "Java",
-    "stacks": "Java, Springboot, Python",
-    "exp": "1",
-    "tz": "PST",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Moazzam Anwar",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "AI,ML",
-    "stacks": "AI / ML, Docker , ML Ops, LLM, Fast API, AWS",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Moeez rehman",
-    "team": "Ali Raza Watoo",
-    "designation": "SE",
-    "primary": "Java",
-    "stacks": "Java, Springboot, QA - Manual , PHP, AWS, GoLang",
-    "exp": "1",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Moeiz Shahzad",
     "team": "Mahroz",
     "designation": "SE",
@@ -3660,39 +1944,6 @@
     "exp": "1.5 yrs",
     "tz": "Anytime",
     "industries": "E-commerce & Retail, Farming, Information Technology, ERP",
-    "dep": "Normal"
-  },
-  {
-    "name": "Mohammad Ali Hamza",
-    "team": "Ali Raza Watoo",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, React, Python, MERN",
-    "exp": "2",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Mohammad Asadullah Siddiqui",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, Laravel, PHP, AWS, React",
-    "exp": "2.5 yrs",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Mohammad Asim",
-    "team": "Saad Team",
-    "designation": "SSE",
-    "primary": "React",
-    "stacks": "React, ROR, Javascript, Typescript, Python, AWS, Nest, GraphQL",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "Normal"
   },
   {
@@ -3707,28 +1958,6 @@
     "dep": "Low"
   },
   {
-    "name": "Mohammad Usama Anser",
-    "team": "Ahmed Wasim",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, React",
-    "exp": "3",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Mohammad Wahaj Tariq",
-    "team": "Ali Raza Watoo",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "Python, MERN, AI / ML",
-    "exp": "1",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Mohammad Waqas Taj",
     "team": "Aqib Maqbool",
     "designation": "SSE",
@@ -3738,39 +1967,6 @@
     "tz": "Anytime",
     "industries": "FinTech, Healthcare, Hospitality, Information Technology, E-commerce & Retail, Education",
     "dep": "Low"
-  },
-  {
-    "name": "Mohammad Yousaf",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Docker, Python, AWS, FastAPI, Django, Flask, AI / ML, React",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "FinTech, AI Chatbot, Computer Vision, E-commerce & Retail",
-    "dep": "High"
-  },
-  {
-    "name": "Mohsin Amjad",
-    "team": "Aqib Maqbool",
-    "designation": "PM",
-    "primary": "Project Management",
-    "stacks": "Project Management",
-    "exp": "16y",
-    "tz": "Anytime",
-    "industries": "FinTech, Telecom, Agritech, Information Technology",
-    "dep": "High"
-  },
-  {
-    "name": "Mohsin Tariq",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, Javascript, SQL",
-    "exp": "1.5 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
   },
   {
     "name": "Mohsin Zafar",
@@ -3795,50 +1991,6 @@
     "dep": "High"
   },
   {
-    "name": "Momina Ali",
-    "team": "Yasir Barkat",
-    "designation": "FC",
-    "primary": "Dynamics F&O",
-    "stacks": "Finance Modules:GL, AP, AR, Cash &Bank, Credit and Collections, Asset Leasing, Fixed Assets Supply chain Modules: Asset Management, Inventory Management,Procurment, Product info",
-    "exp": "2.5 years",
-    "tz": "PKT",
-    "industries": "Retail,Food",
-    "dep": "Normal"
-  },
-  {
-    "name": "Moniza Irfan",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "PHP",
-    "stacks": "PHP, Laravel, SQL",
-    "exp": "2 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Mubashir",
-    "team": "Aqib Maqbool",
-    "designation": "DevOps Engineer",
-    "primary": "DevOps",
-    "stacks": "DevOps, Docker",
-    "exp": "",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Muddasar Hussain",
-    "team": "Ghulam Murtaza",
-    "designation": "ASE",
-    "primary": "Javascript",
-    "stacks": "Javascript, Typescript, MERN, Next, Node, Python, React, React Native",
-    "exp": "1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Mufeeza Aslam",
     "team": "Awais Mushtaq",
     "designation": "ASE",
@@ -3859,28 +2011,6 @@
     "tz": "Anytime",
     "industries": "",
     "dep": "Normal"
-  },
-  {
-    "name": "Muhamamd Daim Khan",
-    "team": "Awais Mushtaq",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, MERN, Javascript, Node, React",
-    "exp": "1y",
-    "tz": "PKT",
-    "industries": "Information Technology, Sports",
-    "dep": "Normal"
-  },
-  {
-    "name": "Muhammad Aamir Sattar",
-    "team": "Talha Mughal",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN, Docker , DevOps, Javascript, ML Ops, React, Typescript, Python",
-    "exp": "3y",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
   },
   {
     "name": "Muhammad Abdullah",
@@ -3949,17 +2079,6 @@
     "dep": "High"
   },
   {
-    "name": "Muhammad Afaq Zahoor",
-    "team": "Ghulam Murtaza",
-    "designation": "SQA",
-    "primary": "QA Automation",
-    "stacks": "QA Automation, QA - Manual",
-    "exp": "3y",
-    "tz": "PST",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Muhammad Afham",
     "team": "Junaid Rehmat",
     "designation": "ATL",
@@ -3969,17 +2088,6 @@
     "tz": "Anytime",
     "industries": "E-commerce & Retail, Oil and Gas, Construction, Architecture and Planning, Education, Healthcare",
     "dep": "Normal"
-  },
-  {
-    "name": "Muhammad Afnan Hashmi",
-    "team": "Talha Mughal",
-    "designation": "SE",
-    "primary": "Salesforce",
-    "stacks": "Salesforce, AI / ML, Java, Javascript, MERN, Node, Python, React",
-    "exp": "2y",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
   },
   {
     "name": "Muhammad Ahmad",
@@ -4015,28 +2123,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Muhammad Akif Arif",
-    "team": "Salman Ali",
-    "designation": "SE",
-    "primary": "Javascript",
-    "stacks": "Javascript, React, Typescript, ROR, Elixir, Heroku, Vue Js",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Ali",
-    "team": "Junaid Ali",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN, Next, Nest, Ember Js, AWS",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Muhammad Ali Hanjra",
     "team": "Usama Imtiaz",
     "designation": "ASE",
@@ -4056,17 +2142,6 @@
     "exp": "Less than 1y",
     "tz": "Anytime",
     "industries": "Software Devolpment, Healthcare",
-    "dep": "Normal"
-  },
-  {
-    "name": "Muhammad Ali Raza",
-    "team": "Ali Raza Watoo",
-    "designation": "ASE",
-    "primary": "MERN",
-    "stacks": "MERN",
-    "exp": "Below 1",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "Normal"
   },
   {
@@ -4092,61 +2167,6 @@
     "dep": "High"
   },
   {
-    "name": "Muhammad Anees Shafique",
-    "team": "Ali Raza Watoo",
-    "designation": "ATL",
-    "primary": "AWS",
-    "stacks": "AWS, Docker , GraphQL, PHP, Python, ROR, React, Javascript",
-    "exp": "5",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Annus",
-    "team": "Salman Ali",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, AWS, Node",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Ans",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "Javascript",
-    "stacks": "Javascript, ROR, React, Docker, Python",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Aqeel Yasin",
-    "team": "Aqib Maqbool",
-    "designation": "Associate Solution Architect",
-    "primary": "AI/ML",
-    "stacks": "AI/ML, Computer Vision, Docker, Deep Learning, GenAI, Python, MongoDB, SQL",
-    "exp": "8y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Muhammad Aqib Bin Naeem",
-    "team": "Junaid Rehmat",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN, Django",
-    "exp": "1.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Muhammad Armughan",
     "team": "Fahad Hassan",
     "designation": "SE",
@@ -4169,28 +2189,6 @@
     "dep": "High"
   },
   {
-    "name": "Muhammad Arslan",
-    "team": "Junaid Ali",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, .Net, Shopify, Angular, Node, React, AWS, Azure",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Muhammad Asad",
-    "team": "Ali Raza Watoo",
-    "designation": "SE",
-    "primary": "Rails",
-    "stacks": "Rails, GoLang, ReactJS",
-    "exp": "2",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Muhammad Asad Yasin",
     "team": "Ghulam Murtaza",
     "designation": "SE",
@@ -4211,28 +2209,6 @@
     "tz": "EST",
     "industries": "FinTech, Gaming and 3D, E-commerce & Retail, Logistics and Supply Chain, Real Estate",
     "dep": "Low"
-  },
-  {
-    "name": "Muhammad Awais",
-    "team": "Salman Ali",
-    "designation": "ASE",
-    "primary": "MERN",
-    "stacks": "ROR, MERN, Python, AWS, Docker, Javascript",
-    "exp": "Less than 1y",
-    "tz": "Anytime",
-    "industries": "Healthcare, E-commerce & Retail",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Awais Akhter",
-    "team": "Junaid Ali",
-    "designation": "ASE",
-    "primary": "Laravel",
-    "stacks": "Laravel, Python, Javascript, React",
-    "exp": "Less than 1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
   },
   {
     "name": "Muhammad Ayan",
@@ -4279,17 +2255,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Muhammad Bakhsh",
-    "team": "Fahad Hassan",
-    "designation": "ASE",
-    "primary": "AI/ML",
-    "stacks": "AI/ML, Python, GenAI, Deep Learning, Azure, Docker, Computer Vision",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "Healthcare, Finance, Logistics and Supply Chain, CRM, Real Estate",
-    "dep": "Normal"
-  },
-  {
     "name": "MUHAMMAD BASIM AYUB",
     "team": "Aqib Maqbool",
     "designation": "ATL",
@@ -4298,17 +2263,6 @@
     "exp": "0-1 year",
     "tz": "PST",
     "industries": "Healthcare, Automotive Industry, FinTech, Farming, Entertainment",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Bilal",
-    "team": "Talha Mughal",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, Next, React, Framer, MERN, Typescript",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -4356,17 +2310,6 @@
     "dep": "High"
   },
   {
-    "name": "Muhammad Ertiza Ejaz",
-    "team": "Junaid Ali",
-    "designation": "TL",
-    "primary": "ROR",
-    "stacks": "ROR, React, Node, Angular, Laravel, Vue, SQL, NoSQL, Monolithic, Microservices",
-    "exp": "6y",
-    "tz": "EST",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Muhammad Faisal",
     "team": "Aqib Maqbool",
     "designation": "SQA",
@@ -4375,17 +2318,6 @@
     "exp": "1 yr",
     "tz": "PKT",
     "industries": "Information Technology, Gaming and 3D, Travel and Tourism, Automotive Industry",
-    "dep": "Normal"
-  },
-  {
-    "name": "Muhammad Faizan",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "AI/ML",
-    "stacks": "AI / ML, Next, Python, Flask, Django",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "Finance, Stocks",
     "dep": "Normal"
   },
   {
@@ -4400,17 +2332,6 @@
     "dep": "Low"
   },
   {
-    "name": "Muhammad Faizan Qadri",
-    "team": "Mahroz",
-    "designation": "SSE",
-    "primary": "ROR, Java",
-    "stacks": "ROR, Java, AWS, React, SQL",
-    "exp": "3.5y",
-    "tz": "Anytime",
-    "industries": "CRM, Healthcare, Logistics and Supply Chain",
-    "dep": "High"
-  },
-  {
     "name": "Muhammad Fakhar",
     "team": "Ghulam Murtaza",
     "designation": "ATL",
@@ -4419,28 +2340,6 @@
     "exp": "5y",
     "tz": "Anytime",
     "industries": "E-commerce & Retail, Education, Hospitality, Pets Guardianship",
-    "dep": "Low"
-  },
-  {
-    "name": "Muhammad Farrukh Khan",
-    "team": "Salman Ali",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN, ROR",
-    "exp": "2.5y",
-    "tz": "PST",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Faseeh",
-    "team": "Junaid Ali",
-    "designation": "SSE",
-    "primary": "DevOps",
-    "stacks": "DevOps, AWS",
-    "exp": "3.5y",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "Low"
   },
   {
@@ -4466,17 +2365,6 @@
     "dep": "High"
   },
   {
-    "name": "Muhammad Hammad",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "Node.js",
-    "stacks": "Node.js, ROR, React, AWS, GraphQL, Docker , Javascript, MERN, Typescript, SQL",
-    "exp": "2.5 yrs",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Muhammad Hammad Rashid",
     "team": "Mahroz",
     "designation": "SQA",
@@ -4485,17 +2373,6 @@
     "exp": "2 yrs",
     "tz": "Anytime",
     "industries": "Real Estate, Healthcare, Education, E-commerce & Retail, Entertainment, Gaming and 3D, Hospitality, Travel and Tourism, Sports, HR and management systems",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Hamza",
-    "team": "Yasir Barkat",
-    "designation": "ASE",
-    "primary": "Dynamics F&O",
-    "stacks": "Full Stack developer, Web & Mobile App development (MERN & Reactive Native, NextJs), SQL, Postgre, Mongo, Dynamics F&O X++, Customisations, SSRS & Docentric Reporting, Custom Service & Odata integrations, Rails, ReactJS, Javascript, UI/UX, .Net, ASP, C#, GO, React",
-    "exp": "1.7 Years",
-    "tz": "PKT/EST",
-    "industries": "Generative AI Web apps, finance, SC, ATS, Healthcare",
     "dep": "High"
   },
   {
@@ -4510,28 +2387,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Muhammad Haroon Omer",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "React",
-    "stacks": "React, ROR, Javascript, Python, Node.js, SQL, Flask, Django",
-    "exp": "2.5 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Muhammad Haseeb",
-    "team": "Ali Raza Watoo",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, Python, .Net, React, Next",
-    "exp": "2",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Muhammad Haseeb Ul Hassan",
     "team": "Aqib Maqbool",
     "designation": "SE",
@@ -4543,28 +2398,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Muhammad Hasham",
-    "team": "Tensei Games",
-    "designation": "SE",
-    "primary": "Unity Engine",
-    "stacks": "Firebase, ROR, React, Unreal Engine, C++",
-    "exp": "1.5y",
-    "tz": "PKT",
-    "industries": "Gaming and 3D, FinTech",
-    "dep": "Normal"
-  },
-  {
-    "name": "Muhammad Hasnat Raza",
-    "team": "Junaid Ali",
-    "designation": "SSE",
-    "primary": "PHP",
-    "stacks": "PHP, Laravel, ROR, Node, React, Next, Vue, GOLANG, AWS, Azure, GCP, Grpc, Wordpress, Codeigniter, Symfony",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Muhammad Hassaan Siddiqui",
     "team": "Ghulam Murtaza",
     "designation": "SE",
@@ -4573,28 +2406,6 @@
     "exp": "1y",
     "tz": "Anytime",
     "industries": "E-commerce & Retail",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Hassam Khaliq",
-    "team": "Ghulam Murtaza",
-    "designation": "SSE",
-    "primary": ".Net",
-    "stacks": ".Net, Angular, Typescript, Azure, Javascript, Node, React, MERN",
-    "exp": "3y",
-    "tz": "PKT",
-    "industries": "Healthcare, Logistics and Supply Chain, Sports",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Hassan Ijaz",
-    "team": "Ghulam Murtaza",
-    "designation": "ASE",
-    "primary": "Angular",
-    "stacks": "Angular, Javascript, .Net, Typescript",
-    "exp": "1y",
-    "tz": "EST",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -4609,28 +2420,6 @@
     "dep": "High"
   },
   {
-    "name": "Muhammad Hassan Sultan",
-    "team": "Aqib Maqbool",
-    "designation": "SQA",
-    "primary": "QA - Manual",
-    "stacks": "QA - Manual , Javascript",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Hassan Zaheer",
-    "team": "Saad Team",
-    "designation": "ATL-SQA",
-    "primary": "QA Automation",
-    "stacks": "QA Automation, QA - Manual , SDET, Selenium, Cypress",
-    "exp": "3.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Muhammad Hibban Haroon",
     "team": "Junaid Rehmat",
     "designation": "SE",
@@ -4639,17 +2428,6 @@
     "exp": "1.5y",
     "tz": "Anytime",
     "industries": "Education, Software Devolpment, Healthcare, Real Estate, Sports",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Huzaifa",
-    "team": "Junaid Ali",
-    "designation": "SE",
-    "primary": "AWS",
-    "stacks": "AWS, ROR, React, Ember Js, MERN",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -4708,61 +2486,6 @@
     "dep": "High"
   },
   {
-    "name": "Muhammad Irfan",
-    "team": "Talha Mughal",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, React, MERN, GraphQL, Javascript, Nest, Docker , AWS, Python",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Irtiza",
-    "team": "Junaid Rehmat",
-    "designation": "ASE",
-    "primary": "iOS",
-    "stacks": "iOS",
-    "exp": "1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Ismaeel",
-    "team": "Salman Ali",
-    "designation": "SE",
-    "primary": "Java",
-    "stacks": "Java, React",
-    "exp": "1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Muhammad Jamil",
-    "team": "Junaid Ali",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, React, Typescript, Django, GraphQL",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Jawad Amin",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "AI/ML, Python Backend",
-    "stacks": "AI / ML, Python, SQL, Computer Vision, Docker , Fast API",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "Software Development Services",
-    "dep": "Low"
-  },
-  {
     "name": "Muhammad Jawad Haleem",
     "team": "Fahad Hassan",
     "designation": "ASE",
@@ -4815,17 +2538,6 @@
     "exp": "2.5y",
     "tz": "PKT | EST",
     "industries": "Gaming and 3D, Design & Fabrication, Database Management",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Kumail",
-    "team": "Aqib Maqbool",
-    "designation": "SSE",
-    "primary": "Javascript",
-    "stacks": "Javascript, Typescript, QA - Automation",
-    "exp": "4y",
-    "tz": "CDT",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -4906,28 +2618,6 @@
     "dep": "High"
   },
   {
-    "name": "Muhammad Muaz Iqbal",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, ROR, React, Flask, AWS",
-    "exp": "2.5 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Muhammad Mudasir Hayat",
-    "team": "Saad Team",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, Django, AWS, React, Javascript, Flask, Data Science",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Muhammad Mujeeb Ullah Khan",
     "team": "Yasir Barkat",
     "designation": "SSE",
@@ -4970,28 +2660,6 @@
     "tz": "PKT",
     "industries": "Entertainment, Information Technology, HRMS, EdTech, E-Learning, Education, Telecom, E-commerce & Retail",
     "dep": "High"
-  },
-  {
-    "name": "Muhammad Mutahhar Abbas",
-    "team": "Junaid Rehmat",
-    "designation": "SSE",
-    "primary": "Python",
-    "stacks": "Python, Django, Fast Api, Flask, Docker, AWS, GCP, Azure, DevOps, Selenium, CI/CD, Product Design",
-    "exp": "5y",
-    "tz": "Anytime",
-    "industries": "Healthcare, Software Devolpment, E-commerce & Retail, Travel and Tourism, LLMs, Hospitality, Sports",
-    "dep": "Normal"
-  },
-  {
-    "name": "Muhammad Muzammal Murtaza",
-    "team": "Ali Raza Watoo",
-    "designation": "SSE",
-    "primary": "Rails",
-    "stacks": "Rails, Java, React",
-    "exp": "4",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
   },
   {
     "name": "Muhammad Nadeem",
@@ -5049,17 +2717,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Muhammad Omer Khan",
-    "team": "Ahmed Wasim",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "Python, Django, Flask, Next",
-    "exp": "1 year",
-    "tz": "EST",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Muhammad Qasim Yousaf",
     "team": "Mahroz",
     "designation": "SSE",
@@ -5104,17 +2761,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Muhammad Saad Sultan",
-    "team": "Saad Team",
-    "designation": "ASE",
-    "primary": ".Net",
-    "stacks": ".Net, ASP, C#",
-    "exp": "Less than 1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
     "name": "Muhammad Sadiq",
     "team": "Aqib Maqbool",
     "designation": "ASE",
@@ -5124,28 +2770,6 @@
     "tz": "Anytime",
     "industries": "FinTech",
     "dep": "Normal"
-  },
-  {
-    "name": "Muhammad Safdar",
-    "team": "Fahad Hassan",
-    "designation": "SE",
-    "primary": "SQL, Python, Data Analyst",
-    "stacks": "Python, SQL, Data Analyst",
-    "exp": "3y",
-    "tz": "PKT",
-    "industries": "Healthcare, Information Technology",
-    "dep": "Normal"
-  },
-  {
-    "name": "Muhammad Saim",
-    "team": "Talha Mughal",
-    "designation": "SSE",
-    "primary": "MERN",
-    "stacks": "MERN, ROR, React, Typescript, DevOps, AWS",
-    "exp": "3y",
-    "tz": "PST",
-    "industries": "",
-    "dep": "High"
   },
   {
     "name": "Muhammad Saim Malik",
@@ -5181,28 +2805,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Muhammad Sami Khan",
-    "team": "Ghulam Murtaza",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, AWS, Docker , DevOps, GraphQL, Javascript, Nest, QA - Manual , React, React Native, Typescript, MERN",
-    "exp": "4y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Sami Khokher",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "LAMP & MERN",
-    "stacks": "Laravel, React, Next, PHP, SQL, Javascript",
-    "exp": "1.5 yrs",
-    "tz": "PKT",
-    "industries": "Software Development Services",
-    "dep": "Low"
-  },
-  {
     "name": "Muhammad Saqib",
     "team": "Aqib Maqbool",
     "designation": "ATL",
@@ -5211,17 +2813,6 @@
     "exp": "5-6 years",
     "tz": "PKT",
     "industries": "Healthcare, Entertainment, Information Technology, E-commerce & Retail, Education, Hospitality, Gaming and 3D",
-    "dep": "Low"
-  },
-  {
-    "name": "Muhammad Shahab Sharif",
-    "team": "Saad Team",
-    "designation": "SE",
-    "primary": "Swift",
-    "stacks": "Swift, iOS Native, Flutter",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "Low"
   },
   {
@@ -5302,17 +2893,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Muhammad Sheharyar",
-    "team": "Ali Raza Watoo",
-    "designation": "SE",
-    "primary": "Ruby On Rails",
-    "stacks": "Ruby On Rails, React JS, Vue JS,c# .Net core Runtime, AI/ML",
-    "exp": "2",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Muhammad Sher Afgan bhatti",
     "team": "Mahroz",
     "designation": "SSE",
@@ -5321,28 +2901,6 @@
     "exp": "3.5 yrs",
     "tz": "Anytime",
     "industries": "Food & Beverages, E-commerce & Retail, Telecommunication",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Sibtain Asad",
-    "team": "Ali Raza Watoo",
-    "designation": "ASE",
-    "primary": "Javascript",
-    "stacks": "Javascript, Python, React, Typescript, Django",
-    "exp": "1",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Sufian",
-    "team": "Junaid Rehmat",
-    "designation": "SSQAE",
-    "primary": "Cypress",
-    "stacks": "Cypress, Playwright, QA Automation, QA - Manual , Appium, CI/CD",
-    "exp": "4y",
-    "tz": "PST",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -5355,17 +2913,6 @@
     "tz": "Anytime",
     "industries": "Education, Sports",
     "dep": "Low"
-  },
-  {
-    "name": "Muhammad Sulman",
-    "team": "Junaid Ali",
-    "designation": "SE",
-    "primary": "Android",
-    "stacks": "Android, Java, ROR, PHP",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
   },
   {
     "name": "Muhammad Tahir Maqsood",
@@ -5522,17 +3069,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Muhammad Usman",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "Django",
-    "stacks": "Python, Django, Javascript, React",
-    "exp": "2.5 yrs",
-    "tz": "Anytime",
-    "industries": "Real Estate, Education, Automotive Industry",
-    "dep": "High"
-  },
-  {
     "name": "Muhammad Usman Ali",
     "team": "Mahroz",
     "designation": "ASE",
@@ -5566,17 +3102,6 @@
     "dep": "High"
   },
   {
-    "name": "Muhammad Wadood ul Haq",
-    "team": "Saad Team",
-    "designation": "SE",
-    "primary": ".Net",
-    "stacks": ".Net, ASP, C#",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
     "name": "Muhammad Wajahat",
     "team": "Ashar Ali",
     "designation": "SE",
@@ -5585,17 +3110,6 @@
     "exp": "2y",
     "tz": "PKT",
     "industries": "Information Technology",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Wajid",
-    "team": "Ali Raza Watoo",
-    "designation": "SSE",
-    "primary": "Node Js",
-    "stacks": "Node Js, Nest Js, React Js, Next Js (MERN)",
-    "exp": "4",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -5618,17 +3132,6 @@
     "exp": "2.5 yrs",
     "tz": "PKT",
     "industries": "Real Estate, Construction, Automotive Industry, Farming, Gaming and 3D, Healthcare, Information Technology",
-    "dep": "High"
-  },
-  {
-    "name": "Muhammad Yahya",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "MERN",
-    "stacks": "MERN, React Native, Javascript, React, Node",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "Travel and Tourism, Ed-Tech, Recruitment, E-commerce & Retail",
     "dep": "High"
   },
   {
@@ -5665,17 +3168,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Muhammad Zain Ul Abideen",
-    "team": "Ghulam Murtaza",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "Angular, GraphQL, DevOps, AWS, Python, ROR, Typescript",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "E-commerce & Retail",
-    "dep": "Normal"
-  },
-  {
     "name": "Muhammad Zakria",
     "team": "Ghulam Murtaza",
     "designation": "SSE",
@@ -5709,17 +3201,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Mumtaz Ul Hassan",
-    "team": "Cloud 1",
-    "designation": "TL",
-    "primary": "Salesforce",
-    "stacks": "Salesforce, Java, Javascript, PHP, MERN, MEAN, LAMP, Laravel",
-    "exp": "18",
-    "tz": "PST",
-    "industries": "Sales, Services, Experience, Prop Tech",
-    "dep": "High"
-  },
-  {
     "name": "Muneeb Ahmad",
     "team": "Junaid Rehmat",
     "designation": "SE",
@@ -5731,17 +3212,6 @@
     "dep": "High"
   },
   {
-    "name": "Muneeb Ahmed Nasir",
-    "team": "Fahad Hassan",
-    "designation": "SE",
-    "primary": "Data Engineering",
-    "stacks": "Python, Data Engineering, Docker, Databricks, Azure, AWS, Airflow",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "Education, Entertainment, Information Technology",
-    "dep": "Normal"
-  },
-  {
     "name": "Muneeb Ur Rehman",
     "team": "Ghulam Murtaza",
     "designation": "SSE",
@@ -5751,17 +3221,6 @@
     "tz": "EST",
     "industries": "Education, E-commerce & Retail, Healthcare, Sports, Ad Tech",
     "dep": "High"
-  },
-  {
-    "name": "Munhib Humayun",
-    "team": "Yasir Barkat",
-    "designation": "FC",
-    "primary": "Dynamics F&O",
-    "stacks": "Finance: GL, AP, AR, Asset Leasing, Fixed Assets, Cash & Bank, Credit & Collections SCM: PIM, IM, Procurement, Sales",
-    "exp": "3 years",
-    "tz": "PKT",
-    "industries": "Chemical, Pharma, Engineering, Retail, Food, Education, Textile",
-    "dep": "Normal"
   },
   {
     "name": "Muqadas Zahid",
@@ -5786,17 +3245,6 @@
     "dep": "High"
   },
   {
-    "name": "Musa Umer",
-    "team": "Mahroz",
-    "designation": "SQA",
-    "primary": "QA - Manual",
-    "stacks": "QA - Manual , QA Automation",
-    "exp": "1.5 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Mutahara Ghulam Rasool",
     "team": "Aqib Maqbool",
     "designation": "SQA",
@@ -5805,17 +3253,6 @@
     "exp": "",
     "tz": "PKT",
     "industries": "FinTech, Automotive Industry, E-commerce & Retail, Travel and Tourism",
-    "dep": "Normal"
-  },
-  {
-    "name": "Muti ur Rehman",
-    "team": "Cloud 1",
-    "designation": "ATL",
-    "primary": "Salesforce",
-    "stacks": "Salesforce, Javascript",
-    "exp": "7y",
-    "tz": "Anytime",
-    "industries": "E-commerce & Retail, Finance, IT & Infrastructure, Real Estate, Creative Services, Information Technology",
     "dep": "Normal"
   },
   {
@@ -5852,17 +3289,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Nabeel Shafiq",
-    "team": "Dania Asrar Butt",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, React, GraphQL, Javascript, Typescript, AWS, shopify app development",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "Healthcare, Logistics and Supply Chain, Education",
-    "dep": "High"
-  },
-  {
     "name": "Nabiha Hamid",
     "team": "Ahmad Wasim",
     "designation": "ASE",
@@ -5883,28 +3309,6 @@
     "tz": "Anytime",
     "industries": "Travel and Tourism",
     "dep": "Low"
-  },
-  {
-    "name": "Nadir Shehzad",
-    "team": "Junaid Rehmat",
-    "designation": "ATL",
-    "primary": "QA Automation",
-    "stacks": "QA Automation, QA - Manual , Selenium, Cypress, Playwright, Appium, CI/CD",
-    "exp": "5y",
-    "tz": "PST",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Naeem Ahmad",
-    "team": "Ghulam Murtaza",
-    "designation": "ASE",
-    "primary": "MERN",
-    "stacks": "Javascript, MERN, Next, Node, React, Typescript",
-    "exp": "Less than 1y",
-    "tz": "Anytime",
-    "industries": "Information Technology",
-    "dep": "High"
   },
   {
     "name": "Naila Awan",
@@ -5940,28 +3344,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Naseeb Ahmed Mian",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, React, Typescript, Javascript, Node, Nest, Next, Angular, MERN, Python, Flask, GraphQL, SQL",
-    "exp": "2 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Natasha Khaliq",
-    "team": "Junaid Ali",
-    "designation": "SSE",
-    "primary": "QA Automation",
-    "stacks": "QA Automation",
-    "exp": "4y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Naureen Mujtaba",
     "team": "Fahad Hassan",
     "designation": "SSE",
@@ -5971,17 +3353,6 @@
     "tz": "EST",
     "industries": "Information Technology, FinTech, Healthcare, Real Estate",
     "dep": "High"
-  },
-  {
-    "name": "Naveed Sadaqat Ali",
-    "team": "Ashar Ali",
-    "designation": "SSE",
-    "primary": "MERN",
-    "stacks": "Angular, React, Node, Nest",
-    "exp": "3.5y",
-    "tz": "EST",
-    "industries": "Information Technology, Healthcare, E-commerce & Retail",
-    "dep": "Low"
   },
   {
     "name": "Nayab Imtiaz",
@@ -6017,50 +3388,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Nimra Abid",
-    "team": "Ahmed Wasim",
-    "designation": "SE",
-    "primary": "Javascript",
-    "stacks": "Python, Django, Fast API, React, Node, Next, GraphQL, Docker, AWS, Javascript, MERN, Typescript, Rest API, AI / ML, Flask, SQL, Node.js",
-    "exp": "2.5",
-    "tz": "PKT",
-    "industries": "Information Technology, E-commerce & Retail, Education, Fintech, Hospitality, Healthcare, Saas, Oil and Gas",
-    "dep": "Normal"
-  },
-  {
-    "name": "Nimra Zahoor",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "Javascript",
-    "stacks": "Javascript, MERN, React, React Native",
-    "exp": "1.5 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Noor fatima",
-    "team": "Ahmed Wasim",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, MERN, Python, Django, Fast API",
-    "exp": "2.5",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Noor Ul Absaar zia",
-    "team": "Ali Raza Watoo",
-    "designation": "SSE",
-    "primary": "MERN",
-    "stacks": "MERN, React Native, Node, Next, Nest, React, Typescript",
-    "exp": "3",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Nowail Zahir",
     "team": "Usama Imtiaz",
     "designation": "SSE",
@@ -6083,28 +3410,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Numan Anees",
-    "team": "Talha Mughal",
-    "designation": "SE",
-    "primary": "Javascript",
-    "stacks": "Javascript, MERN, Typescript, React, Nest, Next, AWS, DevOps, GraphQL, React Native, Docker , Python, Node, Blockchain",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Omar Sajid",
-    "team": "Ali Raza Watoo",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN",
-    "exp": "3",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Omar Tehzeeb",
     "team": "Mahroz",
     "designation": "SSQA",
@@ -6113,83 +3418,6 @@
     "exp": "4 yrs",
     "tz": "PKT",
     "industries": "FinTech, Healthcare, HRMS",
-    "dep": "High"
-  },
-  {
-    "name": "Pehlaj Rajput",
-    "team": "Usama Imtiaz",
-    "designation": "SSE",
-    "primary": "AI / ML",
-    "stacks": "AI / ML, GenAI, CV, Deep Learning, Python, ML Ops, Computer Vision, Javascript, DevOps, Docker, MERN, Typescript, Flask",
-    "exp": "Less than 1y",
-    "tz": "PKT",
-    "industries": "FinTech, Healthcare, Education, Entertainment, Travel and Tourism, Sports, Real Estate, Information Technology, Automotive Industry",
-    "dep": "High"
-  },
-  {
-    "name": "Qasim Luqman",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "Javascript",
-    "stacks": "Javascript, MERN, Node, React",
-    "exp": "Less than 1 yr",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Raahim Ahmad Khan",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "Python, Django, ROR, React, Typescript, Javascript",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Rabbia Arshad",
-    "team": "Ghulam Murtaza",
-    "designation": "SSE",
-    "primary": "AI / ML",
-    "stacks": "AI / ML, Python, ML Ops",
-    "exp": "3y",
-    "tz": "EST",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Rabbiya Noor",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, React, Python, AWS, Javascript, Typescript",
-    "exp": "2y",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Rafay ul Haq",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "DevOps",
-    "stacks": "Docker , DevOps, Python, SQL, Django, ROR, AWS",
-    "exp": "1 yr",
-    "tz": "Anytime",
-    "industries": "Information Technology, Networking and cybersecurity solution, Healthcare",
-    "dep": "Normal"
-  },
-  {
-    "name": "Rais Taimoor",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "AI / ML",
-    "stacks": "AI / ML",
-    "exp": "2.5y",
-    "tz": "PST",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -6202,50 +3430,6 @@
     "tz": "Anytime",
     "industries": "Real Estate, Finance, E-commerce & Retail",
     "dep": "High"
-  },
-  {
-    "name": "Raja Mohsin Tariq",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, Javascript, SQL, React, DevOps, Docker , AWS, Node.js",
-    "exp": "2 yrs",
-    "tz": "Anytime",
-    "industries": "Healthcare, Education",
-    "dep": "Normal"
-  },
-  {
-    "name": "Rana Adeel",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "AI/ML",
-    "stacks": "GenAI, Deep learning, Python, AI / ML, Typescript, LLM, NLP, PostgreSQL, Docker , Flutter",
-    "exp": "1 yr",
-    "tz": "Anytime",
-    "industries": "Industrial, Solution Provider, E-commerce & Retail",
-    "dep": "Low"
-  },
-  {
-    "name": "Rana Hamza Hussain",
-    "team": "Dania Asrar Butt",
-    "designation": "SSE",
-    "primary": "Angular",
-    "stacks": "Typescript, Javascript, Angular, React, ROR, AWS, MERN, Node, Python",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "Healthcare, Sports, E-commerce & Retail",
-    "dep": "High"
-  },
-  {
-    "name": "Rana Mohid Mehmood",
-    "team": "Saad Team",
-    "designation": "SSQA",
-    "primary": "QA Automation",
-    "stacks": "QA Automation, QA - Manual , Cypress, playwright, Javascript, SQL, SDET, DevOps, Typescript",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
   },
   {
     "name": "Rana Muhammad Abdullah",
@@ -6292,61 +3476,6 @@
     "dep": "High"
   },
   {
-    "name": "Rashid Zaheer",
-    "team": "Yasir Barkat",
-    "designation": "ATL",
-    "primary": "Dynamics F&O",
-    "stacks": "X++, C#, Customisation, Reporting, Workflows, Integratrion",
-    "exp": "7 Years",
-    "tz": "PKT/EST",
-    "industries": "Finance, Supply chain, Hr Payroll",
-    "dep": "Normal"
-  },
-  {
-    "name": "Raza Ali",
-    "team": "Saad Team",
-    "designation": "SE",
-    "primary": "PHP",
-    "stacks": "PHP, Wordpress",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Raza Faheem Khan",
-    "team": "Junaid Ali",
-    "designation": "ATL",
-    "primary": "Python",
-    "stacks": "Python, Django, Flask, Javascript, AI / ML, AWS, GCP, Azure, GraphQL",
-    "exp": "5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Rehman Ali",
-    "team": "Junaid Ali",
-    "designation": "SSE",
-    "primary": "MERN",
-    "stacks": "MERN, Javascript, Typescript, Python, GCP, AWS, MySQL, GraphQL",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Rida Arshad",
-    "team": "Talha Mughal",
-    "designation": "SE",
-    "primary": "Salesforce",
-    "stacks": "Salesforce, Python, AI / ML",
-    "exp": "1y",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Rida Fatima",
     "team": "Dania Asrar Butt",
     "designation": "SSE",
@@ -6356,17 +3485,6 @@
     "tz": "Anytime",
     "industries": "ATS, Healthcare, Architecture and Planning, Information Technology, Human Resource",
     "dep": "Normal"
-  },
-  {
-    "name": "Rida Rafi Syed",
-    "team": "Dania Asrar Butt",
-    "designation": "SSE",
-    "primary": "Python",
-    "stacks": "AI / ML, MERN, Python, Node, React, Typescript, GraphQL, Next, Javascript",
-    "exp": "5.5y",
-    "tz": "PKT",
-    "industries": "Law Firm, E-commerce & Retail, Education, FinTech, Information Technology, Healthcare, Real Estate, Travel and Tourism, Entertainment, Hospitality",
-    "dep": "High"
   },
   {
     "name": "Rohail Iqbal",
@@ -6413,28 +3531,6 @@
     "dep": "None"
   },
   {
-    "name": "Saad Imran",
-    "team": "Awais Mushtaq",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, AI/ML, React, Next, Docker, Computer Vision, Javascript, Scripting",
-    "exp": "3.5y",
-    "tz": "Anytime",
-    "industries": "Information Technology, Real Estate, Travel and Tourism, E-commerce & Retail",
-    "dep": "Normal"
-  },
-  {
-    "name": "Saad Ishtiaq",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "Javascript",
-    "stacks": "Javascript, MERN, Node, ROR, React, Ember js, AWS",
-    "exp": "2.5y",
-    "tz": "CET",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Saad Nasim Ullah",
     "team": "Ghulam Murtaza",
     "designation": "SSE",
@@ -6443,17 +3539,6 @@
     "exp": "4y",
     "tz": "PKT",
     "industries": "Education",
-    "dep": "Normal"
-  },
-  {
-    "name": "Saad Shah",
-    "team": "Yasir Barkat",
-    "designation": "AFC",
-    "primary": "Dynamics F&O",
-    "stacks": "Supply Chain",
-    "exp": "11 Months",
-    "tz": "AST",
-    "industries": "Food",
     "dep": "Normal"
   },
   {
@@ -6490,17 +3575,6 @@
     "dep": "High"
   },
   {
-    "name": "Sagar Butt",
-    "team": "Ghulam Murtaza",
-    "designation": "ATL",
-    "primary": "React",
-    "stacks": "React",
-    "exp": "4.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Sahar Arif",
     "team": "Ahmed Wasim",
     "designation": "ASE",
@@ -6509,39 +3583,6 @@
     "exp": "Less than 1y",
     "tz": "Anytime",
     "industries": "Information Technology",
-    "dep": "Normal"
-  },
-  {
-    "name": "Sahar Moueen",
-    "team": "Ali Raza Watoo",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, React, AI-ML",
-    "exp": "2",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Saif Ali",
-    "team": "Tensei Games",
-    "designation": "SE",
-    "primary": "Unreal Engine/C++",
-    "stacks": "Technical/Lighting Artist, Python, AI / ML, AWS, Computer Vision, ML Ops, Deep Learning, Unity Engine",
-    "exp": "2.5y",
-    "tz": "PKT | EST",
-    "industries": "Gaming and 3D, Electrical Engineering, Control Systems, Embedded Systems",
-    "dep": "High"
-  },
-  {
-    "name": "Saif Ullah",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "Javascript",
-    "stacks": "Javascript, MERN, Nest, Next, Node, ROR, React, Typescript, SQL, PostgreSQL",
-    "exp": "1.5 yrs",
-    "tz": "Anytime",
-    "industries": "Healthcare, FinTech",
     "dep": "Normal"
   },
   {
@@ -6567,17 +3608,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Sajawal Ali",
-    "team": "Ahmed Wasim",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, ROR",
-    "exp": "1 year",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Sajeel Hussain",
     "team": "Ahmed Wasim",
     "designation": "ASE",
@@ -6598,50 +3628,6 @@
     "tz": "PST| Any",
     "industries": "Automotive Industry, E-commerce & Retail, Architecture and Planning, Facility Management",
     "dep": "High"
-  },
-  {
-    "name": "Salman Saeed",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "AI / ML",
-    "stacks": "AI / ML, AWS, Docker , Javascript, Typescript, React, Python, ROR, Node, Next, MERN",
-    "exp": "2y",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Saman Rafiq",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, Javascript, Typescript, Angular, Node.js, PHP, Salesforce, SQL",
-    "exp": "2.5 yrs",
-    "tz": "PKT",
-    "industries": "FinTech, E-commerce & Retail, Education, HR, HR and management systems, Payroll",
-    "dep": "Normal"
-  },
-  {
-    "name": "Sameer Shahzad",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": ".Net",
-    "stacks": ".Net, Angular, Typescript, React, DevOps",
-    "exp": "1y",
-    "tz": "EST",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Samim Zubair",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "GraphQL",
-    "stacks": "GraphQL, Next, ROR, React, SQL, Typescript, Javascript, Python",
-    "exp": "3 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
   },
   {
     "name": "Samrah ishtiaq",
@@ -6688,28 +3674,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Saram Khalil",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "React / Php / Laravel",
-    "stacks": "Javascript, Node, PHP, React, React Native, SQL, Laravel",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "Healthcare, E-commerce & Retail, Information Technology",
-    "dep": "Normal"
-  },
-  {
-    "name": "Sardar Ibrar Ahmad",
-    "team": "Ashar Ali",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "MERN, Typescript, React, Node, Next, Nest, Javascript, AWS, Docker , Framer, GraphQL",
-    "exp": "1.5y",
-    "tz": "PKT | EST",
-    "industries": "Automotive Industry, E-commerce & Retail, Education, Real Estate, Information Technology, Healthcare, Travel and Tourism",
-    "dep": "Normal"
-  },
-  {
     "name": "Shahab Ali",
     "team": "Aqib Maqbool",
     "designation": "SE",
@@ -6721,17 +3685,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Shaharyar Rana",
-    "team": "Yasir Barkat",
-    "designation": "SFC",
-    "primary": "Dynamics F&O",
-    "stacks": "Retail, Supply Chain, Inventory Mgmt, AWMS",
-    "exp": "5 years",
-    "tz": "PKT",
-    "industries": "Retail, Telecom, FMCG",
-    "dep": "Normal"
-  },
-  {
     "name": "Shaheer Ahmed",
     "team": "Awais Mushtaq",
     "designation": "SSE",
@@ -6740,28 +3693,6 @@
     "exp": "4y",
     "tz": "Anytime",
     "industries": "Education, Entertainment, Healthcare, Consultancy, Architecture and Planning, E-commerce & Retail, IT & Infrastructure",
-    "dep": "Normal"
-  },
-  {
-    "name": "Shaheer Bin Ejaz",
-    "team": "Mahroz",
-    "designation": "SSE",
-    "primary": "SSE",
-    "stacks": "Python, MERN",
-    "exp": "2.5 yrs",
-    "tz": "PKT",
-    "industries": "E-commerce & Retail, Education, Entertainment",
-    "dep": "Normal"
-  },
-  {
-    "name": "Shaheer Shahid",
-    "team": "Saad Team",
-    "designation": "SE",
-    "primary": ".Net",
-    "stacks": ".Net, ASP, C#",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "Normal"
   },
   {
@@ -6864,28 +3795,6 @@
     "dep": "High"
   },
   {
-    "name": "Shehryar Ashraf",
-    "team": "Fahad Hassan",
-    "designation": "ATL",
-    "primary": "AI/ML",
-    "stacks": "Python, AI/ML, Computer Vision, Deep Learning, GenAI, ML Ops, Data Analyst",
-    "exp": "5y",
-    "tz": "EST",
-    "industries": "Healthcare, Information Technology",
-    "dep": "High"
-  },
-  {
-    "name": "Shehryar Sohail",
-    "team": "Ali Raza Watoo",
-    "designation": "ASE",
-    "primary": "React",
-    "stacks": "React",
-    "exp": "Below 1",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Sheraz Ahmad",
     "team": "Fahad Hassan",
     "designation": "ATL",
@@ -6908,83 +3817,6 @@
     "dep": "High"
   },
   {
-    "name": "Shimaim Khan",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, React",
-    "exp": "1y",
-    "tz": "PKT",
-    "industries": "Education",
-    "dep": "High"
-  },
-  {
-    "name": "Shoaib Fazeel Butt",
-    "team": "Ghulam Murtaza",
-    "designation": "SSE",
-    "primary": "Javascript",
-    "stacks": "Javascript, React, Ember js, Java, ROR, Spring Boot",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Siddique Khalid",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "React",
-    "stacks": "React, ROR, Node, Nest, MERN, Java, Docker , AWS",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Sidra Mushtaq",
-    "team": "Mahroz",
-    "designation": "SSQA",
-    "primary": "QA Automation",
-    "stacks": "QA - Manual, Business Analyst",
-    "exp": "3.5 yrs",
-    "tz": "Anytime",
-    "industries": "Entertainment, Gaming and 3D, Healthcare, Information Technology",
-    "dep": "High"
-  },
-  {
-    "name": "Sikander Sultan",
-    "team": "Dania Asrar Butt",
-    "designation": "SE-2",
-    "primary": "MERN",
-    "stacks": "MERN, Javascript, Typescript, Node, React, Next, MongoDB, SQL, AWS",
-    "exp": "3.5y",
-    "tz": "Anytime",
-    "industries": "Entertainment, FinTech, Education",
-    "dep": "Low"
-  },
-  {
-    "name": "Sinan Saleem",
-    "team": "Junaid Ali",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, GraphQL, Heroku, Python, Javascript, SQL, NoSQL, React",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Sitara Shafiq",
-    "team": "Junaid Ali",
-    "designation": "SSQAE",
-    "primary": "QA Automation",
-    "stacks": "QA Automation",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Soban Rauf",
     "team": "Junaid Rehmat",
     "designation": "ASE",
@@ -6993,17 +3825,6 @@
     "exp": "2y",
     "tz": "CST|PKT",
     "industries": "E-commerce & Retail, Software Devolpment",
-    "dep": "Normal"
-  },
-  {
-    "name": "Soban Saeed",
-    "team": "Ahmed Wasim",
-    "designation": "ASE",
-    "primary": "ROR",
-    "stacks": "ROR, MERN, React, React Native",
-    "exp": "Less than 1",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "Normal"
   },
   {
@@ -7018,17 +3839,6 @@
     "dep": "High"
   },
   {
-    "name": "Sufyan Abbada",
-    "team": "Junaid Rehmat",
-    "designation": "SSE",
-    "primary": "Javascript",
-    "stacks": "Javascript",
-    "exp": "3y",
-    "tz": "PST| Any",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Suleman Siddiqui",
     "team": "Aqib Maqbool",
     "designation": "PM",
@@ -7038,39 +3848,6 @@
     "tz": "Anytime",
     "industries": "Hospitality, Logistics and Supply Chain, Sports, E-commerce & Retail, Real Estate",
     "dep": "High"
-  },
-  {
-    "name": "Syed Abdullah",
-    "team": "Fahad Hassan",
-    "designation": "Trainee ASE",
-    "primary": "AI/ML",
-    "stacks": "Computer Vision, Docker, Javascript, MERN, Python, React, SQL",
-    "exp": "Less than 1y",
-    "tz": "PKT",
-    "industries": "Information Technology",
-    "dep": "Normal"
-  },
-  {
-    "name": "Syed Ali Gillani",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "MERN",
-    "stacks": "Javascript, MERN, React, SQL",
-    "exp": "Less than 1 yr",
-    "tz": "Anytime",
-    "industries": "Automobile, Chat Bots",
-    "dep": "Normal"
-  },
-  {
-    "name": "Syed Aown Raza",
-    "team": "Ghulam Murtaza",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "AI / ML, React, Python, django",
-    "exp": "1y",
-    "tz": "Anytime",
-    "industries": "FinTech",
-    "dep": "Normal"
   },
   {
     "name": "Syed Behzad Hassan Naqvi",
@@ -7084,17 +3861,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Syed Ebad Hussain",
-    "team": "Saad Team",
-    "designation": "ATL",
-    "primary": ".Net",
-    "stacks": ".Net, ASP, C#, GO",
-    "exp": "1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Syed Faiz Ali",
     "team": "Yasir Barkat",
     "designation": "SE",
@@ -7104,17 +3870,6 @@
     "tz": "PKT/EST",
     "industries": "Finance, Supply chain, Hr Payroll, Porject Managment, Budget Planning",
     "dep": "Normal"
-  },
-  {
-    "name": "Syed Farrukh Gilani",
-    "team": "Aqib Maqbool",
-    "designation": "SE",
-    "primary": "React",
-    "stacks": "React, Azure, AWS, MERN, Next",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
   },
   {
     "name": "Syed Hamza Ali",
@@ -7194,28 +3949,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Syed Mohammad Moiez Turab",
-    "team": "Saad Team",
-    "designation": "SSE",
-    "primary": "AWS",
-    "stacks": "AWS, Dart, Javascript, MERN, Node, Nest, Flutter, Typescript",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Syed Mohsin Raza",
-    "team": "Aqib Maqbool",
-    "designation": "SQA",
-    "primary": "QA - Manual",
-    "stacks": "QA - Manual",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
     "name": "Syed Muhammad Baqir Mehdi",
     "team": "Awais Mushtaq",
     "designation": "ASE",
@@ -7224,39 +3957,6 @@
     "exp": "Less than 1y",
     "tz": "EST",
     "industries": "Information Technology, CRM",
-    "dep": "High"
-  },
-  {
-    "name": "Syed Muhammad Taqi Haider",
-    "team": "Ali Raza Watoo",
-    "designation": "SE",
-    "primary": "[ROR",
-    "stacks": "[ROR, Laravel/PHP, JavaScript, AWS]",
-    "exp": "3",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Syed Shahid Arshad",
-    "team": "Talha Mughal",
-    "designation": "SE",
-    "primary": "Javascript",
-    "stacks": "Javascript, MERN, Node, Next, React, Docker , AWS, ROR, Typescript",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Syed Shahriyar Bukhari",
-    "team": "Junaid Ali",
-    "designation": "SSE",
-    "primary": "MERN",
-    "stacks": "MERN, MEAN, MEVN, Remix",
-    "exp": "2.5y",
-    "tz": "EST",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -7269,72 +3969,6 @@
     "tz": "Anytime",
     "industries": "Recruitment, E-commerce & Retail",
     "dep": "High"
-  },
-  {
-    "name": "Syed Turrab Hussain zaidi",
-    "team": "Saad Team",
-    "designation": "TL",
-    "primary": ".Net",
-    "stacks": ".Net, ASP, C#",
-    "exp": "1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Syed Umar Ali",
-    "team": "Ahmed Wasim",
-    "designation": "SSE",
-    "primary": "Python",
-    "stacks": "Python, React, Next, ROR, Node.js, AWS, GCP",
-    "exp": "2.5",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Syed Uzair Ul Hassan",
-    "team": "Junaid Ali",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, Python, Java, GOLANG, Typescript, Javascript, SQL, NoSQL",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Syed Zain Bukhari",
-    "team": "Mahroz",
-    "designation": "SSE",
-    "primary": "Node.js",
-    "stacks": "Node.js, Typescript, Blockchain, Javascript",
-    "exp": "3 yrs",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Syeda Fatima Shirazi",
-    "team": "Junaid Rehmat",
-    "designation": "SE",
-    "primary": "iOS",
-    "stacks": "iOS",
-    "exp": "1y",
-    "tz": "PKT | Any",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Taha Hadayat",
-    "team": "Talha Mughal",
-    "designation": "SSE",
-    "primary": "MERN",
-    "stacks": "MERN, ROR, AWS, DevOps, GraphQL, Javascript, Nest, Next, Node, React, React Native, Typescript, Docker",
-    "exp": "3y",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
   },
   {
     "name": "Taha Imran",
@@ -7370,50 +4004,6 @@
     "dep": "High"
   },
   {
-    "name": "Talha",
-    "team": "Saad Team",
-    "designation": "SE",
-    "primary": "React",
-    "stacks": "React, ROR, Javascript, Typescript",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Talha Abid",
-    "team": "Salman Ali",
-    "designation": "SE",
-    "primary": "Elixir",
-    "stacks": "Elixir, Node, Javascript, Typescript, GraphQL",
-    "exp": "4y",
-    "tz": "Anytime",
-    "industries": "Information Technology",
-    "dep": "Normal"
-  },
-  {
-    "name": "Talha Jamil",
-    "team": "Junaid Rehmat",
-    "designation": "ATL",
-    "primary": "Python",
-    "stacks": "Python, Django, Fast Api, DevOps",
-    "exp": "4y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Talha Mahboob",
-    "team": "Saad Team",
-    "designation": "SE",
-    "primary": "PHP",
-    "stacks": "PHP, Wordpress, Airtable, Squarespace, Sharepoint",
-    "exp": "1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Talha Mohy Ud Din",
     "team": "Aqib Maqbool",
     "designation": "ASE",
@@ -7422,39 +4012,6 @@
     "exp": "1 yr",
     "tz": "PST",
     "industries": "Entertainment, Education, Healthcare, Information Technology",
-    "dep": "High"
-  },
-  {
-    "name": "Talha Mughal",
-    "team": "Talha Mughal",
-    "designation": "Director",
-    "primary": "ROR",
-    "stacks": "ROR, Angular, React, AWS, Docker, DevOps, Javascript",
-    "exp": "8y",
-    "tz": "Anytime",
-    "industries": "Construction, E-commerce & Retail, Education, Entertainment, Finance, FinTech, Healthcare",
-    "dep": "High"
-  },
-  {
-    "name": "Talha Naair",
-    "team": "Ali Raza Watoo",
-    "designation": "SSE",
-    "primary": "Docker",
-    "stacks": "Docker , GraphQL, Javascript, ROR, Angular",
-    "exp": "3",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Talha Naeem",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, React, Node, AWS, MERN",
-    "exp": "2.5 yrs",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -7480,17 +4037,6 @@
     "dep": "High"
   },
   {
-    "name": "Tayyab Tariq",
-    "team": "Aqib Maqbool",
-    "designation": "SE",
-    "primary": "MERN, Python",
-    "stacks": "React, Python, Node, MERN, Javascript, Typescript, SQL, MongoDB, AWS, Azure",
-    "exp": "",
-    "tz": "Anytime",
-    "industries": "Healthcare, E-commerce & Retail, Entertainment",
-    "dep": "Normal"
-  },
-  {
     "name": "Touseef Ur Rehman",
     "team": "Ahmed Wasim",
     "designation": "ATL",
@@ -7500,17 +4046,6 @@
     "tz": "PKT",
     "industries": "Farming, E-commerce & Retail, FMCG, Healthcare",
     "dep": "Normal"
-  },
-  {
-    "name": "Umair Ahmad",
-    "team": "Mahroz",
-    "designation": "ATL",
-    "primary": "AI / ML",
-    "stacks": "AI / ML, GenAI, Python, NLP, LLM, Computer Vision",
-    "exp": "6.5 yrs",
-    "tz": "CST",
-    "industries": "",
-    "dep": "High"
   },
   {
     "name": "Umair Dar",
@@ -7524,17 +4059,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Umair Qasim",
-    "team": "Awais Mushtaq",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, Django, FastAPI, flask, Git, DRF, Javascript, SQL, AI / ML, QA Automation, QA - Manual, Docker, Next, React",
-    "exp": "6y",
-    "tz": "Anytime",
-    "industries": "Education, Information Technology, Hospitality, E-commerce & Retail, Healthcare, Real Estate, Telecom",
-    "dep": "High"
-  },
-  {
     "name": "Umar Razzaq",
     "team": "Tensei Games",
     "designation": "SE",
@@ -7543,17 +4067,6 @@
     "exp": "3y",
     "tz": "PKT",
     "industries": "Education, Gaming and 3D, Information Technology",
-    "dep": "High"
-  },
-  {
-    "name": "Umber Zahid",
-    "team": "Usama Imtiaz",
-    "designation": "SE",
-    "primary": "MERN",
-    "stacks": "AWS, Javascript, MERN, Node, React, Typescript",
-    "exp": "2.5y",
-    "tz": "PKT",
-    "industries": "Healthcare, Consultancy, Education, Travel and Tourism",
     "dep": "High"
   },
   {
@@ -7568,17 +4081,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Umer Hayat",
-    "team": "Muhammad Babar",
-    "designation": "ASE",
-    "primary": "Dynamics 365 CE / Power Platform",
-    "stacks": "Dynamics 365 CRM/CEPower Platform (Power Apps – Model & Canvas, Power Automate, Power Pages, Power BI, AI Builder) Dataverse (Tables, Web API, OData, FetchXML)DevelopmentC#, Plugins, Custom APIs HTML/CSS, JavaScript, TypeScript, React (PCF Control) Power Pages Web Resources (JS) Azure (Logic Apps, Functions, API Management) , AWS KingswaySoft SSIS, Azure Data Factory, Azure Blob Storage Integrations with BC, SharePointToolsGit, Visual Studio, VS Code, Postman, PowerShell",
-    "exp": "1 Year",
-    "tz": "PKT/Middle East",
-    "industries": "- Horse Racing & Sports Administration - Financial Services - Textile",
-    "dep": "Normal"
-  },
-  {
     "name": "Umm e Farwa Irfan",
     "team": "Yasir Barkat",
     "designation": "SE",
@@ -7590,17 +4092,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Usama Basharat",
-    "team": "Ali Raza Watoo",
-    "designation": "ATL",
-    "primary": "React",
-    "stacks": "React, ROR, Next, Python, Django, AWS, GraphQL, Docker, Typescript",
-    "exp": "4",
-    "tz": "Anytime",
-    "industries": "ATS, Education, Entertainment, FinTech, Information Technology",
-    "dep": "Normal"
-  },
-  {
     "name": "Usama Bin Waseem",
     "team": "Tensei Games",
     "designation": "ASE",
@@ -7609,39 +4100,6 @@
     "exp": "2y",
     "tz": "PKT | EST",
     "industries": "Gaming and 3D, Information Technology",
-    "dep": "High"
-  },
-  {
-    "name": "Usama Ijaz",
-    "team": "Mahroz",
-    "designation": "SSE",
-    "primary": "Angular",
-    "stacks": "Angular, React, Node, Python, React Native, Typescript, MERN",
-    "exp": "3.5 yrs",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Usama Ilyas",
-    "team": "Dania Asrar Butt",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, React, Next, Javascript, Node",
-    "exp": "3",
-    "tz": "Anytime",
-    "industries": "ATS, Logistics and Supply Chain, Healthcare",
-    "dep": "High"
-  },
-  {
-    "name": "USAMA IMRAN",
-    "team": "Junaid Ali",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, Python, Node, AWS",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "High"
   },
   {
@@ -7667,28 +4125,6 @@
     "dep": "High"
   },
   {
-    "name": "Usama Mansoor",
-    "team": "Junaid Ali",
-    "designation": "ATL",
-    "primary": "AI / ML",
-    "stacks": "AI / ML, Python, AWS, GOLANG",
-    "exp": "4y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Usama Masud",
-    "team": "Ali Raza Watoo",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, AWS, Javascript, MERN, Next, React, Typescript, React Native, Docker, Node, Nest",
-    "exp": "2",
-    "tz": "Anytime",
-    "industries": "Education, Entertainment, Information Technology, Pets Guardianship, ATS",
-    "dep": "High"
-  },
-  {
     "name": "Usama Nasir",
     "team": "Junaid Rehmat",
     "designation": "ATL",
@@ -7711,50 +4147,6 @@
     "dep": "High"
   },
   {
-    "name": "Usama Tariq",
-    "team": "Mahroz",
-    "designation": "ASE",
-    "primary": "PHP",
-    "stacks": "PHP, Laravel, React, Node, Next",
-    "exp": "1y",
-    "tz": "Anytime",
-    "industries": "ERP, Saas, Transport",
-    "dep": "Normal"
-  },
-  {
-    "name": "Usman Ahmad Awan",
-    "team": "Aqib Maqbool",
-    "designation": "SSE",
-    "primary": "ROR, Nest, React, Next",
-    "stacks": "ROR, React, React Native, Next, Node, Nest",
-    "exp": "",
-    "tz": "EST",
-    "industries": "E-commerce & Retail",
-    "dep": "High"
-  },
-  {
-    "name": "Usman Javaid",
-    "team": "Aqib Maqbool",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR, React, Javascript, MERN, Typescript, Docker, Next",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Usman Javed",
-    "team": "Dania Asrar Butt",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR, AWS, GraphQL, Nest, Typescript, Javascript, MERN",
-    "exp": "4y",
-    "tz": "Anytime",
-    "industries": "Healthcare, Automotive Industry, Logistics and Supply Chain, FinTech",
-    "dep": "High"
-  },
-  {
     "name": "Usman Khan Lodhi",
     "team": "Junaid Rehmat",
     "designation": "SSE",
@@ -7763,17 +4155,6 @@
     "exp": "3y",
     "tz": "Anytime",
     "industries": "E-commerce & Retail, FinTech, Healthcare, Oil and Gas, Sports, Software Devolpment, Information Technology",
-    "dep": "Normal"
-  },
-  {
-    "name": "Usman Khurram",
-    "team": "Awais Mushtaq",
-    "designation": "SE",
-    "primary": "ROR",
-    "stacks": "ROR React Next Graphql",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "Education Healthcare",
     "dep": "Normal"
   },
   {
@@ -7810,78 +4191,12 @@
     "dep": "Normal"
   },
   {
-    "name": "Usman Tahir",
-    "team": "Junaid Ali",
-    "designation": "SE",
-    "primary": "Wordpress",
-    "stacks": "Wordpress, PHP",
-    "exp": "1y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Low"
-  },
-  {
-    "name": "Uzair Shahid Shahid",
-    "team": "Mahroz",
-    "designation": "SE",
-    "primary": "Python",
-    "stacks": "Python, Flask, Django, ROR, React, Typescript",
-    "exp": "2.5 yrs",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Wahaj Rahman",
     "team": "Muhammad Babar",
     "designation": "ASE",
     "primary": "Dynamics 365 CRM / CE Power Platform",
     "stacks": "Dynamics 365 CE Power Platform Development (C#, JavaScript, Python) ADF, Git, Visual Studio, VS Code, Postman",
     "exp": "1 Year",
-    "tz": "PKT",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Wajahat Hussain Shah",
-    "team": "Junaid Ali",
-    "designation": "SE",
-    "primary": "PHP",
-    "stacks": "PHP, Laravel, Python, Flask, Javascript, React, GraphQL, SQL",
-    "exp": "1.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Wajeeh Ur Rahman Ahsan",
-    "team": "Aqib Maqbool",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "ROR",
-    "exp": "Option 1",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Wajeeha Azeem",
-    "team": "Junaid Rehmat",
-    "designation": "SE",
-    "primary": "Android",
-    "stacks": "Android, Java",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Waleed Bin Osama",
-    "team": "Ahmed Wasim",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "Python, MERN",
-    "exp": "Less than 1",
     "tz": "PKT",
     "industries": "",
     "dep": "Normal"
@@ -7909,72 +4224,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Waqas Bin Abbas",
-    "team": "Junaid Ali",
-    "designation": "SSE",
-    "primary": "AI / ML",
-    "stacks": "AI / ML, AWS, Django, Flask, Javascript, MERN, Node, Python, React",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Waqas Tahir",
-    "team": "Ghulam Murtaza",
-    "designation": "SE",
-    "primary": "Angular",
-    "stacks": "Angular, Javascript, Node, React, Typescript, MERN, GraphQL, Next, React Native, AWS",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Waqas Zafar",
-    "team": "Cloud 1",
-    "designation": "SQA",
-    "primary": "Salesforce",
-    "stacks": "Salesforce",
-    "exp": "2.5y",
-    "tz": "PKT",
-    "industries": "Finance, IT & Infrastructure, Real Estate, Creative Services, Information Technology, Law Firm",
-    "dep": "Normal"
-  },
-  {
-    "name": "Wardah Arshad",
-    "team": "Mahroz",
-    "designation": "SSQA",
-    "primary": "QA Automation",
-    "stacks": "QA Automation, QA - Manual",
-    "exp": "2.5 yrs",
-    "tz": "Anytime",
-    "industries": "E-commerce & Retail, Healthcare, Information Technology",
-    "dep": "Normal"
-  },
-  {
-    "name": "Waris Mahmood",
-    "team": "Talha Mughal",
-    "designation": "ASE",
-    "primary": "Next",
-    "stacks": "MERN, Typescript, React, Next, Javascript, Python, Node, Fast API, Angular",
-    "exp": "1y",
-    "tz": "PKT | EST",
-    "industries": "Information Technology, Sports, FinTech",
-    "dep": "Normal"
-  },
-  {
-    "name": "Wasam Khan",
-    "team": "Dania Asrar Butt",
-    "designation": "SE",
-    "primary": "Next, React, Node",
-    "stacks": "Next, React, Node, MongoDB, Python, AI/ML",
-    "exp": "1y",
-    "tz": "PKT",
-    "industries": "Gaming and 3D, Information Technology",
-    "dep": "Normal"
-  },
-  {
     "name": "Wasif Ali",
     "team": "Awais Mushtaq",
     "designation": "SSE",
@@ -7995,17 +4244,6 @@
     "tz": "Anytime",
     "industries": "E-commerce & Retail, Healthcare, IT & Infrastructure, Education, NGO",
     "dep": "High"
-  },
-  {
-    "name": "Zahid Parviz",
-    "team": "Muhammad Babar",
-    "designation": "SE",
-    "primary": "Dynamics 365 CE / Power Platform",
-    "stacks": "Dynamics 365 CE Power Platform Development (C#, JavaScript, Python) ADF, Git, Visual Studio, VS Code, Postman",
-    "exp": "1 Year",
-    "tz": "PKT/EST",
-    "industries": "Healthcare Government Commercial",
-    "dep": "Normal"
   },
   {
     "name": "Zahid Yousaf",
@@ -8030,39 +4268,6 @@
     "dep": "Low"
   },
   {
-    "name": "Zaid Waseem",
-    "team": "Ahmed Wasim",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "Python, MERN",
-    "exp": "Less than 1",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Zaigham Farid",
-    "team": "Junaid Rehmat",
-    "designation": "SE",
-    "primary": "Android",
-    "stacks": "Android, Java",
-    "exp": "2y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Zain Akram",
-    "team": "Awais Mushtaq",
-    "designation": "SSE",
-    "primary": "MERN",
-    "stacks": "ROR, MERN, Typescript, Node, Next, MongoDB, Nest, React, QA - Manual, Javascript, GraphQL, AWS",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "E-commerce & Retail, Education, Healthcare, Sports",
-    "dep": "High"
-  },
-  {
     "name": "Zain Al Abidin",
     "team": "Ahmed Wasim",
     "designation": "ASE",
@@ -8072,17 +4277,6 @@
     "tz": "PKT",
     "industries": "Information Technology",
     "dep": "Normal"
-  },
-  {
-    "name": "Zain Asher",
-    "team": "Talha Mughal",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "Python, Docker , React, Typescript",
-    "exp": "Below 1",
-    "tz": "Anytime",
-    "industries": "IT & Infrastructure",
-    "dep": "Low"
   },
   {
     "name": "Zain Saleem",
@@ -8107,28 +4301,6 @@
     "dep": "Normal"
   },
   {
-    "name": "Zain Ul Abideen",
-    "team": "Ali Raza Watoo",
-    "designation": "ASE",
-    "primary": "AI / ML",
-    "stacks": "AI / ML, React, ROR, Python, Flutter",
-    "exp": "Below 1",
-    "tz": "PST",
-    "industries": "",
-    "dep": "High"
-  },
-  {
-    "name": "Zainab azhar",
-    "team": "Yasir Barkat",
-    "designation": "FC",
-    "primary": "Business Central",
-    "stacks": "Finance:G/L, Bank, Fixed asset, Inventory, Sales, Purchase, Warehouse,Assembly,Production",
-    "exp": "2.5 years",
-    "tz": "PKT/EST",
-    "industries": "Finance, Supply Chain, Pharmaceutical & Healthcare, Commercial & Industrial Supply,",
-    "dep": "Normal"
-  },
-  {
     "name": "Zakria Imdad",
     "team": "Awais Mushtaq",
     "designation": "Trainee ASE",
@@ -8137,17 +4309,6 @@
     "exp": "Less than 1y",
     "tz": "Anytime",
     "industries": "Healthcare",
-    "dep": "Normal"
-  },
-  {
-    "name": "Zakriya Zulafiqar",
-    "team": "Junaid Ali",
-    "designation": "SSE",
-    "primary": "React",
-    "stacks": "React, Angular, ROR, Node, Typescript, Next, Docker",
-    "exp": "2.5y",
-    "tz": "Anytime",
-    "industries": "",
     "dep": "Normal"
   },
   {
@@ -8171,17 +4332,6 @@
     "tz": "EST",
     "industries": "Education",
     "dep": "High"
-  },
-  {
-    "name": "Zeerak Waqas",
-    "team": "Yasir Barkat",
-    "designation": "FC",
-    "primary": "Dynamics F&O",
-    "stacks": "Supply Chain, Production, Asset Management, Landed Cost, Invoice Capture",
-    "exp": "11 Months",
-    "tz": "PKT",
-    "industries": "IT, Textile, Food",
-    "dep": "Normal"
   },
   {
     "name": "Zeeshan Ikram",
@@ -8217,39 +4367,6 @@
     "dep": "High"
   },
   {
-    "name": "Zia Ullah",
-    "team": "Fahad Hassan",
-    "designation": "Trainee ASE",
-    "primary": "AI/ML",
-    "stacks": "AI/ML, Computer Vision, Deep Learning, GenAI, Python, QA - Automation, SQL",
-    "exp": "1y",
-    "tz": "Anytime",
-    "industries": "Architecture and Planning, Education, Real Estate, E-commerce & Retail",
-    "dep": "Normal"
-  },
-  {
-    "name": "Zia ur Rehman",
-    "team": "Mahroz",
-    "designation": "SSE",
-    "primary": "ROR",
-    "stacks": "GraphQL, Docker, ROR, React, SQL, PostgreSQL, AWS, Python",
-    "exp": "3.5 yrs",
-    "tz": "PKT",
-    "industries": "E-commerce & Retail, Real Estate, Healthcare, Telecommunication",
-    "dep": "High"
-  },
-  {
-    "name": "Zille Muhammad Jafary",
-    "team": "Junaid Ali",
-    "designation": "SSE",
-    "primary": "PHP",
-    "stacks": "PHP, Laravel, Javascript, Typescript, Vue, React, Shopify",
-    "exp": "3y",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
     "name": "Zoha Afzal",
     "team": "Fahad Hassan",
     "designation": "Trainee ASE",
@@ -8272,28 +4389,6 @@
     "dep": "Low"
   },
   {
-    "name": "Zohaib Zahid",
-    "team": "Ahmed Wasim",
-    "designation": "ASE",
-    "primary": "MERN",
-    "stacks": "MERN, JS, TS, NestJs, NextJs, React, Java, Python, AWS, SQL, Wordpress, .Net",
-    "exp": "Less than 1y",
-    "tz": "PKT",
-    "industries": "POS, Smart Attendance, Ecommerce",
-    "dep": "Normal"
-  },
-  {
-    "name": "Zuha Abdullah",
-    "team": "Yasir Barkat",
-    "designation": "FC",
-    "primary": "Dynamics F&O",
-    "stacks": "Supply chain: AWMS, TMS, Landed Cost, PIM, PMA, Expense Managment, Retail & Commerce",
-    "exp": "2 Years",
-    "tz": "PKT/PST",
-    "industries": "Manufactuting (LandScaping) & Distribution",
-    "dep": "Normal"
-  },
-  {
     "name": "Zuha Sohail",
     "team": "Awais Mushtaq",
     "designation": "ASE",
@@ -8303,27 +4398,5 @@
     "tz": "PKT | EST",
     "industries": "Information Technology, E-commerce & Retail",
     "dep": "High"
-  },
-  {
-    "name": "Zuha Umar",
-    "team": "Ahmed Wasim",
-    "designation": "ASE",
-    "primary": "Python",
-    "stacks": "Python, MERN, AI / ML",
-    "exp": "Less than 1",
-    "tz": "Anytime",
-    "industries": "",
-    "dep": "Normal"
-  },
-  {
-    "name": "Zunaira Bari",
-    "team": "Mahroz",
-    "designation": "SSQA",
-    "primary": "SSQA",
-    "stacks": "QA - Manual, Typescript, Javascript",
-    "exp": "5.5 yrs",
-    "tz": "PKT",
-    "industries": "E-commerce & Retail, Education, Real Estate",
-    "dep": "Low"
   }
 ]

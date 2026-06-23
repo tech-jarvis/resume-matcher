@@ -9,7 +9,8 @@
     "start": "next start",
     "resume:extract-template": "node scripts/extract-template-structure.mjs",
     "resume:generate": "node scripts/generate-resume.mjs",
-    "resume:validate": "node scripts/office/validate.mjs files/storage/sample-output.docx"
+    "resume:validate": "node scripts/office/validate.mjs files/storage/sample-output.docx",
+    "reconcile:active": "node scripts/reconcile-active-employees.mjs --write"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",

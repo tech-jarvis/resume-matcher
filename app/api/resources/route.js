@@ -1,4 +1,5 @@
 import { apiErrorResponse, mapError } from "@/lib/apiErrors";
+import { filterActiveResources } from "@/lib/activeEmployees";
 import { requireAuth } from "@/lib/supabase/requireAuth";
 import { rowToResource, resourceToRow } from "@/lib/supabaseResources";
 
@@ -15,7 +16,7 @@ export async function GET() {
     const mapped = mapError(dbErr);
     return Response.json({ error: mapped.message, code: mapped.code }, { status: mapped.status });
   }
-  return Response.json({ resources: (data ?? []).map(rowToResource) });
+  return Response.json({ resources: filterActiveResources((data ?? []).map(rowToResource)) });
 }
 
 export async function POST(request) {
