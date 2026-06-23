@@ -196,6 +196,8 @@ export default function ResourceMatcher() {
             {results && (
               <MatchResultsTable
                 results={results}
+                jd={jd}
+                resumes={resumes}
                 onReset={() => {
                   setResults(null);
                   setJd("");
