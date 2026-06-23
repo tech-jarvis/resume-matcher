@@ -135,13 +135,22 @@ function buildActiveIndex(employees) {
 }
 
 function isActiveResource(resource, index) {
+  const name = resource.name;
+  if (!name) return false;
+
+  const employeeId = resource.employeeId ?? resource.employee_id;
+  if (typeof employeeId === "number" && employeeId > 0 && employeeId < 1_000_000) {
+    return index.byId.has(employeeId);
+  }
+
   const id = resource.id;
   if (typeof id === "number" && Number.isInteger(id) && id > 0 && id < 1_000_000) {
-    return index.byId.has(id);
+    const byId = index.byId.get(id);
+    if (byId && namesMatch(name, byId.name)) return true;
   }
 
   for (const active of index.employees) {
-    if (namesMatch(resource.name, active.name)) return true;
+    if (namesMatch(name, active.name)) return true;
   }
 
   return false;
